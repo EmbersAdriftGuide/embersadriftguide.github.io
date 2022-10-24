@@ -1,0 +1,522 @@
+body {
+  background: rgb(76, 82, 119);
+  min-height: 100vh;
+	box-sizing: border-box;
+	padding-top: 1.5rem;
+  min-width: 100vw;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  margin: 0 auto 5rem auto;
+  color: rgb(125, 127, 165);
+}
+
+.tabs {
+	display: flex;
+  overflow-x: scroll;
+  width: 90vw;
+  margin: auto;
+  height: 100%;
+  z-index: 1;
+}
+
+.skilltabs {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.spectabs {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs label {
+	order: 1;
+  position: relative;
+	display: block;
+  height: 2rem;
+	padding: 1.5rem 1.5rem;
+	margin-right: 0.5rem;
+	cursor: pointer;
+  background: rgb(52, 52, 70);
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+.skilltabs label {
+	order: 1;
+	display: block;
+	padding: 0.8rem 1rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+  background: #454c63;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+
+.spectabs label {
+	order: 1;
+	display: block;
+  margin: auto;
+	padding: 0.8rem 1rem;
+	cursor: pointer;
+  background: rgb(30, 30, 41);
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+
+.tabs .main {
+  order: 99;
+  position: absolute;
+  top: 6.4rem;
+	width: 95%;
+  max-width: 48rem;
+  min-height: 25em;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+	display: none;
+  margin: auto;
+  padding: 1.5rem, auto;
+  background: rgb(30, 30, 41);
+}
+.skilltabs .tab {
+  order: 99;
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 0.5rem;
+  background:  rgb(52, 52, 70);
+}
+
+.spectabs .tab {
+  order: 99;
+  flex-grow: 1;
+	width: 100%;
+  display: none;
+  padding: 0.5rem;
+}
+
+.zindex{
+  z-index:3;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: rgb(30, 30, 41);
+}
+.tabs input[type="radio"]:checked + label + .main {
+	display: block;
+}
+
+.skilltabs input[type="radio"] {
+	display: none;
+}
+.skilltabs input[type="radio"]:checked + label {
+	background:  rgb(52, 52, 70);
+}
+.skilltabs input[type="radio"]:checked + label + .tab {
+	display: inline-block;
+}
+
+.spectabs input[type="radio"] {
+	display: none;
+}
+.spectabs input[type="radio"]:checked + label {
+	background: rgb(30, 30, 41);
+}
+.spectabs input[type="radio"]:checked + label + .tab {
+	display: inline-block;
+}
+
+.tab, .main {
+  border-radius: 0px 10px 10px 10px;
+}
+
+label{
+  border-radius: 5px 5px 0px 0px;
+  height: 1.5rem;
+}
+
+.skilltabs label{
+  height: 3rem;
+}
+
+.spectabs label{
+  height: 3rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 5ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.close:target {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup {
+  margin: 10rem auto;
+  padding: 0.4rem;
+  background: rgb(212, 208, 235, 0.3);
+  border-radius: 5px;
+  width: 30rem;
+  position: relative;
+}
+
+.popup .close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  z-index: 6;
+}
+
+.popup .tab{
+  max-height: 65vh;
+  overflow-y: scroll;
+}
+
+
+.rectangle{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width:2rem;
+  height:2rem;
+  border-radius: 5px;
+  background:rgb(52, 52, 70);
+  z-index: 5;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.icon, .blank {
+  position: relative;
+  margin: 2%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.icon .dTxt {
+  text-align: center;
+}
+
+.spec {
+  outline-style: solid;
+  outline-width: 0.2rem;
+  outline-color: #4a557c;
+}
+
+.spec, .class {
+  width: 5rem;
+  height: auto;
+  border-radius: 50%;
+  outline-style: solid;
+  outline-width: 0.2rem;
+  outline-color: #4a557c;
+}
+
+.class {
+  margin-left: 3.5rem;
+  margin-top: 1rem;
+  float: left;
+}
+
+.mats {
+  float: left;
+  margin-right: 0.5rem;
+}
+
+.tabIcon, .mats {
+  width:3.5rem;
+}
+
+.line {
+  background-image:linear-gradient(to right, rgba(128, 128, 128, 0.425), rgba(0,0,0,0));
+  height: 3px;
+}
+
+h1 {
+  color:rgb(181, 183, 221);
+  padding-left: 3.5rem;
+  padding-top: 1rem;
+}
+
+.middle {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  font-style: bold;
+  line-height: 2.5rem;
+}
+
+.subHeader {
+  padding-left: 3.5rem;
+}
+
+h3, h4, p, .itxt, .dTxt {
+  color: rgb(181, 183, 221);
+  margin : 0.5rem 0rem 0.5rem 0rem;
+}
+
+a:link, a:visited {
+  color: white;
+}
+
+.iTxt {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.name {
+  opacity: 75%;
+  display: inline;
+}
+
+.grey {
+  background-color: rgb(49, 46, 63);
+}
+
+.dark {
+  background-color: rgb(30, 30, 41);
+}
+
+.blue {
+  color: rgb(88, 158, 223);
+}
+
+.cyan {
+  color: aqua;
+}
+
+.red {
+  color: red;
+}
+
+.orange {
+  color:darkorange;
+}
+
+.yellow {
+  color:gold;
+}
+
+.green{
+  color: limegreen;
+}
+
+.midtone {
+  color:#5f6a8f
+}
+
+a img:hover, .spectabs label img:hover, .middle img:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(4, 3, 10));
+	filter: drop-shadow(5px 5px 5px rgb(4,3,10));
+}
+
+a img {
+  height: 6.5rem;
+  width: 6.5rem;
+}
+
+.lineup {
+  width: 24%;
+}
+
+.role1, .role2, .role3, .role4, .role5 {
+  position: absolute;
+  top: 6.75rem;
+  z-index: 2;
+}
+
+.role1 {
+  left: 0.75rem;
+}
+
+.role2 {
+  left: 3.5rem;
+}
+
+.role3 {
+  left: -0.3rem;
+}
+
+.role4 {
+  left: 2.15rem;
+}
+
+.role5 {
+  left: 4.6rem;
+}
+
+.nudge {
+  position: relative;
+  top: 0.4rem;
+}
+
+.nudgeMore {
+  position: relative;
+  top: 0.8rem;
+}
+
+.tabs::-webkit-scrollbar, .tab::-webkit-scrollbar, .content::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+.footer {
+  color: white;
+  position: fixed;
+  bottom: 0rem;
+}
+
+.wrapper {
+  width: 50rem;
+  margin: auto;
+  height: 100%;
+  padding-bottom: 2rem;
+}
+
+.arrowR, .arrowL {
+  display: none;
+}
+
+.homePic {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+}
+
+
+@media screen and (max-width: 600px) {
+  .blank, .ea, .name, .footer {
+    display: none;
+  }
+  .icon p {
+    font-size: 1rem;
+  }
+  h1 {
+    padding-left: 3rem;
+  }
+  .popup {
+    width: 90vw;
+    margin: 1rem auto;
+  }
+  .tabs {
+    width: 95%;
+    margin: auto;
+  }
+  .popup .tab{
+    max-height: 80vh;
+    overflow-y: scroll;
+  }
+
+  .lineup {
+    width: 23%;
+  }
+
+  .popup .close{
+    top: 0.5rem;
+    right: 0.95rem;
+  }
+
+  #rectangle{
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .arrowR {
+    display: block;
+    position:absolute;
+    right: 1.2rem;
+    top: 0.1rem;
+    color:rgb(212, 208, 235);
+    z-index: 2;
+  }
+  .arrowL {
+    display: block;
+    position:absolute;
+    left: -1.1rem;
+    top: 0.1rem;
+    color:rgb(212, 208, 235);
+    z-index: 2;
+  }
+  .wrapper {
+    width: 100%;
+  }
+
+  #strip {
+    position:absolute;
+    top: 0rem;
+    right: 0rem;
+    width:1rem;
+    height:8rem;
+    background: rgb(76, 82, 119);
+    z-index: 4;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blank {
+    display: none;
+  }
+  .icons{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  h1 {
+    padding-left: 1.5rem;
+  }
+  .skilltabs label {
+    padding: 0.7rem 0.7rem;
+  }
+  .arrowL {
+    left: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .icons{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  h1 {
+    padding-left: 1rem;
+  }
+  .skilltabs label {
+    padding: 0.5rem 0.5rem;
+  }
+  .arrowL {
+    left: 0rem;
+  }
+}
