@@ -160,9 +160,18 @@ label{
   opacity: 1;
 }
 
-.close:target {
+.close:target, .cancel:target {
   visibility: hidden;
   opacity: 0;
+}
+
+.overlay .cancel {
+  position: absolute;
+  min-width: 100vh;
+  min-height: 100vw;
+  width: 100%;
+  cursor: default;
+  z-index: 4;
 }
 
 .popup {
@@ -172,6 +181,7 @@ label{
   border-radius: 5px;
   width: 30rem;
   position: relative;
+  z-index: 5;
 }
 
 .popup .close {
