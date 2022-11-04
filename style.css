@@ -432,6 +432,7 @@ a img {
   .blank, .ea, .name, .footer {
     display: none;
   }
+
   .icon p {
     font-size: 1rem;
   }
@@ -499,6 +500,10 @@ a img {
 @media screen and (max-width: 400px) {
   .blank {
     display: none;
+  }
+  .subHeader {
+    padding-left: 1.75rem;
+    padding-right: 1.5rem;
   }
   .icons{
     margin-left: 1rem;
