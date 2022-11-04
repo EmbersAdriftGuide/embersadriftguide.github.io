@@ -456,12 +456,12 @@ a img {
   }
 
   .popup .close{
-    top: 0.5rem;
-    right: 0.95rem;
+    top: 0.95rem;
+    right: 1.45rem;
   }
 
   #rectangle{
-    top: 0.5rem;
+    top: 0.75rem;
     right: 0.5rem;
   }
 
