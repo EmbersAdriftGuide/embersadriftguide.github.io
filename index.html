@@ -9,6 +9,7 @@
     <title>Embers Adrift Guide</title>
     <meta name="description" content="A complete guide for Embers Adrift Class Skills and Crafting">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/fire.png">
+    <script>function checkRadio(name) {document.getElementById(name).checked = true;}</script>
   </head>
 <body>
   <div class="wrapper">
@@ -20,7 +21,29 @@
           <h1>Embers Adrift Guide<span class="midtone ea"> - Welcome!</span></h1>
           <div class="icons">
             <img src="icons/blahblah.png" class="homePic">
-            <h3>*** Have moved website hosting, please bookmark new URL ***</h3>
+            <hr><h2>Class and Skill Guides;</h2><hr>
+              <div class="icon">
+                <a onclick="checkRadio('tabDefender')"><img class="spec" src="icons/class/defender.png" alt="Defender"></a>
+                <p class="iTxt"><b>Defender</b></p></div>
+              <div class="icon">
+                <a onclick="checkRadio('tabStriker')"><img class="spec" src="icons/class/Duelist.png" alt="Striker"></a>
+                <p class="iTxt"><b>Striker</b></p></div>
+              <div class="icon">
+                <a onclick="checkRadio('tabSupport')"><img class="spec" src="icons/class/Supporter.png" alt="Supporter"></a>
+                <p class="iTxt"><b>Supporter</b></p></div>
+                <div class="blank"><a><img src="icons/blank.png"></a></div>
+            <hr><h2>Crafting Guides;</h2><hr>
+              <div class="icon">
+                <a onclick="checkRadio('tabGathering')"><img class="spec" src="icons/sickle.png" alt="Gathering"></a>
+                <p class="iTxt"><b>Gathering</b></p></div>
+              <div class="icon">
+                <a onclick="checkRadio('tabMetalwork')"><img class="spec" src="icons/anvil.png" alt="Metalwork"></a>
+                <p class="iTxt"><b>Metalwork</b></p></div>
+              <div class="icon">
+                <a onclick="checkRadio('tabWoodsman')"><img class="spec" src="icons/tree.png" alt="Woodsman"></a>
+                <p class="iTxt"><b>Woodsman</b></p></div>
+                <div class="blank"><a><img src="icons/blank.png"></a></div>
+            <hr><h3>*** Have moved website hosting, please bookmark new URL ***</h3>
             <h3 class="midtone">Added level 30 skill ranks (a couple are missing, will add soon)<br>from info posted by AliceBluu, let me know if you spot any errors</h3>
             <h4 class="midtone">report mistakes to tallbird#9579 on discord, <br>thank you to Huggles & Karacus for their help<br>&nbsp;</h4>
           </div>
@@ -52,7 +75,6 @@
               <p class="iTxt"><b>Resistant</b></p>
             </div>
           </div>
-          <div class="centered">
             <div class="spectabs">
               <input type="radio" name="defenderTabs" id="tabJuggernaut" checked="checked">
               <label for="tabJuggernaut"><img class="spec" src="icons/class/juggernaut.png" alt="Juggernaut"></label>
@@ -204,7 +226,6 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
 
         <div id="DefInfo" class="overlay"> <!-- ClassInfo -->
@@ -1586,7 +1607,6 @@
               <p class="iTxt"><b>Bleeding<br>Strike</b></p>
             </div>
           </div>
-          <div class="centered">
             <div class="spectabs">
               <input type="radio" name="strikerTabs" id="tabBerserker" checked="checked">
               <label for="tabBerserker"><img class="spec" src="icons/class/Berserker.png" alt="Berserker"></label>
@@ -1743,7 +1763,6 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
 
         <div id="StrInfo" class="overlay"> <!-- ClassInfo -->
@@ -3098,7 +3117,6 @@
               <p class="iTxt"><b>Screen</b></p>
             </div>
           </div>
-          <div class="centered">
             <div class="spectabs">
               <input type="radio" name="supportTabs" id="tabDuelist" checked="checked">
               <label for="tabDuelist"><img class="spec" src="icons/class/Duelist.png" alt="Duelist"></label>
@@ -3261,7 +3279,6 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
 
         <div id="SupInfo" class="overlay"> <!-- ClassInfo -->
@@ -4673,7 +4690,6 @@
         <label for="tabGathering"><img src="icons/sickle.png" alt="Gathering"></label>
         <div class="main">
           <div><h1>Gathering<span class="midtone ea"> - work in progress</span></h1></div>
-          <div class="centered">
             <div class="spectabs">
               <input type="radio" name="GatheringTabs" id="tabForester" checked="checked">
               <label for="tabForester"><img class="spec" src="icons/crafting/Forester.png" alt="Forester"></label>
@@ -4774,7 +4790,6 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
 
         <div id="BowString" class="overlay"> <!-- Forester -->
@@ -5181,7 +5196,6 @@
         <label for="tabMetalwork"><img src="icons/anvil.png" alt="Metalwork"></label>
         <div class="main">
           <div><h1>Metalwork<span class="midtone ea"> - work in progress</span></h1></div>
-          <div class="centered">
             <div class="spectabs">
               <input type="radio" name="MetalworkTabs" id="tabArmorsmith" checked="checked">
               <label for="tabArmorsmith"><img class="spec" src="icons/crafting/Armorsmith.png" alt="Armorsmith"></label>
@@ -5383,7 +5397,6 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
 
         <div id="ArmorBracing" class="overlay"> <!-- Armorsmith -->
@@ -6764,7 +6777,6 @@
         <label for="tabWoodsman" class="zindex"><img src="icons/tree.png" alt="Woodsman"></label>
         <div class="main">
           <div><h1>Woodsman<span class="midtone ea"> - work in progress</span></h1></div>
-          <div class="centered">
             <div class="spectabs">
               <input type="radio" name="WoodsmanTabs" id="tabWoodworker" checked="checked">
               <label for="tabWoodworker"><img class="spec" src="icons/crafting/Woodworker.png" alt="Woodworker"></label>
@@ -6991,7 +7003,6 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
 
         <div id="Arrows" class="overlay"> <!-- Woodworker -->

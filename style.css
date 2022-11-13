@@ -197,12 +197,6 @@ label{
   text-align: center;
 }
 
-.spec {
-  outline-style: solid;
-  outline-width: 0.2rem;
-  outline-color: #4a557c;
-}
-
 .spec, .class {
   width: 5rem;
   height: auto;
@@ -259,6 +253,13 @@ h2 {
 h3, h4, p, .itxt, .dTxt {
   color: rgb(181, 183, 221);
   margin : 0.5rem 0rem 0.5rem 0rem;
+}
+
+hr { 
+  flex-basis: 100%; 
+  height: 0; 
+  margin: 0; 
+  border: 0; 
 }
 
 a:link, a:visited {
