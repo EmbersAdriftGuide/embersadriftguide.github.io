@@ -219,6 +219,7 @@ h1 {
   color:rgb(181, 183, 221);
   padding-left: 3.5rem;
   padding-top: 1rem;
+  cursor: default;
 }
 
 .middle {
@@ -233,6 +234,7 @@ h2 {
   color: rgb(181, 183, 221);
   font-style: bold;
   line-height: 2.5rem;
+  cursor: default;
 }
 
 .subHeader {
@@ -242,6 +244,7 @@ h2 {
 h3, h4, p, .itxt, .dTxt {
   color: rgb(181, 183, 221);
   margin : 0.5rem 0rem 0.5rem 0rem;
+  cursor: default;
 }
 
 hr { 
@@ -303,13 +306,14 @@ a:link, a:visited {
 }
 
 a img:hover, .spectabs label img:hover, .middle img:hover {
-  -webkit-filter: drop-shadow(5px 5px 5px rgb(4, 3, 10));
-	filter: drop-shadow(5px 5px 5px rgb(4,3,10));
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(87, 84, 104));
+	filter: drop-shadow(5px 5px 5px rgb(87, 84, 104));
 }
 
 a img {
   height: 6.5rem;
   width: 6.5rem;
+  cursor: pointer;
 }
 
 .lineup {
