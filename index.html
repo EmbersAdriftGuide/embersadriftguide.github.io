@@ -37,11 +37,11 @@
                 <a onclick="checkRadio('tabGathering')"><img class="spec" src="icons/sickle.png" alt="Gathering"></a>
                 <p class="iTxt"><b>Gathering</b></p></div>
               <div class="icon">
-                <a onclick="checkRadio('tabMetalwork')"><img class="spec" src="icons/anvil.png" alt="Metalwork"></a>
-                <p class="iTxt"><b>Metalwork</b></p></div>
+                <a onclick="checkRadio('tabMetalwork')"><img class="spec" src="icons/anvil.png" alt="Blacksmith"></a>
+                <p class="iTxt"><b>Blacksmith</b></p></div>
               <div class="icon">
-                <a onclick="checkRadio('tabWoodsman')"><img class="spec" src="icons/tree.png" alt="Woodsman"></a>
-                <p class="iTxt"><b>Woodsman</b></p></div>
+                <a onclick="checkRadio('tabWoodsman')"><img class="spec" src="icons/tree.png" alt="Bushcraft"></a>
+                <p class="iTxt"><b>Bushcraft</b></p></div>
                 <div class="blank"><a><img src="icons/blank.png"></a></div>
             <hr><h3>*** Have changed quite a few things under the hood, <br>if stuff displays weirdly you may need to clear browser cache ***</h3>
             <h3 class="midtone">Added level 30 skill ranks (a couple are missing, will add soon)<br>from info posted by AliceBluu, let me know if you spot any errors</h3>
@@ -1898,6 +1898,10 @@
                   <p><img src="icons/reagents/MildNumbingAgent.png" class="mats">
                     <b>Mild Numbing Agent</b> - requires lvl <b>8</b>
                     <br><small>Effects: <b>+4</b> to <span class="red">Damage</span></small><br>&nbsp;</p>
+                    <div class="line"></div>
+                  <p><img src="icons/reagents/NumbingAgent.png" class="mats">
+                    <b>Numbing Agent</b> - requires lvl <b>18</b>
+                    <br><small>Effects: <b>+5</b> to <span class="red">Damage</span></small><br>&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -4710,19 +4714,24 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Bow String</h2>
                 <div class="content">
-                  <h3>Materials required;</h3>
+                  <h3>Requires Gathering Tool - Sickle</h3>
                   <div class="line"></div>
                   <p><img src="icons/crafting/Flax.png" class="mats">
                     <b>Linen Bow String</b> - Flax x1
-                    <br><small>Requires Gathering Tool - Sickle</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/PrairieCotton.png" class="mats">
                     <b>Cotton Bow String</b> - Cotton x1
-                    <br><small>Requires Gathering Tool - Sickle</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/SpiderSilk.png" class="mats">
                     <b>Silk Bow String</b> - Spider Silk x1
-                    <br><small>Rare drop from spiders</small><br>&nbsp;</p>
+                    <br><small>Rare drop from spiders</small>
+                    <br><small>Requires Forester level <b>15</b></small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/crafting/Ramie.png" class="mats">
+                    <b>Ramie Bow String</b> - Ramie x1
+                    <br><small>Requires Forester level <b>20</b></small><br>&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -4739,23 +4748,24 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Cloth</h2>
                 <div class="content">
-                  <h3>Materials required;</h3>
+                  <h3>Requires Gathering Tool - Sickle</h3>
                   <div class="line"></div>
                   <p><img src="icons/crafting/Flax.png" class="mats">
                     <b>Linen Cloth</b> - Flax x1
-                    <br><small>Requires Gathering Tool - Sickle</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/PrairieCotton.png" class="mats">
                     <b>Cotton Cloth</b> - Cotton x1
-                    <br><small>Requires Gathering Tool - Sickle</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/SpiderSilk.png" class="mats">
                     <b>Silk Cloth</b> - Spider Silk x1
-                    <br><small>Rare drop from spiders</small><br>&nbsp;</p>
+                    <br><small>Rare drop from spiders</small>
+                    <br><small>Requires Forester level <b>15</b></small></p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/Ramie.png" class="mats">
                     <b>Ramie Cloth</b> - Ramie x1
-                    <br><small>Requires Gathering Tool - Sickle</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>20</b></small><br>&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -4772,23 +4782,24 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Thread</h2>
                 <div class="content">
-                  <h3>Materials required;</h3>
+                  <h3>Requires Gathering Tool - Sickle</h3>
                   <div class="line"></div>
                   <p><img src="icons/crafting/Flax.png" class="mats">
                     <b>Linen Thread</b> - Flax x1
-                    <br><small>Requires Gathering Tool - Sickle</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/PrairieCotton.png" class="mats">
                     <b>Cotton Thread</b> - Cotton x1
-                    <br><small>Requires Gathering Tool - Sickle</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/SpiderSilk.png" class="mats">
                     <b>Silk Thread</b> - Spider Silk x1
-                    <br><small>Rare drop from spiders</small><br>&nbsp;</p>
+                    <br><small>Rare drop from spiders</small>
+                    <br><small>Requires Forester level <b>15</b></small></p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/Ramie.png" class="mats">
                     <b>Ramie Thread</b> - Ramie x1
-                    <br><small>Requires Gathering Tool - Sickle</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>20</b></small><br>&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -4805,19 +4816,19 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Plant Oil</h2>
                 <div class="content">
-                  <h3>Materials required;</h3>
+                  <h3>Requires Gathering Tool - Sickle</h3>
                   <div class="line"></div>
                   <p><img src="icons/crafting/Flax.png" class="mats">
                     <b>Linseed Oil</b> - Flax x1
-                    <br><small>Requires Gathering Tool - Sickle</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/PrairieCotton.png" class="mats">
                     <b>Cotton Oil</b> - Cotton x1
-                    <br><small>Requires Gathering Tool - Sickle</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/Ramie.png" class="mats">
                     <b>Ramie Oil</b> - Ramie x1
-                    <br><small>Requires Gathering Tool - Sickle</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>20</b></small><br>&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -4834,22 +4845,27 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Mushroom Oil</h2>
                 <div class="content">
-                  <h3>Materials required;</h3>
+                  <h3>Requires Gathering Tool - Sickle</h3>
                   <div class="line"></div>
                   <p><img src="icons/crafting/PennyBunMushroom.png" class="mats">
-                    <b>Common Penny Bun Mushroom Oil</b>
-                    <br>- Common Penny Bun Mushroom x1
-                    <br><small>Requires Gathering Tool - Sickle</small></p>
+                    <b>Penny Bun Mushroom Oil</b>
+                    <br>-Penny Bun Mushroom x1
+                    <br><small>Requires Forester level <b>1</b></small></p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/CommonMuddleMushroom.png" class="mats">
-                    <b>Common Muddle Mushroom Oil</b>
-                    <br>- Common Muddle Mushroom x1
-                    <br><small>Requires Gathering Tool - Sickle</small></p>
+                    <b>Muddle Mushroom Oil</b>
+                    <br>-Muddle Mushroom x1
+                    <br><small>Requires Forester level <b>10</b></small></p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/PrairieSpikeCapMushroom.png" class="mats">
-                    <b>Prairie Spike Cap Mushroom Oil</b>
-                    <br>- Prairie Spike Cap Mushroom x1
-                    <br><small>Requires Gathering Tool - Sickle</small></p>
+                    <b>Spike Cap Mushroom Oil</b>
+                    <br>-Spike Cap Mushroom x1
+                    <br><small>Requires Forester level <b>15</b></small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/crafting/RoyalGullyMushroom.png" class="mats">
+                    <b>Royal Gully Mushroom Oil</b>
+                    <br>-Royal Gully Mushroom x1
+                    <br><small>Requires Forester level <b>20</b></small></p>
                 </div>
               </div>
             </div>
@@ -4870,11 +4886,19 @@
                   <div class="line"></div>
                   <p><img src="icons/crafting/PineLog.png" class="mats">
                     <b>Pine Sap</b> - Pine Log x1
-                    <br><small>Requires Gathering Tool - Axe</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/PineLog.png" class="mats">
                     <b>Cedar Sap</b> - Cedar Log x1
-                    <br><small>Requires Gathering Tool - Axe</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>10</b></small><br>&nbsp;</p>
+                    <div class="line"></div>
+                  <p><img src="icons/crafting/PineLog.png" class="mats">
+                    <b>Maple Sap</b> - Maple Log x1
+                    <br><small>Requires Forester level <b>20</b></small><br>&nbsp;</p>
+                    <div class="line"></div>
+                  <p><img src="icons/crafting/PineLog.png" class="mats">
+                    <b>Fir Sap</b> - Fir Log x1
+                    <br><small>Requires Forester level <b>25</b></small><br>&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -4891,15 +4915,23 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Wood</h2>
                 <div class="content">
-                  <h3>Materials required;</h3>
+                  <h3>Requires Gathering Tool - Axe</h3>
                   <div class="line"></div>
                   <p><img src="icons/crafting/PineLog.png" class="mats">
                     <b>Pine Wood</b> - Pine Log x1
-                    <br><small>Requires Gathering Tool - Axe</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/PineLog.png" class="mats">
                     <b>Cedar Wood</b> - Cedar Log x1
-                    <br><small>Requires Gathering Tool - Axe</small><br>&nbsp;</p>
+                    <br><small>Requires Forester level <b>10</b></small><br>&nbsp;</p>
+                    <div class="line"></div>
+                  <p><img src="icons/crafting/PineLog.png" class="mats">
+                    <b>Maple Wood</b> - Maple Log x1
+                    <br><small>Requires Forester level <b>20</b></small><br>&nbsp;</p>
+                    <div class="line"></div>
+                  <p><img src="icons/crafting/PineLog.png" class="mats">
+                    <b>Fir Wood</b> - Fir Log x1
+                    <br><small>Requires Forester level <b>25</b></small><br>&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -4916,22 +4948,22 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Crushed Deer Leaf Tea Leaves</h2>
                 <div class="content">
-                  <h3>Materials required;</h3>
+                  <h3>Requires Gathering Tool - Skinning Knife</h3>
                   <div class="line"></div>
                   <p><img src="icons/crafting/DryDeerLeaves.png" class="mats">
                     <b>Dry Deer Leaf Tea Leaves</b>
                     <br>-Dry Deer Leaves x1
-                    <br><small>Requires Gathering Tool - Skinning Knife</small></p>
+                    <br><small>Requires Hunter level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/WiltedDearLeaves.png" class="mats">
                     <b>Wilted Dear Leaf Tea Leaves</b>
                     <br>- Wilted Dear Leaves x1
-                    <br><small>Requires Gathering Tool - Skinning Knife</small></p>
+                    <br><small>Requires Hunter level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/DeerLeaves.png" class="mats">
                     <b>Mild Dear Leaf Tea Leaves</b>
                     <br>- Mild Dear Leaves x1
-                    <br><small>Requires Gathering Tool - Skinning Knife</small></p>
+                    <br><small>Requires Hunter level <b>20</b></small><br>&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -4948,19 +4980,19 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Bones</h2>
                 <div class="content">
-                  <h3>Materials required;</h3>
+                  <h3>Requires Gathering Tool - Skinning Knife</h3>
                   <div class="line"></div>
                   <p><img src="icons/crafting/CoarseLeanCarcass.png" class="mats">
-                    <b>Lean Bones</b> - Coarse Lean Carcass x1
-                    <br><small>Requires Gathering Tool - Skinning Knife</small><br>&nbsp;</p>
+                    <b>Lean Bones</b> - Lean Carcass x1
+                    <br><small>Requires Hunter level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/RoughLightCarcass.png" class="mats">
-                    <b>Light Bones</b> - Rough Light Carcass x1
-                    <br><small>Requires Gathering Tool - Skinning Knife</small><br>&nbsp;</p>
+                    <b>Light Bones</b> - Light Carcass x1
+                    <br><small>Requires Hunter level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/FairDenseCarcass.png" class="mats">
                     <b>Dense Bones</b> - Dense Carcass x1
-                    <br><small>Requires Gathering Tool - Skinning Knife</small><br>&nbsp;</p>
+                    <br><small>Requires Hunter level <b>20</b></small><br>&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -4977,19 +5009,19 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Leather</h2>
                 <div class="content">
-                  <h3>Materials required;</h3>
+                  <h3>Requires Gathering Tool - Skinning Knife</h3>
                   <div class="line"></div>
                   <p><img src="icons/crafting/CoarseLeanCarcass.png" class="mats">
                     <b>Lean Leather</b> - Lean Carcass x1
-                    <br><small>Requires Gathering Tool - Skinning Knife</small><br>&nbsp;</p>
+                    <br><small>Requires Hunter level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/RoughLightCarcass.png" class="mats">
                     <b>Light Leather</b> - Light Carcass x1
-                    <br><small>Requires Gathering Tool - Skinning Knife</small><br>&nbsp;</p>
+                    <br><small>Requires Hunter level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/FairDenseCarcass.png" class="mats">
                     <b>Dense Leather</b> - Dense Carcass x1
-                    <br><small>Requires Gathering Tool - Skinning Knife</small><br>&nbsp;</p>
+                    <br><small>Requires Hunter level <b>20</b></small><br>&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -5006,19 +5038,19 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Meat</h2>
                 <div class="content">
-                  <h3>Materials required;</h3>
+                  <h3>Requires Gathering Tool - Skinning Knife</h3>
                   <div class="line"></div>
                   <p><img src="icons/crafting/CoarseLeanCarcass.png" class="mats">
-                    <b>Lean Meat</b> - Coarse Lean Carcass x1
-                    <br><small>Requires Gathering Tool - Skinning Knife</small><br>&nbsp;</p>
+                    <b>Lean Meat</b> - Lean Carcass x1
+                    <br><small>Requires Hunter level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/RoughLightCarcass.png" class="mats">
-                    <b>Light Meat</b> - Rough Light Carcass x1
-                    <br><small>Requires Gathering Tool - Skinning Knife</small><br>&nbsp;</p>
+                    <b>Light Meat</b> - Light Carcass x1
+                    <br><small>Requires Hunter level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/FairDenseCarcass.png" class="mats">
                     <b>Dense Meat</b> - Dense Carcass x1
-                    <br><small>Requires Gathering Tool - Skinning Knife</small><br>&nbsp;</p>
+                    <br><small>Requires Hunter level <b>20</b></small><br>&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -5035,23 +5067,23 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Metal Ingot</h2>
                 <div class="content">
-                  <h3>Materials required;</h3>
+                  <h3>Requires Gathering Tool - PickAxe</h3>
                   <div class="line"></div>
                   <p><img src="icons/crafting/CopperOre.png" class="mats">
                     <b>Copper Ingot</b> - Copper Ore x1
-                    <br><small>Requires Gathering Tool - PickAxe</small><br>&nbsp;</p>
+                    <br><small>Requires Prospector level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/TinOre.png" class="mats">
                     <b>Tin Ingot</b> - Tin Ore x1
-                    <br><small>Requires Gathering Tool - PickAxe</small><br>&nbsp;</p>
+                    <br><small>Requires Prospector level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/ZinkOre.png" class="mats">
                     <b>Zink Ingot</b> - Zink Ore x1
-                    <br><small>Requires Gathering Tool - PickAxe</small><br>&nbsp;</p>
+                    <br><small>Requires Prospector level <b>20</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/SilverOre.png" class="mats">
                     <b>Silver Ingot</b> - Silver Ore x1
-                    <br><small>Requires Gathering Tool - PickAxe</small><br>&nbsp;</p>
+                    <br><small>Requires Prospector level <b>25</b></small><br>&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -5068,19 +5100,19 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Cut Gem</h2>
                 <div class="content">
-                  <h3>Materials required;</h3>
+                  <h3>Requires Gathering Tool - PickAxe</h3>
                   <div class="line"></div>
                   <p><img src="icons/crafting/FleckedMalachite.png" class="mats">
                     <b>Malachite Gem</b> - Malachite x1
-                    <br><small>Requires Gathering Tool - PickAxe</small><br>&nbsp;</p>
+                    <br><small>Requires Prospector level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/ShinyTurquoise.png" class="mats">
                     <b>Turquoise Gem</b> - Turquoise x1
-                    <br><small>Requires Gathering Tool - PickAxe</small><br>&nbsp;</p>
+                    <br><small>Requires Prospector level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/SparklingTopaz.png" class="mats">
                     <b>Topaz Gem</b> - Topaz x1
-                    <br><small>Requires Gathering Tool - PickAxe</small><br>&nbsp;</p>
+                    <br><small>Requires Prospector level <b>20</b></small><br>&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -5088,9 +5120,9 @@
         </div>
 
         <input type="radio" name="tabs" id="tabMetalwork">
-        <label for="tabMetalwork"><img src="icons/anvil.png" alt="Metalwork"></label>
+        <label for="tabMetalwork"><img src="icons/anvil.png" alt="Blacksmith"></label>
         <div class="main">
-          <div><h1>Metalwork<span class="midtone ea"> - work in progress</span></h1></div>
+          <div><h1>Blacksmith<span class="midtone ea"> - work in progress</span></h1></div>
             <div class="spectabs">
               <input type="radio" name="MetalworkTabs" id="tabArmorsmith" checked="checked">
               <label for="tabArmorsmith"><img class="spec" src="icons/crafting/Armorsmith.png" alt="Armorsmith"></label>
@@ -6637,9 +6669,9 @@
         </div>
 
         <input type="radio" name="tabs" id="tabWoodsman">
-        <label for="tabWoodsman" class="zindex"><img src="icons/tree.png" alt="Woodsman"></label>
+        <label for="tabWoodsman" class="zindex"><img src="icons/tree.png" alt="Bushcraft"></label>
         <div class="main">
-          <div><h1>Woodsman<span class="midtone ea"> - work in progress</span></h1></div>
+          <div><h1>Bushcraft<span class="midtone ea"> - work in progress</span></h1></div>
             <div class="spectabs">
               <input type="radio" name="WoodsmanTabs" id="tabWoodworker" checked="checked">
               <label for="tabWoodworker"><img class="spec" src="icons/crafting/Woodworker.png" alt="Woodworker"></label>
