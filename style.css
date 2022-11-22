@@ -166,7 +166,7 @@ label{
   z-index: 6;
 }
 
-.icons {
+.flexBox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -175,7 +175,7 @@ label{
   margin-right: 2.5rem;
 }
 
-.icon, .blank {
+.icon, .blank, .accWrapper {
   position: relative;
   margin: 2%;
   margin-left: 1rem;
@@ -201,18 +201,49 @@ label{
   float: left;
 }
 
-.mats {
+.floatL {
   float: left;
   margin-right: 0.5rem;
 }
 
-.tabIcon, .mats {
+.floatR {
+  float: right;
+}
+
+.tabIcon, .mats{
   width:3.5rem;
 }
 
 .line {
   background-image:linear-gradient(to right, rgba(128, 128, 128, 0.425), rgba(0,0,0,0));
   height: 3px;
+}
+
+.banner{
+  position: relative;
+  padding-top: 2.5rem;
+}
+
+.logo {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  cursor: default;
+}
+
+.logo img {
+  width: 60%;
+  -webkit-filter: drop-shadow(2px 2px 5px #222);
+  filter: drop-shadow(2px 2px 5px #222);
+}
+
+.guide {
+  position: absolute;
+  color: rgba(29, 29, 44, 0.85);
+  right:2.5rem;
+  bottom:2.5rem;
+  font-size: 3em;
+  font-weight: bold;
 }
 
 h1 {
@@ -382,10 +413,32 @@ a img {
 .homePic {
   max-width: 100%;
   height: auto;
-  margin-bottom: 2rem;
-  border-radius: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
 }
 
+.panel {
+  padding: 0 18px 0 0;
+  display: none;
+  overflow: hidden;
+}
+
+.accButton {
+  width: 70%;
+  border:none;
+  background: rgb(30, 30, 41);
+  display:inline;
+}
+
+.button {
+  background: rgb(30, 30, 41);
+}
+
+.margin {
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 0.4rem;
+}
 
 @media screen and (max-width: 600px) {
   .blank, .ea, .name, .footer {
@@ -394,7 +447,15 @@ a img {
 
   .icon p {
     font-size: 1rem;
+    font-weight: unset;
   }
+
+  .title{
+    font-size: 2rem;
+    bottom: 1.5rem;
+    left: 1rem;
+  }
+
   h1 {
     padding-left: 3rem;
   }
@@ -420,22 +481,22 @@ a img {
     right: 0.5rem;
   }
 
+  .arrowR, .arrowL {
+    display: block;
+    position:absolute;
+    top: 0.1rem;
+    color:white;
+    z-index: 2;
+  }
+
   .arrowR {
-    display: block;
-    position:absolute;
-    right: 1.2rem;
-    top: 0.1rem;
-    color:rgb(212, 208, 235);
-    z-index: 2;
+    right: 2rem;
   }
+
   .arrowL {
-    display: block;
-    position:absolute;
     left: -1.1rem;
-    top: 0.1rem;
-    color:rgb(212, 208, 235);
-    z-index: 2;
   }
+
   .wrapper {
     width: 100%;
   }
@@ -451,9 +512,13 @@ a img {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .blank {
     display: none;
+  }
+  .flexBox {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
   .subHeader {
     padding-left: 1.75rem;
@@ -471,6 +536,15 @@ a img {
   }
   .arrowL {
     left: 0.25rem;
+  }
+  .guide{
+    right: 1.5rem;
+    bottom: 2rem;
+    font-size: 5.5vw;
+  }
+  .scale {
+  width: 4rem;
+  margin-top: 1rem;
   }
 }
 

@@ -18,20 +18,68 @@
         <input type="radio" name="tabs" id="tabHome" checked="checked">
         <label for="tabHome" class="zindex"><img src="icons/fire.png" alt="home"></label>
         <div class="main">
-          <h1>Embers Adrift Guide<span class="midtone ea"> - Welcome!</span></h1>
-          <div class="icons">
-            <img src="icons/blahblah.png" class="homePic">
-            <hr><h2>Class and Skill Guides;</h2><hr>
-              <div class="icon">
-                <a onclick="checkRadio('tabDefender')"><img class="spec" src="icons/class/defender.png" alt="Defender"></a>
-                <p class="iTxt"><b>Defender</b></p></div>
-              <div class="icon">
-                <a onclick="checkRadio('tabStriker')"><img class="spec" src="icons/class/Duelist.png" alt="Striker"></a>
-                <p class="iTxt"><b>Striker</b></p></div>
-              <div class="icon">
-                <a onclick="checkRadio('tabSupport')"><img class="spec" src="icons/class/Supporter.png" alt="Supporter"></a>
-                <p class="iTxt"><b>Supporter</b></p></div>
-                <div class="blank"><a><img src="icons/blank.png"></a></div>
+          <div class="flexBox">
+            <div class="banner">
+            <img src="icons/Banner.png" class="homePic">
+            <div class="logo"><img src="icons/Embers-Adrift-Brand-White-Colour.png"></div><div class="guide">GUIDE</div></div>
+            <hr><h2>Class Roles<span class="midtone"> - Work in Progress :)</span></h2>
+            Click on the text for expanding spec information<br>
+            (yeah it needs more formatting work, but i'm too tired)<hr>
+              <div class="accWrapper"> <!-- Defender -->
+                <p><a onclick="openOverlay('DefInfo')"  type="button"><img class="spec floatL scale" src="icons/class/defender.png" alt="Defender"></a><button onclick="accordion('accDefender')" class="accButton"  type="button">
+                  <p><b>Defender</b> - <small>Defenders are Skilled warriors, that fight in heavy armor. They are trained to face their enemies head-on and draw attacks towards themselves</small><span class="blank"><br>&nbsp;<br>&nbsp;<br>&nbsp;</span></button></p></p>
+                <div id="accDefender" class="panel">
+                  <p><a onclick="checkRadio('tabJuggernaut')"><img src="icons/class/juggernaut.png" class="spec floatL mats margin"></a>
+                    <b>Juggernaut</b><small> - The Juggernaut pushes the battle forward, striking down enemies with little regard for their defenses.<br>&nbsp;<br>
+                    If you want to play a tank who can cheat KOs, shrug off stuns and damage, create havoc in battle - drawing attention to themselves from multiple enemies - and deal a good amount of their own damage to multiple enemies, then Juggernaut is for you.</small></p>
+                    <div class="line"></div>
+                  <p><a onclick="checkRadio('tabKnight')"><img src="icons/class/knight.png" class="spec mats floatL margin"></a>
+                    <b>Knight</b><small> - An expert in one-on-one combat, the Knight's oath to protect others makes them a powerful ally.<br>&nbsp;<br>
+                    If you're looking to be a tank fully decked out in platemail frustrating your enemies with armor and shield and little exposed to attacks then the Knight is for you. Not only will you be hard to kill, but you'll be highly specialized in drawing the attention of any monster.</small></p>
+                    <div class="line"></div>
+                  <p><a onclick="checkRadio('tabMarshal')"><img src="icons/class/marshal.png" class="spec mats floatL margin"></a>
+                    <b>Marshal</b><small> - A seasoned tactician and military commander who changes the tide of battle by stopping enemies in their tracks. The Marshal sees every battle as a test of their wits.<br>&nbsp;<br>
+                    Exerting control over the battlefield and your enemies is a great way to ensure victory in every conflict. Trapping and slowing your enemies while increasing your own combat effectiveness draws the ire of your foes to such a height that they make fatal mistakes.</small></p>
+                </div>
+              </div>
+              <div class="accWrapper"> <!-- Striker -->
+                <p><a onclick="openOverlay('StrInfo')"  type="button"><img class="spec floatL scale" src="icons/class/Duelist.png" alt="Striker"></a><a onclick="accordion('accStriker')" class="accButton"  type="button">
+                <p><b>Striker</b> - <small>Strikers are deadly fighters trained to inflict as much damage as they can in a variety of ways. You'll often find them flanking their enemies or attacking them from behind</small><span class="blank"><br>&nbsp;<br>&nbsp;<br>&nbsp;</span></a></p></p>
+                <div id="accStriker" class="panel">
+                  <p><a onclick="checkRadio('tabBerserker')"><img src="icons/class/Berserker.png" class="spec floatL mats margin"></a>
+                    <b>Berserker</b><small> - Striking as many foes as quickly as possible, the Berserker is no stranger to the heat of battle.<br>&nbsp;<br>
+                    Having 'Guts' and an all out offensive is the only defense for a Berserker. If you aren't attacking one or more foes you are failing. Resting between attacks? No, the 'Assault' won't stop until the enemy's heart does.<br>&nbsp;<br>
+                    Does that 'Intimidate' you? It should, many foes choose not to join in conflicts against a Berserker; their battle 'Fury' cannot be satisfied until their enemies lay dead at their feet. Berserkers deal out deadly damage in rapid fashion; don't get in their way.</small><br></p>
+                    <div class="line"></div>
+                  <p><a onclick="checkRadio('tabBrigand')"><img src="icons/class/Brigand.png" class="spec mats floatL margin"></a>
+                    <b>Brigand</b><small> - Underhanded fighting and quick strikes, the Brigand can knock out foes as well as it can dispatch them.<br>&nbsp;<br>
+                    Brigands are not looking for a fair fight. They will attack 'From the Shadows,' 'Stun' you and even your friends, they will 'Daze' you, and then they will take their time stabbing through the holes in your armor.<br>&nbsp;<br>
+                    Once you are at their mercy, they will show none and 'Execute' you. Do not cross a Brigand unless you want to die before you even know what's happening.</small><br></p>
+                    <div class="line"></div>
+                  <p><a onclick="checkRadio('tabWarden')"><img src="icons/class/Warden.png" class="spec mats floatL margin"></a>
+                    <b>Warden</b><small> - Attuned to the world around them the resourceful Warden uses nature to attack enemies and aid their allies.<br>&nbsp;<br>
+                    Wardens can be as helpful to their allies as they are deadly to their enemies. They know the 'Lay of the Land' to help speed their friends along the journey.<br>&nbsp;<br>
+                    They carry poisons for their foes and know how to heal their friends after a long battle. They can also sedate enemies so that they don't join in the fight.</small></p>
+                </div>
+              </div>
+              <div class="accWrapper"> <!-- Support -->
+                <p><a onclick="openOverlay('SupInfo')"  type="button"><img class="spec floatL scale" src="icons/class/Supporter.png" alt="Supporter"></a><button onclick="accordion('accSupport')" class="accButton"  type="button">
+                <p><b>Supporter</b> - <small>Supporters are Combat medics skilled in warcraft. Heal your allies and help them in combat, or hinder your enemies to destroy them. They are trained to tend to their allies and flank their enemies</small><span class="blank"><br>&nbsp;</span></button></p></p>
+                <div id="accSupport" class="panel">
+                  <p><a onclick="checkRadio('tabDuelist')"><img src="icons/class/Duelist.png" class="spec floatL mats margin"></a>
+                    <b>Duelist</b><small> - Offensively and defensively balanced, the duelist moves quickly through the battlefield bleeding out enemies and patching up allies.<br>&nbsp;<br>
+                    The swiftness of the Duelist cannot be discounted whether in striking their foes or in healing their allies. Abilities like 'Triage' and 'Stim' help allies recover quickly in the heat of battle, whereas abilities like 'Weak Point' and 'Hemorrhaging Strike' pick apart and demoralize enemies until they are crumbling to their knees.</small><br></p>
+                    <div class="line"></div>
+                  <p><a onclick="checkRadio('tabSentinal')"><img src="icons/class/Sentinel.png" class="spec mats floatL margin"></a>
+                    <b>Sentinel</b><small> - The most crucial members of the old castle guard, the Sentinel excels at both reinforcing their allies and reducing their enemies effectiveness.<br>&nbsp;<br>
+                    The Sentinel is a guardian of the people; both healing and fortifying allies and themselves, while also weakening and damaging their opponents. A Sentinel's last resort to protect their allies is to enrage enemies into attacking the Sentinel instead of any other groupmates.</small><br></p>
+                    <div class="line"></div>
+                  <p><a onclick="checkRadio('tabWarlord')"><img src="icons/class/Warlord.png" class="spec mats floatL margin"></a>
+                    <b>Warlord</b><small> - An imposing presence on the battlefield, Warlords use their powerful voices alongside their combat skills in battle to both inspire their allies and invoke fear in their enemies.<br>&nbsp;<br>
+                    Warlords are fearsome allies. Their battle songs inspire and recover the resolve of ALL of their allies and their shouts can send their enemies fleeing in terror.<br>&nbsp;<br>
+                    When a Warlord swings their weapon in combat it drains the blood and strength from enemy limbs, slowing and weakening their attacks and making it difficult for them to keep up their guard. When the Warlord heeds the call of battle the graves of their enemies seem to open beneath their very feet.</small></p>
+                </div>
+              </div>
             <hr><h2>Crafting Guides;</h2><hr>
               <div class="icon">
                 <a onclick="checkRadio('tabGathering')"><img class="spec" src="icons/sickle.png" alt="Gathering"></a>
@@ -43,17 +91,15 @@
                 <a onclick="checkRadio('tabWoodsman')"><img class="spec" src="icons/tree.png" alt="Bushcraft"></a>
                 <p class="iTxt"><b>Bushcraft</b></p></div>
                 <div class="blank"><a><img src="icons/blank.png"></a></div>
-            <hr><h3>*** Have changed quite a few things under the hood, <br>if stuff displays weirdly you may need to clear browser cache ***</h3>
-            <h3 class="midtone">Added level 30 skill ranks (a couple are missing, will add soon)<br>from info posted by AliceBluu, let me know if you spot any errors</h3>
             <h4 class="midtone">report mistakes to tallbird#9579 on discord, <br>thank you to Huggles & Karacus for their help<br>&nbsp;</h4>
           </div>
         </div>
-        
+
         <input type="radio" name="tabs" id="tabDefender">
         <label for="tabDefender"><img src="icons/defender.png" alt="Defender"></label>
         <div class="main">
           <div class="middle"><a onclick="openOverlay('DefInfo')"><img class="class" src="icons/class/defender.png"></a><h1>Defender<span class="midtone ea"> - Skilled Warriors</span></h1></div>
-          <div class="icons">
+          <div class="flexBox">
             <div class="icon">
               <a onclick="openOverlay('ThreateningStrike')"><img src="icons/skills/ThreateningStrike.png"  alt="Threatening Strike"></a>
               <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/damage.png" class='role2'>
@@ -81,7 +127,7 @@
               <div class="tab">
                 <p>&nbsp;</p>
                 <h1>Juggernaut<span class="midtone ea"> - <small>Push the Battle Forward</small></span></h1>
-                <div class="icons">
+                <div class="flexBox">
                   <div class="icon">
                     <a onclick="openOverlay('Breach')"><img src="icons/skills/Breach.png"  alt="Breach"></a>
                     <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/damage.png" class='role2'>
@@ -129,7 +175,7 @@
               <div class="tab">
                 <p>&nbsp;</p>
                 <h1>Knight<span class="midtone ea"> - <small>An Oath to Protect Others</small></span></h1>
-                <div class="icons">
+                <div class="flexBox">
                   <div class="icon">
                     <a onclick="openOverlay('EnragingStrike')"><img src="icons/skills/EnragingStrike.png"  alt="EnragingStrike"></a>
                     <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/debuff.png" class='role2'>
@@ -177,7 +223,7 @@
               <div class="tab">
                 <p>&nbsp;</p>
                 <h1>Marshal<span class="midtone ea"> - <small>A Seasoned Tactician</small></span></h1>
-                <div class="icons">
+                <div class="flexBox">
                   <div class="icon">
                     <a onclick="openOverlay('Halt')"><img src="icons/skills/Halt.png"  alt="Halt"></a>
                     <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/cc.png" class='role2'>
@@ -240,22 +286,22 @@
                 <div class="content">
                   <h3>Base stats for each specialisation</h3>
                   <div class="line"></div>
-                  <p><img src="icons/class/defender.png" class="mats">
+                  <p><img src="icons/class/defender.png" class="mats floatL">
                     <b>Defender</b>: <i class="fa-solid fa-arrow-up yellow"></i></i> +5 THR, <i class="fa-solid fa-arrow-left red"></i> +3 THR
                     <br><small>+35 to Health / +45 to Armor Weight Capacity</small>
                     <br><small>+5 to Resiliance / +0 to +30 to Health Regen</small></p>
                     <div class="line"></div>
-                  <p><img src="icons/class/juggernaut.png" class="mats">
+                  <p><img src="icons/class/juggernaut.png" class="mats floatL">
                     <b>Juggernaut</b>
                     <br><small>+0 to +245 Health / +0 to +45 to Armor Weight Capacity</small>
                     <br><small>+0 to +10 Movement Debuff Resists</small></p>
                     <div class="line"></div>
-                  <p><img src="icons/class/knight.png" class="mats">
+                  <p><img src="icons/class/knight.png" class="mats floatL">
                     <b>Knight</b>
                     <br><small>+0 to +231 Health / +0 to +65 to Armor Weight Capacity</small>
                     <br><small>+0 to +10 Mental Debuff Resists</small></p>
                     <div class="line"></div>
-                  <p><img src="icons/class/marshal.png" class="mats">
+                  <p><img src="icons/class/marshal.png" class="mats floatL">
                     <b>Marshal</b>
                     <br><small>+0 to +238 Health / +0 to +55 to Armor Weight Capacity</small>
                     <br><small>+0 to +10 Stun Resist</small></p>
@@ -267,28 +313,28 @@
                 <h2 class="dark">&nbsp;Defender Weapons Options</h2>
                 <div class="content">
                   <div class="line"></div>
-                  <p><img src="icons/crafting/KiteShield.png" class="mats">
+                  <p><img src="icons/crafting/KiteShield.png" class="mats floatL">
                     <b>Shield</b>
                     <br><small>Buckler: +Parry, +Block, +Armor Class</small>
-                    <br><small>Kite: +Block, +Armor Class (higher)</small></p>
+                    <br><small>Kite & Heater: +Block, +Armor Class (higher)</small></p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ShortSword.png" class="mats">
+                  <p><img src="icons/crafting/ShortSword.png" class="mats floatL">
                     <b>1H Sword</b>
                     <br><small>Position Bonus: <i class="fa-solid fa-arrow-up yellow"></i> +15 HIT, <i class="fa-solid fa-arrow-left red"></i> +10 PEN, <i class="fa-solid fa-arrow-down blue"></i> +3 DMG</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Mace.png" class="mats">
+                  <p><img src="icons/crafting/Mace.png" class="mats floatL">
                     <b>1H Mace</b>
                     <br><small>Position Bonus: <i class="fa-solid fa-arrow-up yellow"></i> +5 DMG, <i class="fa-solid fa-arrow-left red"></i> +3 DMG</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Hatchet.png" class="mats">
+                  <p><img src="icons/crafting/Hatchet.png" class="mats floatL">
                     <b>1H Axe</b>
                     <br><small>Position Bonus: <i class="fa-solid fa-arrow-down blue"></i> +5 DMG, <i class="fa-solid fa-arrow-left red"></i> +15 HIT</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/2HMaul.png" class="mats">
+                  <p><img src="icons/crafting/2HMaul.png" class="mats floatL">
                     <b>2H Maul</b>
                     <br><small>Position Bonus: <i class="fa-solid fa-arrow-up yellow"></i> +5 DMG, <i class="fa-solid fa-arrow-down blue"></i> +3 DMG</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Polearm.png" class="mats">
+                  <p><img src="icons/crafting/Polearm.png" class="mats floatL">
                     <b>2H Polearm</b>
                     <br><small>Position Bonus: +5 Parry, +25 Riposte</small><br>&nbsp;</p>
                 </div>
@@ -423,19 +469,19 @@
                 <div class="content">
                   <h3>Drops from: Bears, Toads</h3>
                   <div class="line"></div>
-                  <p><img src="icons/reagents/DilutedUrine.png" class="mats">
+                  <p><img src="icons/reagents/DilutedUrine.png" class="mats floatL">
                     <b>Diluted Urine</b> - requires lvl <b>2</b>
                     <br><small>Effects: <b>+4</b> to <span class="orange">Threat</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/ReducedUrine.png" class="mats">
+                  <p><img src="icons/reagents/ReducedUrine.png" class="mats floatL">
                     <b>Reduced Urine</b> - requires lvl <b>8</b>
                     <br><small>Effects: <b>+6</b> to <span class="orange">Threat</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/Urine.png" class="mats">
+                  <p><img src="icons/reagents/Urine.png" class="mats floatL">
                     <b>Urine</b> - requires lvl <b>18</b>
                     <br><small>Effects: <b>+8</b> to <span class="orange">Threat</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/StrongSmellingUrine.jpg" class="mats">
+                  <p><img src="icons/reagents/StrongSmellingUrine.jpg" class="mats floatL">
                     <b>Strong Smelling Urine</b> - requires lvl <b>28</b>
                     <br><small>Effects: <b>+10</b> to <span class="orange">Threat</span></small></p>
                 </div>
@@ -539,15 +585,15 @@
                 <div class="content">
                   <h3>Drops from: Shoats, Boars</h3>
                   <div class="line"></div>
-                  <p><img src="icons/reagents/DilutedLiverOil.png" class="mats">
+                  <p><img src="icons/reagents/DilutedLiverOil.png" class="mats floatL">
                     <b>Diluted Liver Oil</b> - requires lvl <b>6</b>
                     <br><small>Effects: <b>+3</b> to <span class="red">Damage</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/DilutedLiverOil.png" class="mats">
+                  <p><img src="icons/reagents/DilutedLiverOil.png" class="mats floatL">
                     <b>Weak Liver Oil</b> - requires lvl <b>8</b>
                     <br><small>Effects: <b>+4</b> to <span class="red">Damage</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/DilutedLiverOil.png" class="mats">
+                  <p><img src="icons/reagents/DilutedLiverOil.png" class="mats floatL">
                     <b>Light Liver Oil</b> - requires lvl <b>18</b>
                     <br><small>Effects: <b>+5</b> to <span class="red">Damage</span></small><br>&nbsp;</p>
                 </div>
@@ -874,17 +920,17 @@
                 <div class="content">
                   <h3>Drops from: Does</h3>
                   <div class="line"></div>
-                  <p><img src="icons/reagents/StalePheromones.png" class="mats">
+                  <p><img src="icons/reagents/StalePheromones.png" class="mats floatL">
                     <b>Stale Pheromones</b> - requires lvl <b>6</b>
                     <br><small>Effects: <b>+3</b> to <span class="red">Damage</span></small>
                     <br><small>Effects: <b>+2s</b> to <span class="orange">Duration</span></small></p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/WeakPheromones.png" class="mats">
+                  <p><img src="icons/reagents/WeakPheromones.png" class="mats floatL">
                     <b>Weak Pheromones</b> - requires lvl <b>8</b>
                     <br><small>Effects: <b>+4</b> to <span class="red">Damage</span></small>
                     <br><small>Effects: <b>+2s</b> to <span class="orange">Duration</span></small></p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/Pheromones.png" class="mats">
+                  <p><img src="icons/reagents/Pheromones.png" class="mats floatL">
                     <b>Pheromones</b> - requires lvl <b>18</b>
                     <br><small>Effects: <b>+5</b> to <span class="red">Damage</span></small>
                     <br><small>Effects: <b>+3s</b> to <span class="orange">Duration</span></small></p>
@@ -1213,12 +1259,12 @@
                 <div class="content">
                   <h3>Drops from: Mistwalkers, Bats</h3>
                   <div class="line"></div>
-                  <p><img src="icons/reagents/FlasksOfDryTar.png" class="mats">
+                  <p><img src="icons/reagents/FlasksOfDryTar.png" class="mats floatL">
                     <b>Flasks Of Dry Tar</b> - requires lvl <b>6</b>
                     <br><small>Effects: <b>+3</b> to <span class="red">Damage</span></small>
                     <br><small>Effects: <b>+6s</b> to <span class="orange">Duration</span></small></p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/FlasksOfDryTar.png" class="mats">
+                  <p><img src="icons/reagents/FlasksOfDryTar.png" class="mats floatL">
                     <b>Flasks Of Rigid Tar</b> - requires lvl <b>8</b>
                     <br><small>Effects: <b>+4</b> to <span class="red">Damage</span></small>
                     <br><small>Effects: <b>+7s</b> to <span class="orange">Duration</span></small></p>
@@ -1554,7 +1600,7 @@
         <label for="tabStriker"><img src="icons/striker.png" alt="Striker"></label>
         <div class="main">
           <div class="middle"><a onclick="openOverlay('StrInfo')"><img class="class" src="icons/class/Duelist.png"></a><h1>Striker<span class="midtone ea"> - Deadly Fighters</span></h1></div>
-          <div class="icons">
+          <div class="flexBox">
             <div class="icon">
               <a onclick="openOverlay('AdvantageStrike')"><img src="icons/skills/AdvantageStrike.png"  alt="Advantage Strike"></a>
               <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/damage.png" class='role2'>
@@ -1582,7 +1628,7 @@
               <div class="tab">
                 <p>&nbsp;</p>
                 <h1>Berserker<span class="midtone ea"> - <small>An All Out Offensive</small></span></h1>
-                <div class="icons">
+                <div class="flexBox">
                 <div class="icon">
                   <a onclick="openOverlay('Assault')"><img src="icons/skills/Assault.png"  alt="Assault"></a>
                   <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/damage.png" class='role2'>
@@ -1635,7 +1681,7 @@
               <div class="tab">
                 <p>&nbsp;</p>
                 <h1>Brigand<span class="midtone ea"> - <small>Underhanded Fighting</small></span></h1>
-                <div class="icons">
+                <div class="flexBox">
                 <div class="icon">
                   <a onclick="openOverlay('Stun')"><img src="icons/skills/Stun.png"  alt="Stun"></a>
                   <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/cc.png" class='role2'>
@@ -1683,7 +1729,7 @@
               <div class="tab">
                 <p>&nbsp;</p>
                 <h1>Warden<span class="midtone ea"> - <small>Attuned to the World</small></span></h1>
-                <div class="icons">
+                <div class="flexBox">
                 <div class="icon">
                   <a onclick="openOverlay('VenomStrike')"><img src="icons/skills/VenomStrike.png"  alt="VenomStrike"></a>
                   <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/damage.png" class='role2'>
@@ -1747,22 +1793,22 @@
                 <div class="content">
                   <h3>Base stats for each specialisation</h3>
                   <div class="line"></div>
-                  <p><img src="icons/class/Duelist.png" class="mats">
+                  <p><img src="icons/class/Duelist.png" class="mats floatL">
                     <b>Striker</b> - Position Bonus: <i class="fa-solid fa-arrow-left red"></i> -3 THR, <i class="fa-solid fa-arrow-down blue"></i> -5 THR
                     <br><small>+30 to Health / +25 to Armor Weight Capacity</small>
                     <br><small>+5 to Hit</small></p>
                     <div class="line"></div>
-                  <p><img src="icons/class/Berserker.png" class="mats">
+                  <p><img src="icons/class/Berserker.png" class="mats floatL">
                     <b>Berserker</b>
                     <br><small>+0 to +201 Health / +0 to +45 to Armor Weight Capacity</small>
                     <br><small>+0 to +5 to 1H, 2H, Ranged Weapon Damage</small></p>
                     <div class="line"></div>
-                  <p><img src="icons/class/Brigand.png" class="mats">
+                  <p><img src="icons/class/Brigand.png" class="mats floatL">
                     <b>Brigand</b>
                     <br><small>+0 to +194 Health / +0 to +30 to Armor Weight Capacity</small>
                     <br><small>+0 to +10 Penetration</small></p>
                     <div class="line"></div>
-                  <p><img src="icons/class/Warden.png" class="mats">
+                  <p><img src="icons/class/Warden.png" class="mats floatL">
                     <b>Warden</b>
                     <br><small>+0 to +187 Health / +0 to +30 to Armor Weight Capacity</small>
                     <br><small>+0 to +10 Hit</small></p>
@@ -1774,27 +1820,27 @@
                 <h2 class="dark">&nbsp;Striker Weapons Options</h2>
                 <div class="content">
                   <div class="line"></div>
-                  <p><img src="icons/crafting/Dagger.png" class="mats">
+                  <p><img src="icons/crafting/Dagger.png" class="mats floatL">
                     <b>Dagger</b>
                     <br><small>Position Bonus: <i class="fa-solid fa-arrow-left red"></i> +15 PEN, <i class="fa-solid fa-arrow-down blue"></i> +35 PEN</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ShortSword.png" class="mats">
+                  <p><img src="icons/crafting/ShortSword.png" class="mats floatL">
                     <b>1H Sword</b>
                     <br><small>Position Bonus: <i class="fa-solid fa-arrow-up yellow"></i> +15 HIT, <i class="fa-solid fa-arrow-left red"></i> +10 PEN, <i class="fa-solid fa-arrow-down blue"></i> +3 DMG</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Hatchet.png" class="mats">
+                  <p><img src="icons/crafting/Hatchet.png" class="mats floatL">
                     <b>1H Axe</b>
                     <br><small>Position Bonus: <i class="fa-solid fa-arrow-down blue"></i> +5 DMG, <i class="fa-solid fa-arrow-left red"></i> +15 HIT</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/GreatAxe.png" class="mats">
+                  <p><img src="icons/crafting/GreatAxe.png" class="mats floatL">
                     <b>2H Great Axe</b>
                     <br><small>Position Bonus: <i class="fa-solid fa-arrow-left red"></i> +5 DMG, <i class="fa-solid fa-arrow-down blue"></i> +15 HIT</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/GreatSword.png" class="mats">
+                  <p><img src="icons/crafting/GreatSword.png" class="mats floatL">
                     <b>2H Great Sword</b>
                     <br><small>Position Bonus: <i class="fa-solid fa-arrow-left red"></i> +30 HIT</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LongBow.png" class="mats">
+                  <p><img src="icons/crafting/LongBow.png" class="mats floatL">
                     <b>Bow</b>
                     <br><small>LongBow: <i class="fa-solid fa-arrow-left red"></i> +20 PEN, <i class="fa-solid fa-arrow-down blue"></i> +15 HIT</small>
                     <br><small>ShortBow: <i class="fa-solid fa-arrow-left red"></i> +20 PEN, <i class="fa-solid fa-arrow-down blue"></i> +15 HIT</small></p>
@@ -1891,15 +1937,15 @@
                 <div class="content">
                   <h3>Drops from: Quillbacks, Emberflies</h3>
                   <div class="line"></div>
-                  <p><img src="icons/reagents/WeakNumbingAgent.png" class="mats">
+                  <p><img src="icons/reagents/WeakNumbingAgent.png" class="mats floatL">
                     <b>Weak Numbing Agent</b> - requires lvl <b>2</b>
                     <br><small>Effects: <b>+3</b> to <span class="red">Damage</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/MildNumbingAgent.png" class="mats">
+                  <p><img src="icons/reagents/MildNumbingAgent.png" class="mats floatL">
                     <b>Mild Numbing Agent</b> - requires lvl <b>8</b>
                     <br><small>Effects: <b>+4</b> to <span class="red">Damage</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/NumbingAgent.png" class="mats">
+                  <p><img src="icons/reagents/NumbingAgent.png" class="mats floatL">
                     <b>Numbing Agent</b> - requires lvl <b>18</b>
                     <br><small>Effects: <b>+5</b> to <span class="red">Damage</span></small><br>&nbsp;</p>
                 </div>
@@ -1986,15 +2032,15 @@
                 <div class="content">
                   <h3>Drops from: Stags, Bucks, Wolves, Crabs</h3>
                   <div class="line"></div>
-                  <p><img src="icons/reagents/YouthfulHormones.png" class="mats">
+                  <p><img src="icons/reagents/YouthfulHormones.png" class="mats floatL">
                     <b>Youthful Hormones</b> - requires lvl <b>6</b>
                     <br><small>Effects: <b>+3</b> to <span class="red">Damage</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/AdolescentHormones.png" class="mats">
+                  <p><img src="icons/reagents/AdolescentHormones.png" class="mats floatL">
                     <b>Adolescent Hormones</b> - requires lvl <b>8</b>
                     <br><small>Effects: <b>+4</b> to <span class="red">Damage</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/AdultHormones.png" class="mats">
+                  <p><img src="icons/reagents/AdultHormones.png" class="mats floatL">
                     <b>Adult Hormones</b> - requires lvl <b>18</b>
                     <br><small>Effects: <b>+5</b> to <span class="red">Damage</span></small><br>&nbsp;</p>
                 </div>
@@ -2368,17 +2414,17 @@
                 <div class="content">
                   <h3>Drops from: Rats, Ants</h3>
                   <div class="line"></div>
-                  <p><img src="icons/reagents/WeakSleepingDose.png" class="mats">
+                  <p><img src="icons/reagents/WeakSleepingDose.png" class="mats floatL">
                     <b>Weak Sleeping Dose</b> - requires lvl <b>6</b>
                     <br><small>Effects: <b>+6s</b> to <span class="orange">Duration</span></small>
                     <br><small>Effects: <b>+1</b> to Triggers</small></p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/MildSleepingDose.png" class="mats">
+                  <p><img src="icons/reagents/MildSleepingDose.png" class="mats floatL">
                     <b>Mild Sleeping Dose</b> - requires lvl <b>8</b>
                     <br><small>Effects: <b>+7s</b> to <span class="orange">Duration</span></small>
                     <br><small>Effects: <b>+1</b> to Triggers</small></p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/SleepingDose.png" class="mats">
+                  <p><img src="icons/reagents/SleepingDose.png" class="mats floatL">
                     <b>Sleeping Dose</b> - requires lvl <b>18</b>
                     <br><small>Effects: <b>+8s</b> to <span class="orange">Duration</span></small>
                     <br><small>Effects: <b>+1</b> to Triggers</small></p>
@@ -2727,20 +2773,20 @@
                 <div class="content">
                   <h3>Drops from: Spiders</h3>
                   <div class="line"></div>
-                  <p><img src="icons/reagents/WeakVenom.png" class="mats">
+                  <p><img src="icons/reagents/WeakVenom.png" class="mats floatL">
                     <b>Weak Venom</b> - requires lvl <b>6</b>
                     <br><small>Effects: <b>+1</b> to <span class="red">Damage Over Time</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/MildVenom.png" class="mats">
+                  <p><img src="icons/reagents/MildVenom.png" class="mats floatL">
                     <b>Mild Venom</b> - requires lvl <b>8</b>
                     <br><small>Effects: <b>+3</b> to <span class="red">Damage</span></small>
                     <br><small>Effects: <b>+1</b> to <span class="red">Damage Over Time</span></small></p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/Venom.png" class="mats">
+                  <p><img src="icons/reagents/Venom.png" class="mats floatL">
                     <b>Venom</b> - requires lvl <b>18</b>
                     <br><small>Effects: <b>+2</b> to <span class="red">Damage Over Time</span></small></p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/WeakDoomSpiderVenom.png" class="mats">
+                  <p><img src="icons/reagents/WeakDoomSpiderVenom.png" class="mats floatL">
                     <b>Weak Doom Spider Venom</b> - requires lvl <b>8</b>
                     <br><small>Effects: <b>+40s</b> to Duration</small>
                     <br><small>Effects: <b>+1</b> to <span class="red">Damage Over Time</span></small></p>
@@ -3038,7 +3084,7 @@
         <label for="tabSupport"><img src="icons/Supporter.png" alt="Support"></label>
         <div class="main">
           <div class="middle"><a onclick="openOverlay('SupInfo')"><img class="class" src="icons/class/Supporter.png"></a><h1>Supporter<span class="midtone ea"> - Combat Medics</span></h1></div>
-          <div class="icons">
+          <div class="flexBox">
             <div class="icon">
               <a onclick="openOverlay('AssailingStrike')"><img src="icons/skills/AssailingStrike.png"  alt="Assailing Strike"></a>
               <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/damage.png" class='role2'>
@@ -3066,7 +3112,7 @@
               <div class="tab">
                 <p>&nbsp;</p>
                 <h1>Duelist<span class="midtone ea"> - <small>Balanced Offense and Defense</small></span></h1>
-                <div class="icons">
+                <div class="flexBox">
                 <div class="icon">
                   <a onclick="openOverlay('Patch')"><img src="icons/skills/Patch.png"  alt="Patch"></a>
                   <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/heal.png" class='role2'>
@@ -3114,7 +3160,7 @@
               <div class="tab">
                 <p>&nbsp;</p>
                 <h1>Sentinel<span class="midtone ea"> - <small>A Guardian of the People</small></span></h1>
-                <div class="icons">
+                <div class="flexBox">
                 <div class="icon">
                   <a onclick="openOverlay('Replenish')"><img src="icons/skills/Replenish.png"  alt="Replenish"></a>
                   <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/heal.png" class='role2'>
@@ -3162,7 +3208,7 @@
               <div class="tab">
                 <p>&nbsp;</p>
                 <h1>Warlord<span class="midtone ea"> - <small>Inspiring Battle Songs</small></span></h1>
-                <div class="icons">
+                <div class="flexBox">
                 <div class="icon">
                   <a onclick="openOverlay('RejuvenatingHymn')"><img src="icons/skills/RejuvenatingHymn.png"  alt="RejuvenatingHymn"></a>
                   <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/heal.png" class='role2'>
@@ -3237,22 +3283,22 @@
                 <div class="content">
                   <h3>Base stats for each specialisation</h3>
                   <div class="line"></div>
-                  <p><img src="icons/class/Supporter.png" class="mats">
+                  <p><img src="icons/class/Supporter.png" class="mats floatL">
                     <b>Supporter</b>: <i class="fa-solid fa-arrow-left red"></i> +5 Armor DMG, <i class="fa-solid fa-arrow-down blue"></i> +3 Armor DMG
                     <br><small>+25 to Health / +25 to Armor Weight Capacity</small>
                     <br><small>+5 to Combat Movement</small></p>
                     <div class="line"></div>
-                  <p><img src="icons/class/Duelist.png" class="mats">
+                  <p><img src="icons/class/Duelist.png" class="mats floatL">
                     <b>Duelist</b>
                     <br><small>+0 to +178 Health / +0 to +40 to Armor Weight Capacity</small>
                     <br><small>+0 to +10 to Combat Movement</small></p>
                     <div class="line"></div>
-                  <p><img src="icons/class/Sentinel.png" class="mats">
+                  <p><img src="icons/class/Sentinel.png" class="mats floatL">
                     <b>Sentinel</b>
                     <br><small>+0 to +185 Health / +0 to +45 to Armor Weight Capacity</small>
                     <br><small>+0 to +5 Physical Damage Resists</small></p>
                     <div class="line"></div>
-                  <p><img src="icons/class/Warlord.png" class="mats">
+                  <p><img src="icons/class/Warlord.png" class="mats floatL">
                     <b>Warlord</b>
                     <br><small>+0 to +171 Health / +0 to +40 to Armor Weight Capacity</small>
                     <br><small>+0 to +10 Daze Resists</small></p>
@@ -3264,29 +3310,29 @@
                 <h2 class="dark">&nbsp;Supporter Weapons Options</h2>
                 <div class="content">
                   <div class="line"></div>
-                  <p><img src="icons/crafting/Banner.png" class="mats">
+                  <p><img src="icons/crafting/Banner.png" class="mats floatL">
                     <b>Banner</b>
                     <br><small>Offhand</small>
                     <br><small>+ Combat Movement, + Resilience</small></p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ShortSword.png" class="mats">
+                  <p><img src="icons/crafting/ShortSword.png" class="mats floatL">
                     <b>1H Sword</b>
                     <br><small>Position Bonus: <i class="fa-solid fa-arrow-up yellow"></i> +15 HIT, <i class="fa-solid fa-arrow-left red"></i> +10 PEN, <i class="fa-solid fa-arrow-down blue"></i> +3 DMG</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Mace.png" class="mats">
+                  <p><img src="icons/crafting/Mace.png" class="mats floatL">
                     <b>1H Mace</b>
                     <br><small>Position Bonus: <i class="fa-solid fa-arrow-up yellow"></i> +5 DMG, <i class="fa-solid fa-arrow-left red"></i> +3 DMG</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Hatchet.png" class="mats">
+                  <p><img src="icons/crafting/Hatchet.png" class="mats floatL">
                     <b>1H Axe</b>
                     <br><small>Position Bonus: <i class="fa-solid fa-arrow-down blue"></i> +5 DMG, <i class="fa-solid fa-arrow-left red"></i> +15 HIT</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Crossbow.png" class="mats">
+                  <p><img src="icons/crafting/Crossbow.png" class="mats floatL">
                     <b>Crossbow</b>
                     <br><small>CrossBow: <i class="fa-solid fa-arrow-left red"></i> +5 DMG, <i class="fa-solid fa-arrow-down blue"></i> +15 HIT</small>
                     <br><small>Heavy Crossbow: <i class="fa-solid fa-arrow-left red"></i> +5 DMG, <i class="fa-solid fa-arrow-down blue"></i> +15 HIT</small></p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Quarterstaff.png" class="mats">
+                  <p><img src="icons/crafting/Quarterstaff.png" class="mats floatL">
                     <b>Quarterstaff</b>
                     <br><small>Position Bonus: <i class="fa-solid fa-arrow-up yellow"></i> +30 HIT</small><br>&nbsp;</p>
                 </div>
@@ -3419,19 +3465,19 @@
                 <div class="content">
                   <h3>Drops from: Does, Bears</h3>
                   <div class="line"></div>
-                  <p><img src="icons/reagents/CrudeSalve.png" class="mats">
+                  <p><img src="icons/reagents/CrudeSalve.png" class="mats floatL">
                     <b>Crude Salve</b> - requires lvl <b>2</b>
                     <br><small>Effects: <b>+5</b> to <span class="green">Health</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/MakeshiftSalve.png" class="mats">
+                  <p><img src="icons/reagents/MakeshiftSalve.png" class="mats floatL">
                     <b>Makeshift Salve</b> - requires lvl <b>8</b>
                     <br><small>Effects: <b>+9</b> to <span class="green">Health</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/Salve.png" class="mats">
+                  <p><img src="icons/reagents/Salve.png" class="mats floatL">
                     <b>Salve</b> - requires lvl <b>18</b>
                     <br><small>Effects: <b>+12</b> to <span class="green">Health</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/ConcentratedSalve.png" class="mats">
+                  <p><img src="icons/reagents/ConcentratedSalve.png" class="mats floatL">
                     <b>Concentrated Salve</b> - requires lvl <b>28</b>
                     <br><small>Effects: <b>+16</b> to <span class="green">Health</span></small></p>
                 </div>
@@ -3537,11 +3583,11 @@
                 <div class="content">
                   <h3>Drops from: Emberflies, Ants</h3>
                   <div class="line"></div>
-                  <p><img src="icons/reagents/WeakIchor.png" class="mats">
+                  <p><img src="icons/reagents/WeakIchor.png" class="mats floatL">
                     <b>Weak Ichor</b> - requires lvl <b>6</b>
                     <br><small>Effects: <b>+3</b> to <span class="green">Health</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/WeakIchor.png" class="mats">
+                  <p><img src="icons/reagents/WeakIchor.png" class="mats floatL">
                     <b>Mild Ichor</b> - requires lvl <b>8</b>
                     <br><small>Effects: <b>+5</b> to <span class="green">Health</span></small></p>
                 </div>
@@ -3888,15 +3934,15 @@
                 <div class="content">
                   <h3>Drops from: Wolves, Boars</h3>
                   <div class="line"></div>
-                  <p><img src="icons/reagents/DilutedTincture.png" class="mats">
+                  <p><img src="icons/reagents/DilutedTincture.png" class="mats floatL">
                     <b>Diluted Tincture</b> - requires lvl <b>6</b>
                     <br><small>Effects: <b>+2</b> to <span class="green">Health Over Time</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/Tincture.png" class="mats">
+                  <p><img src="icons/reagents/Tincture.png" class="mats floatL">
                     <b>Tincture</b> - requires lvl <b>8</b>
                     <br><small>Effects: <b>+4</b> to <span class="green">Health Over Time</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/RobustTincture.png" class="mats">
+                  <p><img src="icons/reagents/RobustTincture.png" class="mats floatL">
                     <b>Robust Tincture</b> - requires lvl <b>18</b>
                     <br><small>Effects: <b>+5</b> to <span class="green">Health Over Time</span></small><br>&nbsp;</p>
                 </div>
@@ -4247,11 +4293,11 @@
                 <div class="content">
                   <h3>Drops from: Mistwalkers, Bats</h3>
                   <div class="line"></div>
-                  <p><img src="icons/reagents/SicklySkin.png" class="mats">
+                  <p><img src="icons/reagents/SicklySkin.png" class="mats floatL">
                     <b>Sickly Skin</b> - requires lvl <b>6</b>
                     <br><small>Effects: <b>+1</b> to <span class="red">Damage</span></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/reagents/SicklySkin.png" class="mats">
+                  <p><img src="icons/reagents/SicklySkin.png" class="mats floatL">
                     <b>Rotten Skin</b> - requires lvl <b>8</b>
                     <br><small>Effects: <b>+2</b> to <span class="red">Damage</span></small><br>&nbsp;</p>
                 </div>
@@ -4608,7 +4654,7 @@
               <div class="tab">
                 <p>&nbsp;</p>
                 <h1><img src="icons/tree2.png" class="nudge"> Forester<span class="midtone ea"> - <small>Refine Wood and Plants</small></span></h1>
-                <div class="icons">
+                <div class="flexBox">
                 <div class="icon">
                   <a onclick="openOverlay('BowString')"><img src="icons/crafting/LinenBowString.png"  alt="BowString"></a>
                   <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
@@ -4654,7 +4700,7 @@
               <div class="tab">
                 <p>&nbsp;</p>
                 <h1><img src="icons/rabbit.png" class="nudge"> Hunter<span class="midtone ea"> - <small>Refine Animals</small></span></h1>
-                <div class="icons">
+                <div class="flexBox">
                   <div class="icon">
                     <a onclick="openOverlay('TeaLeaves')"><img src="icons/crafting/DeerTeaLeaves.png"  alt="TeaLeaves"></a>
                     <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
@@ -4682,7 +4728,7 @@
               <div class="tab">
                 <p>&nbsp;</p>
                 <h1><img src="icons/mountain.png" class="nudge"> Prospector<span class="midtone ea"> - <small>Refine Minerals</small></span></h1>
-                <div class="icons">
+                <div class="flexBox">
                   <div class="icon">
                     <a onclick="openOverlay('MetalIngot')"><img src="icons/crafting/CopperIngot.png"  alt="MetalIngot"></a>
                     <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
@@ -4716,20 +4762,20 @@
                 <div class="content">
                   <h3>Requires Gathering Tool - Sickle</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/Flax.png" class="mats">
+                  <p><img src="icons/crafting/Flax.png" class="mats floatL">
                     <b>Linen Bow String</b> - Flax x1
                     <br><small>Requires Forester level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PrairieCotton.png" class="mats">
+                  <p><img src="icons/crafting/PrairieCotton.png" class="mats floatL">
                     <b>Cotton Bow String</b> - Cotton x1
                     <br><small>Requires Forester level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/SpiderSilk.png" class="mats">
+                  <p><img src="icons/crafting/SpiderSilk.png" class="mats floatL">
                     <b>Silk Bow String</b> - Spider Silk x1
                     <br><small>Rare drop from spiders</small>
                     <br><small>Requires Forester level <b>15</b></small></p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Ramie.png" class="mats">
+                  <p><img src="icons/crafting/Ramie.png" class="mats floatL">
                     <b>Ramie Bow String</b> - Ramie x1
                     <br><small>Requires Forester level <b>20</b></small><br>&nbsp;</p>
                 </div>
@@ -4750,20 +4796,20 @@
                 <div class="content">
                   <h3>Requires Gathering Tool - Sickle</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/Flax.png" class="mats">
+                  <p><img src="icons/crafting/Flax.png" class="mats floatL">
                     <b>Linen Cloth</b> - Flax x1
                     <br><small>Requires Forester level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PrairieCotton.png" class="mats">
+                  <p><img src="icons/crafting/PrairieCotton.png" class="mats floatL">
                     <b>Cotton Cloth</b> - Cotton x1
                     <br><small>Requires Forester level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/SpiderSilk.png" class="mats">
+                  <p><img src="icons/crafting/SpiderSilk.png" class="mats floatL">
                     <b>Silk Cloth</b> - Spider Silk x1
                     <br><small>Rare drop from spiders</small>
                     <br><small>Requires Forester level <b>15</b></small></p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Ramie.png" class="mats">
+                  <p><img src="icons/crafting/Ramie.png" class="mats floatL">
                     <b>Ramie Cloth</b> - Ramie x1
                     <br><small>Requires Forester level <b>20</b></small><br>&nbsp;</p>
                 </div>
@@ -4784,20 +4830,20 @@
                 <div class="content">
                   <h3>Requires Gathering Tool - Sickle</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/Flax.png" class="mats">
+                  <p><img src="icons/crafting/Flax.png" class="mats floatL">
                     <b>Linen Thread</b> - Flax x1
                     <br><small>Requires Forester level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PrairieCotton.png" class="mats">
+                  <p><img src="icons/crafting/PrairieCotton.png" class="mats floatL">
                     <b>Cotton Thread</b> - Cotton x1
                     <br><small>Requires Forester level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/SpiderSilk.png" class="mats">
+                  <p><img src="icons/crafting/SpiderSilk.png" class="mats floatL">
                     <b>Silk Thread</b> - Spider Silk x1
                     <br><small>Rare drop from spiders</small>
                     <br><small>Requires Forester level <b>15</b></small></p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Ramie.png" class="mats">
+                  <p><img src="icons/crafting/Ramie.png" class="mats floatL">
                     <b>Ramie Thread</b> - Ramie x1
                     <br><small>Requires Forester level <b>20</b></small><br>&nbsp;</p>
                 </div>
@@ -4818,15 +4864,15 @@
                 <div class="content">
                   <h3>Requires Gathering Tool - Sickle</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/Flax.png" class="mats">
+                  <p><img src="icons/crafting/Flax.png" class="mats floatL">
                     <b>Linseed Oil</b> - Flax x1
                     <br><small>Requires Forester level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PrairieCotton.png" class="mats">
+                  <p><img src="icons/crafting/PrairieCotton.png" class="mats floatL">
                     <b>Cotton Oil</b> - Cotton x1
                     <br><small>Requires Forester level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Ramie.png" class="mats">
+                  <p><img src="icons/crafting/Ramie.png" class="mats floatL">
                     <b>Ramie Oil</b> - Ramie x1
                     <br><small>Requires Forester level <b>20</b></small><br>&nbsp;</p>
                 </div>
@@ -4847,22 +4893,22 @@
                 <div class="content">
                   <h3>Requires Gathering Tool - Sickle</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PennyBunMushroom.png" class="mats">
+                  <p><img src="icons/crafting/PennyBunMushroom.png" class="mats floatL">
                     <b>Penny Bun Mushroom Oil</b>
                     <br>-Penny Bun Mushroom x1
                     <br><small>Requires Forester level <b>1</b></small></p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CommonMuddleMushroom.png" class="mats">
+                  <p><img src="icons/crafting/CommonMuddleMushroom.png" class="mats floatL">
                     <b>Muddle Mushroom Oil</b>
                     <br>-Muddle Mushroom x1
                     <br><small>Requires Forester level <b>10</b></small></p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PrairieSpikeCapMushroom.png" class="mats">
+                  <p><img src="icons/crafting/PrairieSpikeCapMushroom.png" class="mats floatL">
                     <b>Spike Cap Mushroom Oil</b>
                     <br>-Spike Cap Mushroom x1
                     <br><small>Requires Forester level <b>15</b></small></p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/RoyalGullyMushroom.png" class="mats">
+                  <p><img src="icons/crafting/RoyalGullyMushroom.png" class="mats floatL">
                     <b>Royal Gully Mushroom Oil</b>
                     <br>-Royal Gully Mushroom x1
                     <br><small>Requires Forester level <b>20</b></small></p>
@@ -4884,19 +4930,19 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PineLog.png" class="mats">
+                  <p><img src="icons/crafting/PineLog.png" class="mats floatL">
                     <b>Pine Sap</b> - Pine Log x1
                     <br><small>Requires Forester level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineLog.png" class="mats">
+                  <p><img src="icons/crafting/PineLog.png" class="mats floatL">
                     <b>Cedar Sap</b> - Cedar Log x1
                     <br><small>Requires Forester level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineLog.png" class="mats">
+                  <p><img src="icons/crafting/PineLog.png" class="mats floatL">
                     <b>Maple Sap</b> - Maple Log x1
                     <br><small>Requires Forester level <b>20</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineLog.png" class="mats">
+                  <p><img src="icons/crafting/PineLog.png" class="mats floatL">
                     <b>Fir Sap</b> - Fir Log x1
                     <br><small>Requires Forester level <b>25</b></small><br>&nbsp;</p>
                 </div>
@@ -4917,19 +4963,19 @@
                 <div class="content">
                   <h3>Requires Gathering Tool - Axe</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PineLog.png" class="mats">
+                  <p><img src="icons/crafting/PineLog.png" class="mats floatL">
                     <b>Pine Wood</b> - Pine Log x1
                     <br><small>Requires Forester level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineLog.png" class="mats">
+                  <p><img src="icons/crafting/PineLog.png" class="mats floatL">
                     <b>Cedar Wood</b> - Cedar Log x1
                     <br><small>Requires Forester level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineLog.png" class="mats">
+                  <p><img src="icons/crafting/PineLog.png" class="mats floatL">
                     <b>Maple Wood</b> - Maple Log x1
                     <br><small>Requires Forester level <b>20</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineLog.png" class="mats">
+                  <p><img src="icons/crafting/PineLog.png" class="mats floatL">
                     <b>Fir Wood</b> - Fir Log x1
                     <br><small>Requires Forester level <b>25</b></small><br>&nbsp;</p>
                 </div>
@@ -4946,22 +4992,22 @@
               <input type="radio" name="TeaLeavesTabs" id="tabDeerLeafTea" checked="checked">
               <label for="tabDeerLeafTea"><img src="icons/crafting/DeerTeaLeaves.png" alt="DeerLeafTea" class="tabIcon"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Crushed Deer Leaf Tea Leaves</h2>
+                <h2 class="dark">&nbsp;Deer Tea Leaves</h2>
                 <div class="content">
                   <h3>Requires Gathering Tool - Skinning Knife</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/DryDeerLeaves.png" class="mats">
-                    <b>Dry Deer Leaf Tea Leaves</b>
+                  <p><img src="icons/crafting/DryDeerLeaves.png" class="mats floatL">
+                    <b>Dry Deer Tea Leaves</b>
                     <br>-Dry Deer Leaves x1
                     <br><small>Requires Hunter level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/WiltedDearLeaves.png" class="mats">
-                    <b>Wilted Dear Leaf Tea Leaves</b>
+                  <p><img src="icons/crafting/WiltedDearLeaves.png" class="mats floatL">
+                    <b>Wilted Dear Tea Leaves</b>
                     <br>- Wilted Dear Leaves x1
                     <br><small>Requires Hunter level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/DeerLeaves.png" class="mats">
-                    <b>Mild Dear Leaf Tea Leaves</b>
+                  <p><img src="icons/crafting/DeerLeaves.png" class="mats floatL">
+                    <b>Mild Dear Tea Leaves</b>
                     <br>- Mild Dear Leaves x1
                     <br><small>Requires Hunter level <b>20</b></small><br>&nbsp;</p>
                 </div>
@@ -4982,15 +5028,15 @@
                 <div class="content">
                   <h3>Requires Gathering Tool - Skinning Knife</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanCarcass.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanCarcass.png" class="mats floatL">
                     <b>Lean Bones</b> - Lean Carcass x1
                     <br><small>Requires Hunter level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/RoughLightCarcass.png" class="mats">
+                  <p><img src="icons/crafting/RoughLightCarcass.png" class="mats floatL">
                     <b>Light Bones</b> - Light Carcass x1
                     <br><small>Requires Hunter level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/FairDenseCarcass.png" class="mats">
+                  <p><img src="icons/crafting/FairDenseCarcass.png" class="mats floatL">
                     <b>Dense Bones</b> - Dense Carcass x1
                     <br><small>Requires Hunter level <b>20</b></small><br>&nbsp;</p>
                 </div>
@@ -5011,15 +5057,15 @@
                 <div class="content">
                   <h3>Requires Gathering Tool - Skinning Knife</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanCarcass.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanCarcass.png" class="mats floatL">
                     <b>Lean Leather</b> - Lean Carcass x1
                     <br><small>Requires Hunter level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/RoughLightCarcass.png" class="mats">
+                  <p><img src="icons/crafting/RoughLightCarcass.png" class="mats floatL">
                     <b>Light Leather</b> - Light Carcass x1
                     <br><small>Requires Hunter level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/FairDenseCarcass.png" class="mats">
+                  <p><img src="icons/crafting/FairDenseCarcass.png" class="mats floatL">
                     <b>Dense Leather</b> - Dense Carcass x1
                     <br><small>Requires Hunter level <b>20</b></small><br>&nbsp;</p>
                 </div>
@@ -5040,15 +5086,15 @@
                 <div class="content">
                   <h3>Requires Gathering Tool - Skinning Knife</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanCarcass.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanCarcass.png" class="mats floatL">
                     <b>Lean Meat</b> - Lean Carcass x1
                     <br><small>Requires Hunter level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/RoughLightCarcass.png" class="mats">
+                  <p><img src="icons/crafting/RoughLightCarcass.png" class="mats floatL">
                     <b>Light Meat</b> - Light Carcass x1
                     <br><small>Requires Hunter level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/FairDenseCarcass.png" class="mats">
+                  <p><img src="icons/crafting/FairDenseCarcass.png" class="mats floatL">
                     <b>Dense Meat</b> - Dense Carcass x1
                     <br><small>Requires Hunter level <b>20</b></small><br>&nbsp;</p>
                 </div>
@@ -5069,19 +5115,19 @@
                 <div class="content">
                   <h3>Requires Gathering Tool - PickAxe</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperOre.png" class="mats">
+                  <p><img src="icons/crafting/CopperOre.png" class="mats floatL">
                     <b>Copper Ingot</b> - Copper Ore x1
                     <br><small>Requires Prospector level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/TinOre.png" class="mats">
+                  <p><img src="icons/crafting/TinOre.png" class="mats floatL">
                     <b>Tin Ingot</b> - Tin Ore x1
                     <br><small>Requires Prospector level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ZinkOre.png" class="mats">
+                  <p><img src="icons/crafting/ZinkOre.png" class="mats floatL">
                     <b>Zink Ingot</b> - Zink Ore x1
                     <br><small>Requires Prospector level <b>20</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/SilverOre.png" class="mats">
+                  <p><img src="icons/crafting/SilverOre.png" class="mats floatL">
                     <b>Silver Ingot</b> - Silver Ore x1
                     <br><small>Requires Prospector level <b>25</b></small><br>&nbsp;</p>
                 </div>
@@ -5102,15 +5148,15 @@
                 <div class="content">
                   <h3>Requires Gathering Tool - PickAxe</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/FleckedMalachite.png" class="mats">
+                  <p><img src="icons/crafting/FleckedMalachite.png" class="mats floatL">
                     <b>Malachite Gem</b> - Malachite x1
                     <br><small>Requires Prospector level <b>1</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ShinyTurquoise.png" class="mats">
+                  <p><img src="icons/crafting/ShinyTurquoise.png" class="mats floatL">
                     <b>Turquoise Gem</b> - Turquoise x1
                     <br><small>Requires Prospector level <b>10</b></small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/SparklingTopaz.png" class="mats">
+                  <p><img src="icons/crafting/SparklingTopaz.png" class="mats floatL">
                     <b>Topaz Gem</b> - Topaz x1
                     <br><small>Requires Prospector level <b>20</b></small><br>&nbsp;</p>
                 </div>
@@ -5130,7 +5176,7 @@
                 <p>&nbsp;</p>
                 <h1>Armorsmith<span class="midtone ea"> - <small>only materials req. done</small></span></h1>
                 <h2 class="subHeader"><span class="midtone"><small>Suggested - <img src="icons/mountain.png" class="nudgeMore"> Prospector + <img src="icons/rabbit.png" class="nudgeMore"> Hunter</small></span></h2>
-                <div class="icons">
+                <div class="flexBox">
                   <div class="icon">
                     <a onclick="openOverlay('ArmorBracing')"><img src="icons/crafting/ArmorBracing.png"  alt="ArmorBracing"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
@@ -5215,7 +5261,7 @@
                 <p>&nbsp;</p>
                 <h1>Weaponsmith<span class="midtone ea"> - <small>only materials req. done</small></span></h1>
                 <h2 class="subHeader"><span class="midtone"><small>Suggested - <img src="icons/mountain.png" class="nudgeMore"> Prospector + <img src="icons/tree2.png" class="nudgeMore"> Forester / <img src="icons/rabbit.png" class="nudgeMore"> Hunter</small></span></h2>
-                <div class="icons">
+                <div class="flexBox">
                   <div class="icon">
                     <a onclick="openOverlay('GreatAxe')"><img src="icons/crafting/GreatAxe.png"  alt="GreatAxe"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/tree2.png" class='role2'>
@@ -5280,7 +5326,7 @@
                 <p>&nbsp;</p>
                 <h1>Tinkerer<span class="midtone ea"> - <small>only materials req. done</small></span></h1>
                 <h2 class="subHeader"><span class="midtone"><small>Suggested - <img src="icons/mountain.png" class="nudgeMore"> Prospector</small></span></h2>
-                <div class="icons">
+                <div class="flexBox">
                   <div class="icon">
                     <a onclick="openOverlay('Dagger')"><img src="icons/crafting/Dagger.png"  alt="Dagger"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role3"><img src="icons/tree2.png" class='role4'><img src="icons/rabbit.png" class='role5'>
@@ -5338,14 +5384,14 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x1</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Strapping.png" class="mats">
+                  <p><img src="icons/crafting/Strapping.png" class="mats floatL">
                     <b>Strapping</b> - Strapping <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>OR</b> - Leather <b>x1</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                 </div>
@@ -5375,14 +5421,14 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x1</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Strapping.png" class="mats">
+                  <p><img src="icons/crafting/Strapping.png" class="mats floatL">
                     <b>Strapping</b> - Strapping <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>OR</b> - Leather <b>x1</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                 </div>
@@ -5412,19 +5458,19 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x6</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>Cloth</b> - Cloth <b>x4</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseThread.png" class="mats">
+                  <p><img src="icons/crafting/CoarseThread.png" class="mats floatL">
                     <b>Thread</b> - Thread <b>x2</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> (Required) <b>x1</b>
                     <br><small>requires imbued recipe, rare drop</small><br>&nbsp;</p>
                 </div>
@@ -5453,18 +5499,18 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Body</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Strapping.png" class="mats">
+                  <p><img src="icons/crafting/Strapping.png" class="mats floatL">
                     <b>Strap</b> - Strapping <b>x2</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>OR</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -5490,22 +5536,22 @@
               <input type="radio" name="HeaterShieldTabs" id="tabHeaterShield" checked="checked">
               <label for="tabHeaterShield"><img src="icons/crafting/HeaterShield.png" alt="HeaterShield" class="tabIcon"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;HeaterShield</h2>
+                <h2 class="dark">&nbsp;Heater Shield</h2>
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Body</b> - Metal <b>x6</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Strapping.png" class="mats">
+                  <p><img src="icons/crafting/Strapping.png" class="mats floatL">
                     <b>Strap</b> - Strapping <b>x4</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>OR</b> - Leather <b>x4</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -5535,18 +5581,18 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Body</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Strapping.png" class="mats">
+                  <p><img src="icons/crafting/Strapping.png" class="mats floatL">
                     <b>Strap</b> - Strapping <b>x2</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>OR</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -5576,18 +5622,18 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Body</b> - Metal <b>x6</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Strapping.png" class="mats">
+                  <p><img src="icons/crafting/Strapping.png" class="mats floatL">
                     <b>Strap</b> - Strapping <b>x4</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>OR</b> - Leather <b>x4</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -5617,18 +5663,18 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Strapping.png" class="mats">
+                  <p><img src="icons/crafting/Strapping.png" class="mats floatL">
                     <b>Strap</b> - Strapping <b>x2</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>OR</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -5658,18 +5704,18 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Strapping.png" class="mats">
+                  <p><img src="icons/crafting/Strapping.png" class="mats floatL">
                     <b>Strap</b> - Strapping <b>x2</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>OR</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -5699,18 +5745,18 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x4</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Strapping.png" class="mats">
+                  <p><img src="icons/crafting/Strapping.png" class="mats floatL">
                     <b>Strap</b> - Strapping <b>x4</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>OR</b> - Leather <b>x4</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -5740,18 +5786,18 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x4</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Strapping.png" class="mats">
+                  <p><img src="icons/crafting/Strapping.png" class="mats floatL">
                     <b>Strap</b> - Strapping <b>x2</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>OR</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -5777,22 +5823,22 @@
               <input type="radio" name="KiteShieldTabs" id="tabKiteShield" checked="checked">
               <label for="tabKiteShield"><img src="icons/crafting/KiteShield.png" alt="KiteShield" class="tabIcon"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;KiteShield</h2>
+                <h2 class="dark">&nbsp;Kite Shield</h2>
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x4</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Strapping.png" class="mats">
+                  <p><img src="icons/crafting/Strapping.png" class="mats floatL">
                     <b>Strap</b> - Strapping <b>x2</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>OR</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -5822,11 +5868,11 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Fur</b> - Leather <b>x1</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseThread.png" class="mats">
+                  <p><img src="icons/crafting/CoarseThread.png" class="mats floatL">
                     <b>Thread</b> - Thread <b>x1</b>
                     <br><small>Coarse / Linen / Cotton</small><br>&nbsp;</p>
                 </div>
@@ -5856,11 +5902,11 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Leather</b> - Leather <b>x1</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x1</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                 </div>
@@ -5890,18 +5936,18 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Head</b> - Metal <b>x6</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Handle</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>OR</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -5931,29 +5977,29 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Blade</b> - Metal <b>x6</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Guard</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Grip</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>OR</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Grip Wrap</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>OR</b> - Cloth <b>x2</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -5983,18 +6029,18 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Head</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Handle</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>OR</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -6007,19 +6053,19 @@
                 <div class="content">
                   <h3>Effects of Head / Handle Materials</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Copper Ingots</b>
                     <br><small>1d5+1 Base Weapon Damage</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Tin Ingots</b>
                     <br><small>2d5+2 Base Weapon Damage</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Pine Wood</b>
                     <br><small>1d5+1 Base Weapon Damage</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Cedar Wood</b>
                     <br><small>2d5+2 Base Weapon Damage</small></p>
                 </div>
@@ -6029,19 +6075,19 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Handle<span class="name midtone"> - Effects of Materials</span></h2>
                 <div class="content">
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Pine wood</b>
                     <br><small>+1 Hit</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Cedar Wood</b>
                     <br><small>+1 Hit / +1 Haste</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Copper Ingots</b>
                     <br><small>+2 Hit / +1 1Hand Weapon Damage</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Tin Ingots</b>
                     <br><small>+2 Hit / +1 Penetration</small><br>&nbsp;</p>
                 </div>
@@ -6051,15 +6097,15 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Flux<span class="name midtone"> - Effects of Materials</span></h2>
                 <div class="content">
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Viscous Ember Flux</b>
                     <br><small>+1 Base Weapon Damage</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Thick Ember Flux</b>
                     <br><small>+2 Base Weapon Damage</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>? Ember Flux</b>
                     <br><small>+3 Base Weapon Damage</small><br>&nbsp;</p>
                 </div>
@@ -6080,29 +6126,29 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Blade</b> - Metal <b>x6</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Guard</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Grip</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>OR</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Grip Wrap</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>OR</b> - Cloth <b>x2</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -6132,18 +6178,18 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Head</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Handle</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>OR</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -6173,18 +6219,18 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Head</b> - Metal <b>x4</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Handle</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>OR</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -6214,18 +6260,18 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Head</b> - Metal <b>x4</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Pole</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>OR</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -6255,29 +6301,29 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Blade</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Guard</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Grip</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>OR</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Grip Wrap</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>OR</b> - Cloth <b>x2</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -6307,11 +6353,11 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Leather</b> - Leather <b>x1</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/WeakGlue.png" class="mats">
+                  <p><img src="icons/crafting/WeakGlue.png" class="mats floatL">
                     <b>Adhesive</b> - Glue <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
                 </div>
@@ -6341,11 +6387,11 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Leather</b> - Leather <b>x1</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/WeakGlue.png" class="mats">
+                  <p><img src="icons/crafting/WeakGlue.png" class="mats floatL">
                     <b>Adhesive</b> - Glue <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
                 </div>
@@ -6375,29 +6421,29 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Blade</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Guard</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Grip</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>OR</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Grip Wrap</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>OR</b> - Cloth <b>x2</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -6427,11 +6473,11 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x1</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/WeakGlue.png" class="mats">
+                  <p><img src="icons/crafting/WeakGlue.png" class="mats floatL">
                     <b>Adhesive</b> - Glue <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
                 </div>
@@ -6461,11 +6507,11 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Tang</b> - Metal <b>x1</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LeanBone.png" class="mats">
+                  <p><img src="icons/crafting/LeanBone.png" class="mats floatL">
                     <b>OR</b> - Bone <b>x1</b>
                     <br><small>Lean Bone / ?? stuff /  & things</small><br>&nbsp;</p>
                 </div>
@@ -6494,15 +6540,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Leather</b> - Leather <b>x2</b>
                     <br><small>Lean? / Coarse / I don't know</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Buckle</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -6532,11 +6578,11 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/Malachite.png" class="mats">
+                  <p><img src="icons/crafting/Malachite.png" class="mats floatL">
                     <b>Gem</b> - Gem <b>x1</b>
                     <br><small>Malachite / Turquoise / Topaz / Cassiterite / Euclase</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x1</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                 </div>
@@ -6566,15 +6612,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/Malachite.png" class="mats">
+                  <p><img src="icons/crafting/Malachite.png" class="mats floatL">
                     <b>Gem</b> - Gem <b>x1</b>
                     <br><small>Malachite / Turquoise / Topaz / Cassiterite / Euclase</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Backing</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -6604,15 +6650,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/Malachite.png" class="mats">
+                  <p><img src="icons/crafting/Malachite.png" class="mats floatL">
                     <b>Gem</b> - Gem <b>x1</b>
                     <br><small>Malachite / Turquoise / Topaz / Cassiterite / Euclase</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Chain</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -6642,15 +6688,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/Malachite.png" class="mats">
+                  <p><img src="icons/crafting/Malachite.png" class="mats floatL">
                     <b>Gem</b> - Gem <b>x1</b>
                     <br><small>Malachite / Turquoise / Topaz / Cassiterite / Euclase</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Loop</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -6679,7 +6725,7 @@
                 <p>&nbsp;</p>
                 <h1>Woodworker<span class="midtone ea"> - <small>only materials req. done</small></span></h1>
                 <h2 class="subHeader"><span class="midtone"><small>Suggested - <img src="icons/tree2.png" class="nudgeMore"> Forester + <img src="icons/rabbit.png" class="nudgeMore"> Hunter</small></span></h2>
-                <div class="icons">
+                <div class="flexBox">
                   <div class="icon">
                     <a onclick="openOverlay('Arrows')"><img src="icons/crafting/Arrow.png"  alt="Arrows"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role3"><img src="icons/tree2.png" class='role4'><img src="icons/rabbit.png" class='role5'>
@@ -6744,7 +6790,7 @@
                 <p>&nbsp;</p>
                 <h1>Outfitter<span class="midtone ea"> - <small>only materials req. done</small></span></h1>
                 <h2 class="subHeader"><span class="midtone"><small>Suggested - <img src="icons/rabbit.png" class="nudgeMore"> Hunter + <img src="icons/tree2.png" class="nudgeMore"> Forester</small></span></h2>
-                <div class="icons">
+                <div class="flexBox">
                   <div class="icon">
                     <a onclick="openOverlay('Bootstraps')"><img src="icons/crafting/Bootstraps.png"  alt="Bootstraps"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role1"><img src="icons/mountain.png" class='role2'>
@@ -6818,7 +6864,7 @@
                 <p>&nbsp;</p>
                 <h1>Provisioner<span class="midtone ea"> - <small>only materials req. done</small></span></h1>
                 <h2 class="subHeader"><span class="midtone"><small>Suggested - <img src="icons/tree2.png" class="nudgeMore"> Forester + <img src="icons/rabbit.png" class="nudgeMore"> Hunter / <img src="icons/mountain.png" class="nudgeMore"> Prospector</small></span></h2>
-                <div class="icons">
+                <div class="flexBox">
                   <div class="icon">
                     <a onclick="openOverlay('BrewedDeerLeafTea')"><img src="icons/crafting/Tea.png"  alt="BrewedDeerLeafTea"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role4">
@@ -6912,25 +6958,25 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/ArrowHeads.png" class="mats">
+                  <p><img src="icons/crafting/ArrowHeads.png" class="mats floatL">
                     <b>Arrowheads</b> - Arrow Heads <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/LeanBone.png" class="mats">
+                  <p><img src="icons/crafting/LeanBone.png" class="mats floatL">
                     <b>OR</b> - Bone <b>x1</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>OR</b> - Metal <b>x1</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Shafts</b> - Wood <b>x1</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>Fletching</b> - Cloth <b>x1</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -6960,25 +7006,25 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/BoltTips.png" class="mats">
+                  <p><img src="icons/crafting/BoltTips.png" class="mats floatL">
                     <b>Bolt tips</b> - Bolt Tips <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/LeanBone.png" class="mats">
+                  <p><img src="icons/crafting/LeanBone.png" class="mats floatL">
                     <b>OR</b> - Bone <b>x1</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>OR</b> - Metal <b>x1</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Shafts</b> - Wood <b>x1</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>Fletching</b> - Cloth <b>x1</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7008,15 +7054,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Pole</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>Flag</b> - Cloth <b>x1</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7046,18 +7092,18 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Body</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Strap</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/Strapping.png" class="mats">
+                  <p><img src="icons/crafting/Strapping.png" class="mats floatL">
                     <b>OR</b> - Strapping <b>x2</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7087,21 +7133,21 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Wood</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Strap</b> - Leather <b>x1</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>OR</b> - Cloth <b>x1</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/LeatherGripWraps.png" class="mats">
+                  <p><img src="icons/crafting/LeatherGripWraps.png" class="mats floatL">
                     <b>OR</b> - Strapping <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7131,15 +7177,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Prod & Tiller</b> - Wood <b>x4</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinenBowString.png" class="mats">
+                  <p><img src="icons/crafting/LinenBowString.png" class="mats floatL">
                     <b>Bowstring</b> - Bowstring <b>x1</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7169,15 +7215,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Prod & Tiller</b> - Wood <b>x6</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinenBowString.png" class="mats">
+                  <p><img src="icons/crafting/LinenBowString.png" class="mats floatL">
                     <b>Bowstring</b> - Bowstring <b>x1</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7207,22 +7253,22 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Bowstaff</b> - Wood <b>x4</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Wrap</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>OR</b> - Cloth <b>x2</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinenBowString.png" class="mats">
+                  <p><img src="icons/crafting/LinenBowString.png" class="mats floatL">
                     <b>Bowstring</b> - Bowstring <b>x1</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7252,22 +7298,22 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Bowstaff</b> - Wood <b>x4</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Wrap</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>OR</b> - Cloth <b>x2</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinenBowString.png" class="mats">
+                  <p><img src="icons/crafting/LinenBowString.png" class="mats floatL">
                     <b>Bowstring</b> - Bowstring <b>x1</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7297,18 +7343,18 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Pole</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Wrap</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>OR</b> - Cloth <b>x2</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7338,11 +7384,11 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Leather</b> - Leather <b>x1</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x1</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                 </div>
@@ -7372,15 +7418,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Leather</b> - Leather <b>x4</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseThread.png" class="mats">
+                  <p><img src="icons/crafting/CoarseThread.png" class="mats floatL">
                     <b>Thread</b> - Thread <b>x2</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7410,15 +7456,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Leather</b> - Leather <b>x4</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseThread.png" class="mats">
+                  <p><img src="icons/crafting/CoarseThread.png" class="mats floatL">
                     <b>Thread</b> - Thread <b>x2</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7448,15 +7494,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Leather</b> - Leather <b>x4</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseThread.png" class="mats">
+                  <p><img src="icons/crafting/CoarseThread.png" class="mats floatL">
                     <b>Thread</b> - Thread <b>x2</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7486,15 +7532,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Leather</b> - Leather <b>x6</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseThread.png" class="mats">
+                  <p><img src="icons/crafting/CoarseThread.png" class="mats floatL">
                     <b>Thread</b> - Thread <b>x4</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7524,15 +7570,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Leather</b> - Leather <b>x4</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseThread.png" class="mats">
+                  <p><img src="icons/crafting/CoarseThread.png" class="mats floatL">
                     <b>Thread</b> - Thread <b>x4</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7562,15 +7608,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Leather</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseThread.png" class="mats">
+                  <p><img src="icons/crafting/CoarseThread.png" class="mats floatL">
                     <b>Thread</b> - Thread <b>x2</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7600,15 +7646,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Leather</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseThread.png" class="mats">
+                  <p><img src="icons/crafting/CoarseThread.png" class="mats floatL">
                     <b>Thread</b> - Thread <b>x2</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7638,15 +7684,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Leather</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseThread.png" class="mats">
+                  <p><img src="icons/crafting/CoarseThread.png" class="mats floatL">
                     <b>Thread</b> - Thread <b>x2</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7676,15 +7722,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>Cloth</b> - Cloth <b>x6</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseThread.png" class="mats">
+                  <p><img src="icons/crafting/CoarseThread.png" class="mats floatL">
                     <b>Thread</b> - Thread <b>x2</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7714,15 +7760,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>Cloth</b> - Cloth <b>x4</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseThread.png" class="mats">
+                  <p><img src="icons/crafting/CoarseThread.png" class="mats floatL">
                     <b>Thread</b> - Thread <b>x2</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7752,15 +7798,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>Cloth</b> - Cloth <b>x4</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseThread.png" class="mats">
+                  <p><img src="icons/crafting/CoarseThread.png" class="mats floatL">
                     <b>Thread</b> - Thread <b>x2</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7790,11 +7836,11 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>Cloth</b> - Cloth <b>x1</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseThread.png" class="mats">
+                  <p><img src="icons/crafting/CoarseThread.png" class="mats floatL">
                     <b>Thread</b> - Thread <b>x1</b>
                     <br><small>Coarse / Linen / Silk</small><br>&nbsp;</p>
                 </div>
@@ -7824,11 +7870,11 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/DeerTeaLeaves.png" class="mats">
+                  <p><img src="icons/crafting/DeerTeaLeaves.png" class="mats floatL">
                     <b>Tea Leaves</b> - Tea Leaves <b>x1</b>
                     <br><small>Deer Leaf Tea Leaves</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Water.png" class="mats">
+                  <p><img src="icons/crafting/Water.png" class="mats floatL">
                     <b>Water</b> - Water <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
                 </div>
@@ -7858,15 +7904,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Handle</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7896,15 +7942,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Handle</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7934,15 +7980,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Handle</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -7972,15 +8018,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Handle</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/ViscousFlux.png" class="mats">
+                  <p><img src="icons/crafting/ViscousFlux.png" class="mats floatL">
                     <b>Flux</b> - (Optional) <b>x1</b>
                     <br><small>without flux you won't get any extra stats</small>
                     <br><small>requires imbued recipe</small></p>
@@ -8010,15 +8056,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PennyBunMushroomOil.png" class="mats">
+                  <p><img src="icons/crafting/PennyBunMushroomOil.png" class="mats floatL">
                     <b>Mushroom Oil</b>
                     <br>- Common Penny Bun Mushroom Oil <b>x1</b><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinseedOil.png" class="mats">
+                  <p><img src="icons/crafting/LinseedOil.png" class="mats floatL">
                     <b>Plant Oil</b> - Plant Oil <b>x1</b>
                     <br><small>Linseed / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Bottle.png" class="mats">
+                  <p><img src="icons/crafting/Bottle.png" class="mats floatL">
                     <b>Bottle</b> - Bottle <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
                 </div>
@@ -8047,15 +8093,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PennyBunMushroomOil.png" class="mats">
+                  <p><img src="icons/crafting/PennyBunMushroomOil.png" class="mats floatL">
                     <b>Mushroom Oil</b>
                     <br>- Spike Cap Mushroom Oil <b>x1</b><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinseedOil.png" class="mats">
+                  <p><img src="icons/crafting/LinseedOil.png" class="mats floatL">
                     <b>Plant Oil</b> - Plant Oil <b>x1</b>
                     <br><small>Linseed / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Bottle.png" class="mats">
+                  <p><img src="icons/crafting/Bottle.png" class="mats floatL">
                     <b>Bottle</b> - Bottle <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
                 </div>
@@ -8084,15 +8130,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PennyBunMushroomOil.png" class="mats">
+                  <p><img src="icons/crafting/PennyBunMushroomOil.png" class="mats floatL">
                     <b>Mushroom Oil</b>
                     <br>- Common Muddle Mushroom Oil <b>x1</b><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinseedOil.png" class="mats">
+                  <p><img src="icons/crafting/LinseedOil.png" class="mats floatL">
                     <b>Plant Oil</b> - Plant Oil <b>x1</b>
                     <br><small>Linseed / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Bottle.png" class="mats">
+                  <p><img src="icons/crafting/Bottle.png" class="mats floatL">
                     <b>Bottle</b> - Bottle <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
                 </div>
@@ -8121,15 +8167,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PennyBunMushroomOil.png" class="mats">
+                  <p><img src="icons/crafting/PennyBunMushroomOil.png" class="mats floatL">
                     <b>Mushroom Oil</b>
                     <br>- Cobalt Wax Mushroom Oil <b>x1</b><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinseedOil.png" class="mats">
+                  <p><img src="icons/crafting/LinseedOil.png" class="mats floatL">
                     <b>Plant Oil</b> - Plant Oil <b>x1</b>
                     <br><small>Linseed / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Bottle.png" class="mats">
+                  <p><img src="icons/crafting/Bottle.png" class="mats floatL">
                     <b>Bottle</b> - Bottle <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
                 </div>
@@ -8158,15 +8204,15 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PennyBunMushroomOil.png" class="mats">
+                  <p><img src="icons/crafting/PennyBunMushroomOil.png" class="mats floatL">
                     <b>Mushroom Oil</b>
                     <br>- Royal Guli Mushroom Oil <b>x1</b><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinseedOil.png" class="mats">
+                  <p><img src="icons/crafting/LinseedOil.png" class="mats floatL">
                     <b>Plant Oil</b> - Plant Oil <b>x1</b>
                     <br><small>Linseed / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Bottle.png" class="mats">
+                  <p><img src="icons/crafting/Bottle.png" class="mats floatL">
                     <b>Bottle</b> - Bottle <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
                 </div>
@@ -8195,7 +8241,7 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/LeanMeat.png" class="mats">
+                  <p><img src="icons/crafting/LeanMeat.png" class="mats floatL">
                     <b>Meat</b> - Meat <b>x1</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
@@ -8225,11 +8271,11 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/LeanMeat.png" class="mats">
+                  <p><img src="icons/crafting/LeanMeat.png" class="mats floatL">
                     <b>Meat</b> - Meat <b>x1</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Smoking Material</b> - Wood <b>x1</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
@@ -8259,11 +8305,11 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Handle</b> - Wood <b>x2</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
@@ -8293,21 +8339,21 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Stake</b> - Wood <b>x1</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>Rag</b> - Cloth <b>x1</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Coal.png" class="mats">
+                  <p><img src="icons/crafting/Coal.png" class="mats floatL">
                     <b>Fuel</b> - Carbon <b>x1</b>
                     <br><small>Coal / ??</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/PineSap.png" class="mats">
+                  <p><img src="icons/crafting/PineSap.png" class="mats floatL">
                     <b>OR</b> - Sap <b>x1</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
-                  <p><img src="icons/crafting/LinseedOil.png" class="mats">
+                  <p><img src="icons/crafting/LinseedOil.png" class="mats floatL">
                     <b>OR</b> - Plant Oil <b>x1</b>
                     <br><small>Linseed / ??</small><br>&nbsp;</p>
                     <div class="line"></div>
@@ -8337,23 +8383,23 @@
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
-                  <p><img src="icons/crafting/CopperIngot.png" class="mats">
+                  <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
                     <b>Metal</b> - Metal <b>x2</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats">
+                  <p><img src="icons/crafting/CoarseLeanLeather.png" class="mats floatL">
                     <b>Leather</b> - Leather <b>x2</b>
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/PineWood.png" class="mats">
+                  <p><img src="icons/crafting/PineWood.png" class="mats floatL">
                     <b>Wood</b> - Wood <b>x1</b>
                     <br><small>Pine / Cedar / Maple / Teak / Yew</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/LinenCloth.png" class="mats">
+                  <p><img src="icons/crafting/LinenCloth.png" class="mats floatL">
                     <b>Cloth</b> - Cloth <b>x1</b>
                     <br><small>Linen / Cotton / Ramie / Jute / Hemp</small><br>&nbsp;</p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Crate.png" class="mats">
+                  <p><img src="icons/crafting/Crate.png" class="mats floatL">
                     <b>Crate</b> - Crate <b>x1</b>
                     <br><small>from merchants</small><br>&nbsp;</p>
                     <div class="line"></div>
