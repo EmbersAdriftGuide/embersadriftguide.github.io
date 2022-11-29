@@ -1,11 +1,11 @@
 body {
   background: rgb(76, 82, 119);
-  min-height: 100vh;
+  height: 100%;
 	box-sizing: border-box;
 	padding-top: 1.5rem;
   min-width: 100vw;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 0 auto;
   color: rgb(125, 127, 165);
 }
 
@@ -14,7 +14,6 @@ body {
   overflow-x: scroll;
   width: 90vw;
   margin: auto;
-  height: 100%;
   z-index: 1;
 }
 
@@ -59,13 +58,13 @@ body {
   top: 6.4rem;
 	width: 95%;
   max-width: 48rem;
-  min-height: 25em;
+  min-height: 28rem;
   z-index: 5;
   display: flex;
   flex-wrap: wrap;
 	display: none;
   margin: auto;
-  padding: 1.5rem, auto;
+  padding: 1.5rem, auto, 5rem, auto;
   background: rgb(30, 30, 41);
 }
 
@@ -394,16 +393,15 @@ a img {
 }
 
 .footer {
-  color: white;
+  margin-top: auto;
   position: fixed;
-  bottom: 0rem;
+  bottom: 0;
 }
 
 .wrapper {
   width: 50rem;
   margin: auto;
-  height: 100%;
-  padding-bottom: 2rem;
+  height: 100vh;
 }
 
 .arrowR, .arrowL {
@@ -438,6 +436,30 @@ a img {
   margin-left: 0.5rem;
   margin-right: 1rem;
   margin-top: 0.4rem;
+}
+
+.accordion, .option  {
+  background-color: rgb(30, 30, 41);
+  color: rgb(181, 183, 221);
+  font-size: 12pt;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accDropdown {
+  padding: 0 18px 0 0;
+  background-color: rgb(30, 30, 41);
+  display: none;
+  overflow: hidden;
+}
+
+.option {
+padding: 9px 18px;
 }
 
 @media screen and (max-width: 600px) {
