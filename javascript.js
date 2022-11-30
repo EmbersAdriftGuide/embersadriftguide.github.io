@@ -1,3 +1,5 @@
+var thing = {}
+
 function checkRadio(name) {
   if (name.match("tabJuggernaut") || name.match("tabKnight") || name.match("tabMarshal")) {
     document.getElementById("tabDefender").checked = true; window.scrollTo(0,0)
@@ -16,46 +18,37 @@ function openOverlay(name) {
 function closeOverlay() {
       overlayList = document.getElementsByClassName("overlay"); 
     for (i = 0; i < overlayList.length; i++) {
-      overlayList[i].style.display = "none";
-    }
-  }
+      overlayList[i].style.display = "none";}
+}
 
 function accordion(name) {
   var doc = document.getElementById(name) 
     if (doc.style.display === "block") {
         doc.style.display = "none";
     } else {
-        doc.style.display = "block";
-    }
-    
+        doc.style.display = "block";}
 }
 
 var recipe = {Name:"", Materials:{}}
 
-function crafting(item, component, value) {
+function crafting(item, component, value) { 
   recipe.Name = item
   recipe.Materials[component] = value
-  var data = JSON.stringify(filterRecipe())
   var doc = document.getElementById(item + "Output")
   document.getElementById(component + item + "Btn").innerHTML = value;
   document.getElementById(component + item).style.display = "none";
-    if (filterRecipe().length > 1){
+    if (filterRecipe(thing).length > 1){
         doc.innerHTML = "<p>Please select materials from the lists above</p>";
-    } else if (filterRecipe().length === 0){
+    } else if (filterRecipe(thing).length === 0){
         doc.innerHTML = "<p>No data available, please select different materials</p>";
     } else {
-//        doc.innerHTML = "<p>" + data + "</p>"; 
-//   }
-    for (const [key, value] of Object.entries(filterRecipe())) {
-      doc.innerHTML = "<p>" + key + " :" + value + "</p>";
-      console.log(key, value);
-    }}
-  console.log(filterRecipe(armorsmith, recipe));
+        doc.innerHTML = " "
+        append(filterRecipe(thing), doc)}
 }
 
-function filterRecipe(profession, recipeParam) {
-  let out = profession[recipeParam.Name]
-  for(let i of Object.entries(recipeParam.Materials)){
+function filterRecipe(item) {
+  let out = item[recipe.Name]
+  for(let i of Object.entries(recipe.Materials)){
     out = out.filter(r => r[i[0]] === i[1])}
   return out
 }
@@ -65,4 +58,10 @@ function loadJSON(file) {
   scriptEle.setAttribute("src", file);
   scriptEle.setAttribute("type", "text/javascript");
   document.body.appendChild(scriptEle);
+}
+
+function append(input, doc) {
+  for (const [key, value] of Object.entries(input[0])) {
+    doc.innerHTML += "<p>" + key + " :" + value + "</p>";
+    console.log(key, value);}
 }
