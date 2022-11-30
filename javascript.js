@@ -54,11 +54,13 @@ function filterRecipe(item) {
 }
 
 function loadJSON(file) {
+  if (!document.getElementById(file)) {
   let scriptEle = document.createElement("script");
   scriptEle.setAttribute("src", file);
   scriptEle.setAttribute("type", "text/javascript");
+  scriptEle.setAttribute("id", file)
   document.body.appendChild(scriptEle);
-}
+}}
 
 function append(input, doc) {
   for (const [key, value] of Object.entries(input[0])) {
