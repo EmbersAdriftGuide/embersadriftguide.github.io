@@ -1,0 +1,4349 @@
+var armorsmith = {
+    "Cuirass": [
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "None",
+            "armorClass": 50,
+            "durability": 78,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous",
+            "armorClass": 55,
+            "durability": 93,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick",
+            "armorClass": 84,
+            "durability": 250,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense",
+            "armorClass": 113,
+            "durability": 484,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "None",
+            "armorClass": 50,
+            "durability": 312,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous",
+            "armorClass": 55,
+            "durability": 375,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick",
+            "armorClass": 84,
+            "durability": 1000,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense",
+            "armorClass": 113,
+            "durability": 1937,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "None",
+            "armorClass": 75,
+            "durability": 937,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous",
+            "resilience": 1,
+            "armorClass": 80,
+            "durability": 1000,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Thick",
+            "resilience": 1,
+            "armorClass": 84,
+            "durability": 1000,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Dense",
+            "resilience": 1,
+            "armorClass": 113,
+            "durability": 1937,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "None",
+            "armorClass": 100,
+            "durability": 1349,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous",
+            "combatMov": 1,
+            "armorClass": 105,
+            "durability": 1394,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick",
+            "combatMov": 1,
+            "armorClass": 109,
+            "durability": 1394,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense",
+            "combatMov": 1,
+            "armorClass": 113,
+            "durability": 1394,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "None",
+            "armorClass": 100,
+            "durability": 1349,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous",
+            "armorClass": 105,
+            "durability": 1619,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick",
+            "armorClass": 109,
+            "durability": 1619,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense",
+            "armorClass": 113,
+            "durability": 1619,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "None",
+            "armorClass": 100,
+            "durability": 337,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous",
+            "armorClass": 105,
+            "durability": 348,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick",
+            "armorClass": 109,
+            "durability": 348,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense",
+            "resilience": 1,
+            "armorClass": 113,
+            "durability": 348,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "None",
+            "armorClass": 100,
+            "durability": 1349,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous",
+            "combatMov": 1,
+            "armorClass": 105,
+            "durability": 1394,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick",
+            "combatMov": 1,
+            "armorClass": 109,
+            "durability": 1394,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense",
+            "resilience": 1,
+            "combatMov": 1,
+            "armorClass": 113,
+            "durability": 1394,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "None",
+            "armorClass": 100,
+            "durability": 1349,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous",
+            "resilience": 1,
+            "armorClass": 105,
+            "durability": 1394,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Thick",
+            "resilience": 1,
+            "armorClass": 109,
+            "durability": 1394,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Dense",
+            "resilience": 1,
+            "armorClass": 113,
+            "durability": 1394,
+            "armorWeight": 23
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "None",
+            "armorClass": 100,
+            "durability": 1349,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous",
+            "combatMov": 1,
+            "armorClass": 105,
+            "durability": 1394,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick",
+            "combatMov": 1,
+            "armorClass": 109,
+            "durability": 1394,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense",
+            "resilience": 1,
+            "combatMov": 1,
+            "armorClass": 113,
+            "durability": 1394,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "None",
+            "armorClass": 100,
+            "durability": 1349,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous",
+            "armorClass": 105,
+            "durability": 1619,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick",
+            "armorClass": 109,
+            "durability": 1619,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense",
+            "resilience": 1,
+            "armorClass": 113,
+            "durability": 1691,
+            "armorWeight": 23
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "None",
+            "armorClass": 75,
+            "durability": 235,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Viscous",
+            "armorClass": 82,
+            "durability": 328,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Thick",
+            "armorClass": 87,
+            "durability": 328,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Dense",
+            "armorClass": 117,
+            "durability": 562,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "None",
+            "armorClass": 75,
+            "durability": 937,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Viscous",
+            "armorClass": 82,
+            "durability": 1312,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Thick",
+            "armorClass": 87,
+            "durability": 1312,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Dense",
+            "armorClass": 117,
+            "durability": 2250,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "None",
+            "armorClass": 75,
+            "durability": 937,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Viscous",
+            "armorClass": 82,
+            "durability": 1312,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Thick",
+            "armorClass": 87,
+            "durability": 1312,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Dense",
+            "armorClass": 117,
+            "durability": 2250,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "None",
+            "armorClass": 100,
+            "durability": 1349,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Viscous",
+            "armorClass": 108,
+            "durability": 1619,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Thick",
+            "armorClass": 113,
+            "durability": 1619,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Dense",
+            "combatMov": 1,
+            "armorClass": 117,
+            "durability": 1619,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "None",
+            "armorClass": 100,
+            "durability": 1349,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Viscous",
+            "armorClass": 108,
+            "durability": 1844,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Thick",
+            "armorClass": 113,
+            "durability": 1844,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Dense",
+            "armorClass": 117,
+            "durability": 1844,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "None",
+            "armorClass": 100,
+            "durability": 337,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Viscous",
+            "armorClass": 108,
+            "durability": 404,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Thick",
+            "armorClass": 113,
+            "durability": 404,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Dense",
+            "combatMov": 1,
+            "armorClass": 118,
+            "durability": 404,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "None",
+            "armorClass": 100,
+            "durability": 1349,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Viscous",
+            "combatMov": 1,
+            "armorClass": 108,
+            "durability": 1619,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Thick",
+            "combatMov": 1,
+            "armorClass": 113,
+            "durability": 1619,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Dense",
+            "combatMov": 1,
+            "armorClass": 118,
+            "durability": 1619,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "None",
+            "armorClass": 100,
+            "durability": 1349,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Viscous",
+            "armorClass": 108,
+            "durability": 1619,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Thick",
+            "armorClass": 113,
+            "durability": 1619,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Dense",
+            "combatMov": 1,
+            "armorClass": 118,
+            "durability": 1619,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "None",
+            "armorClass": 100,
+            "durability": 1349,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Viscous",
+            "combatMov": 1,
+            "armorClass": 108,
+            "durability": 1619,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Thick",
+            "combatMov": 1,
+            "armorClass": 113,
+            "durability": 1619,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Dense",
+            "combatMov": 2,
+            "armorClass": 118,
+            "durability": 1619,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "None",
+            "armorClass": 100,
+            "durability": 1349,
+            "armorWeight": 25
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Viscous",
+            "armorClass": 108,
+            "durability": 1844,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Thick",
+            "armorClass": 113,
+            "durability": 1844,
+            "armorWeight": 24
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Dense",
+            "combatMov": 1,
+            "armorClass": 118,
+            "durability": 1844,
+            "armorWeight": 24
+        }
+    ],
+    "Faulds": [
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "None",
+            "armorClass": 40,
+            "durability": 78,
+            "armorWeight": 20
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous",
+            "armorClass": 44,
+            "durability": 93,
+            "armorWeight": 19
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick",
+            "armorClass": 67,
+            "durability": 250,
+            "armorWeight": 19
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense",
+            "armorClass": 90,
+            "durability": 484,
+            "armorWeight": 19
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "None",
+            "armorClass": 40,
+            "durability": 312,
+            "armorWeight": 20
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous",
+            "armorClass": 44,
+            "durability": 375,
+            "armorWeight": 19
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick",
+            "armorClass": 67,
+            "durability": 1000,
+            "armorWeight": 19
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense",
+            "armorClass": 90,
+            "durability": 1937,
+            "armorWeight": 19
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "None",
+            "armorClass": 60,
+            "durability": 937,
+            "armorWeight": 20
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous",
+            "resilience": 1,
+            "armorClass": 64,
+            "durability": 1000,
+            "armorWeight": 19
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Thick",
+            "resilience": 1,
+            "armorClass": 67,
+            "durability": 1000,
+            "armorWeight": 19
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Dense",
+            "resilience": 1,
+            "armorClass": 90,
+            "durability": 1937,
+            "armorWeight": 19
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "None",
+            "armorClass": 80,
+            "durability": 1349,
+            "armorWeight": 20
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous",
+            "combatMov": 1,
+            "armorClass": 84,
+            "durability": 1394,
+            "armorWeight": 19
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        }
+    ],
+    "Greaves": [
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        }
+    ],
+    "Helm": [
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        }
+    ],
+    "Pauldron": [
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        }
+    ],
+    "Vambrace": [
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        }
+    ],
+    "Buckler": [
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        }
+    ],
+    "Kite Shield": [
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        }
+    ],
+    "Heater Shield": [
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "flux": "Dense"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "None"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Viscous"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Thick"
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "flux": "Dense"
+        }
+    ],
+    "Chain Hauberk": [],
+    "Armor Bracing": [
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "combatMov": 1
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "combatMov": 1
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "combatMov": 1
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "combatMov": 1
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "combatMov": 1
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "combatMov": 3
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "combatMov": 1
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "combatMov": 2
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "combatMov": 3
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "combatMov": 3
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "chemicalDebuffResists": 2
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "chemicalDebuffResists": 1
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "chemicalDebuffResists": 2
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "chemicalDebuffResists": 2
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "chemicalDebuffResists": 2
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "chemicalDebuffResists": 3
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "chemicalDebuffResists": 1
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "chemicalDebuffResists": 2
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "chemicalDebuffResists": 3
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "chemicalDebuffResists": 3
+        }
+    ],
+    "Armor Flap": [
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Worn Strapping",
+            "combatMov": 1
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Coarse Lean",
+            "combatMov": 1
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Rough Light",
+            "combatMov": 1
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Lean",
+            "combatMov": 1
+        },
+        {
+            "metal": "Newhaven Copper",
+            "leather": "Fair Dense",
+            "combatMov": 1
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Worn Strapping",
+            "combatMov": 3
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Coarse Lean",
+            "combatMov": 1
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Rough Light",
+            "combatMov": 2
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Lean",
+            "combatMov": 3
+        },
+        {
+            "metal": "Highlands Copper",
+            "leather": "Fair Dense",
+            "combatMov": 3
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Worn Strapping",
+            "chemicalDebuffResists": 6
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Coarse Lean",
+            "chemicalDebuffResists": 3
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Rough Light",
+            "chemicalDebuffResists": 6
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Lean",
+            "chemicalDebuffResists": 6
+        },
+        {
+            "metal": "Flatlands Tin",
+            "leather": "Fair Dense",
+            "chemicalDebuffResists": 6
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Worn Strapping",
+            "chemicalDebuffResists": 9
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Coarse Lean",
+            "chemicalDebuffResists": 3
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Rough Light",
+            "chemicalDebuffResists": 6
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Lean",
+            "chemicalDebuffResists": 9
+        },
+        {
+            "metal": "Highlands Zink",
+            "leather": "Fair Dense",
+            "chemicalDebuffResists": 9
+        }
+    ],
+    "Armor Padding": [
+        {
+            "leather": "Coarse Lean",
+            "thread": "Coarse",
+            "physicalDebuffResists": 3
+        },
+        {
+            "leather": "Coarse Lean",
+            "thread": "Timberland Linen",
+            "physicalDebuffResists": 3
+        },
+        {
+            "leather": "Coarse Lean",
+            "thread": "Prairie Cotton"
+        },
+        {
+            "leather": "Coarse Lean",
+            "thread": "Spider Silk"
+        },
+        {
+            "leather": "Coarse Lean",
+            "thread": "Mandrake"
+        },
+        {
+            "leather": "Coarse Lean",
+            "thread": "Highlands Linen"
+        },
+        {
+            "leather": "Coarse Lean",
+            "thread": "Ramie"
+        },
+        {
+            "leather": "Rough Light",
+            "thread": "Coarse",
+            "stunResists": 3,
+            "dazeResists": 3
+        },
+        {
+            "leather": "Rough Light",
+            "thread": "Timberland Linen",
+            "stunResists": 2,
+            "dazeResists": 2
+        },
+        {
+            "leather": "Rough Light",
+            "thread": "Prairie Cotton"
+        },
+        {
+            "leather": "Rough Light",
+            "thread": "Spider Silk"
+        },
+        {
+            "leather": "Rough Light",
+            "thread": "Mandrake"
+        },
+        {
+            "leather": "Rough Light",
+            "thread": "Highlands Linen"
+        },
+        {
+            "leather": "Rough Light",
+            "thread": "Ramie"
+        },
+        {
+            "leather": "Fair Lean",
+            "thread": "Coarse",
+            "physicalDebuffResists": 6
+        },
+        {
+            "leather": "Fair Lean",
+            "thread": "Timberland Linen",
+            "physicalDebuffResists": 3
+        },
+        {
+            "leather": "Fair Lean",
+            "thread": "Prairie Cotton"
+        },
+        {
+            "leather": "Fair Lean",
+            "thread": "Spider Silk"
+        },
+        {
+            "leather": "Fair Lean",
+            "thread": "Mandrake"
+        },
+        {
+            "leather": "Fair Lean",
+            "thread": "Highlands Linen"
+        },
+        {
+            "leather": "Fair Lean",
+            "thread": "Ramie"
+        },
+        {
+            "leather": "Fair Dense",
+            "thread": "Coarse",
+            "resilience": 2
+        },
+        {
+            "leather": "Fair Dense",
+            "thread": "Timberland Linen",
+            "resilience": 1
+        },
+        {
+            "leather": "Fair Dense",
+            "thread": "Prairie Cotton"
+        },
+        {
+            "leather": "Fair Dense",
+            "thread": "Spider Silk"
+        },
+        {
+            "leather": "Fair Dense",
+            "thread": "Mandrake"
+        },
+        {
+            "leather": "Fair Dense",
+            "thread": "Highlands Linen"
+        },
+        {
+            "leather": "Fair Dense",
+            "thread": "Ramie"
+        }
+    ],
+    "Armor Straps": [
+        {
+            "leather": "Coarse Lean",
+            "metal": "Newhaven Copper",
+            "movementDebuffResists": 3
+        },
+        {
+            "leather": "Coarse Lean",
+            "metal": "Highlands Copper",
+            "movementDebuffResists": 3
+        },
+        {
+            "leather": "Coarse Lean",
+            "metal": "Flatlands Tin",
+            "movementDebuffResists": 3
+        },
+        {
+            "leather": "Coarse Lean",
+            "metal": "Highlands Zink",
+            "movementDebuffResists": 3
+        },
+        {
+            "leather": "Rough Light",
+            "metal": "Newhaven Copper",
+            "combatMovement": 1
+        },
+        {
+            "leather": "Rough Light",
+            "metal": "Highlands Copper",
+            "combatMovement": 2,
+            "avoid": 1
+        },
+        {
+            "leather": "Rough Light",
+            "metal": "Flatlands Tin",
+            "combatMovement": 2,
+            "avoid": 1
+        },
+        {
+            "leather": "Rough Light",
+            "metal": "Highlands Zink",
+            "combatMovement": 2,
+            "avoid": 1
+        },
+        {
+            "leather": "Fair Lean",
+            "metal": "Newhaven Copper",
+            "movementDebuffResists": 3
+        },
+        {
+            "leather": "Fair Lean",
+            "metal": "Highlands Copper",
+            "movementDebuffResists": 5
+        },
+        {
+            "leather": "Fair Lean",
+            "metal": "Flatlands Tin",
+            "movementDebuffResists": 4
+        },
+        {
+            "leather": "Fair Lean",
+            "metal": "Highlands Zink",
+            "movementDebuffResists": 5
+        },
+        {
+            "leather": "Fair Dense",
+            "metal": "Newhaven Copper",
+            "physicalDebuffResists": 1
+        },
+        {
+            "leather": "Fair Dense",
+            "metal": "Highlands Copper",
+            "physicalDebuffResists": 3
+        },
+        {
+            "leather": "Fair Dense",
+            "metal": "Flatlands Tin",
+            "physicalDebuffResists": 2
+        },
+        {
+            "leather": "Fair Dense",
+            "metal": "Highlands Zink",
+            "physicalDebuffResists": 3
+        }
+    ]
+}
