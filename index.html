@@ -22,9 +22,9 @@
             <div class="banner">
             <img src="icons/Banner.png" class="homePic">
             <div class="logo"><img src="icons/Embers-Adrift-Brand-White-Colour.png"></div><div class="guide">GUIDE</div></div>
-            <hr><h2>Class Roles<span class="midtone"> - Work in Progress :)</span></h2>
-            Click on the text for expanding spec information<br>
-            (yeah it needs more formatting work, but i'm too tired)<hr>
+            <h4>Crafting simulation code works! Woohoo!<br>- currently looks fugly, most of armorsmith done, bear with me :)</h4><br>
+            <hr><h2>Class Roles<span class="midtone"> - Work in Progress</span></h2>
+            Click on the text below for expanding spec information<hr>
               <div class="accWrapper"> <!-- Defender -->
                 <p><a onclick="openOverlay('DefInfo')"  type="button"><img class="spec floatL scale" src="icons/class/defender.png" alt="Defender"></a><button onclick="accordion('accDefender')" class="accButton"  type="button">
                   <p><b>Defender</b> - <small>Defenders are Skilled warriors, that fight in heavy armor. They are trained to face their enemies head-on and draw attacks towards themselves</small><span class="blank"><br>&nbsp;<br>&nbsp;<br>&nbsp;</span></button></p></p>
@@ -91,7 +91,7 @@
                 <a onclick="checkRadio('tabWoodsman')"><img class="spec" src="icons/tree.png" alt="Bushcraft"></a>
                 <p class="iTxt"><b>Bushcraft</b></p></div>
                 <div class="blank"><a><img src="icons/blank.png"></a></div>
-            <h4 class="midtone">report mistakes to tallbird#9579 on discord, <br>thank you to Huggles & Karacus for their help<br>&nbsp;</h4>
+            <h4 class="midtone">report mistakes to tallbird#9579 on discord<br>&nbsp;</h4>
           </div>
         </div>
 
@@ -891,6 +891,8 @@
                   <p>Optional Reagent: Pheromones</p>
                   <div class="line"></div>
                   <p><span class="cyan">Distracting strike that enrages your target forcing them to attack you</p>
+                  <div class="line"></div>
+                  <p>personal note - this skill has  <b><span class= "red">NO THREAT MULTIPLIER</b></span>, it is not a threat button, it is an 'oh shit' button. Stop using it in your threat rotation, definitely don't use it as your opener!! Save it for emergencies. If you are having threat problems try changing this behaviour first.</p>
                 </div>
               </div>
               <input type="radio" name="EnragingStrikeTabs" id="tabEnragingStrikeL30">
@@ -911,6 +913,8 @@
                   <p>Optional Reagent: Pheromones</p>
                   <div class="line"></div>
                   <p><span class="cyan">Distracting strike that enrages your target forcing them to attack you</p>
+                  <div class="line"></div>
+                  <p>personal note - this skill has  <b><span class= "red">NO THREAT MULTIPLIER</b></span>, it is not a threat button, it is an 'oh shit' button. Stop using it in your threat rotation, definitely don't use it as your opener!! Save it for emergencies. If you are having threat problems try changing this behaviour first.</p>
                 </div>
               </div>
               <input type="radio" name="EnragingStrikeTabs" id="tabEnragingStrikeSkills">
@@ -5193,7 +5197,7 @@
               <label for="tabArmorsmith"><img class="spec" src="icons/crafting/Armorsmith.png" alt="Armorsmith"></label>
               <div class="tab">
                 <p>&nbsp;</p>
-                <h1>Armorsmith<span class="midtone ea"> - <small>only materials req. done</small></span></h1>
+                <h1>Armorsmith<span class="midtone ea"> - <small>most crafting simulators now working!</small></span></h1>
                 <h2 class="subHeader"><span class="midtone"><small>Suggested - <img src="icons/mountain.png" class="nudgeMore"> Prospector + <img src="icons/rabbit.png" class="nudgeMore"> Hunter</small></span></h2>
                 <div class="flexBox">
                   <div class="icon">
@@ -5212,9 +5216,9 @@
                     <p class="iTxt"><b>Hauberk</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('MetalBuckler')"><img src="icons/crafting/Buckler.png"  alt="MetalBuckler"></a>
+                    <a onclick="openOverlay('Buckler')"><img src="icons/crafting/Buckler.png"  alt="Buckler"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
-                    <p class="iTxt"><b>Metal<br>Buckler</b></p>
+                    <p class="iTxt"><b>Buckler</b></p>
                   </div>
                   <div class="icon">
                     <a onclick="openOverlay('HeaterShield')"><img src="icons/crafting/HeaterShield.png"  alt="HeaterShield"></a>
@@ -5415,14 +5419,32 @@
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                 </div>
               </div>
-              <input type="radio" name="ArmorBracingTabs" id="tabBaseArmorBracing">
+              <input type="radio" name="ArmorBracingTabs" id="tabBaseArmorBracing" onclick="loadJSON('json/ArmorBracing.js')">
               <label for="tabBaseArmorBracing"><img src="icons/crafting.png" alt="Base" class="tabIcon spec"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Crafting</h2>
-                <div class="content">
-                  <h3>+1 Combat Movement</h3>
-                  <p><span class="cyan">Armor augment for Vambraces and Pauldrons</span></p>
+                <h2 class="dark">&nbsp;Crafting - testing! WIP</h2>
+                <h4>Metal</h4>
+                <button class="accordion" onclick="accordion('metalArmorBracing')" id="metalArmorBracingBtn">Choose Leather +</button>
+                <div id="metalArmorBracing" class="accDropdown">
+                  <div class="option" onclick="crafting('ArmorBracing', 'metal', 'Highlands Copper')">Highlands Copper</div>
+                  <div class="option" onclick="crafting('ArmorBracing', 'metal', 'Newhaven Copper')">Newhaven Copper</div>
+                  <div class="option" onclick="crafting('ArmorBracing', 'metal', 'Flatlands Tin')">Flatlands Tin</div>
+                  <div class="option" onclick="crafting('ArmorBracing', 'metal', 'Highlands Zink')">Highlands Zink</div>
                 </div>
+                <br>&nbsp;
+                <h4>Strapping</h4>
+                <button class="accordion" onclick="accordion('strappingArmorBracing')" id="strappingArmorBracingBtn">Choose Leather +</button>
+                <div id="strappingArmorBracing" class="accDropdown">
+                  <div class="option" onclick="crafting('ArmorBracing', 'strapping', 'Worn Strapping')">Worn Strapping</div>
+                  <div class="option" onclick="crafting('ArmorBracing', 'strapping', 'Coarse Lean')">Coarse Lean</div>
+                  <div class="option" onclick="crafting('ArmorBracing', 'strapping', 'Rough Light')">Rough Light</div>
+                  <div class="option" onclick="crafting('ArmorBracing', 'strapping', 'Fair Lean')">Fair Lean</div>
+                  <div class="option" onclick="crafting('ArmorBracing', 'strapping', 'Fair Dense')">Fair Dense</div>
+                </div>
+                <br>&nbsp;
+                <div id="ArmorBracingOutput"><p>Please select materials from the lists above</p></div>
+                <div class="line"></div>
+                <p><span class="cyan">Armor augment for Vambraces and Pauldrons</span></p>
               </div>
             </div>
           </div>
@@ -5452,14 +5474,32 @@
                     <br><small>Lean / Light / Dense / Robust / Thick</small><br>&nbsp;</p>
                 </div>
               </div>
-              <input type="radio" name="ArmorFlapTabs" id="tabBaseArmorFlap">
+              <input type="radio" name="ArmorFlapTabs" id="tabBaseArmorFlap" onclick="loadJSON('json/ArmorFlap.js')">
               <label for="tabBaseArmorFlap"><img src="icons/crafting.png" alt="Base" class="tabIcon spec"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Crafting</h2>
-                <div class="content">
-                  <h3>+1 Combat Movement</h3>
-                  <p><span class="cyan">Armor augment for Faulds</span></p>
+                <h2 class="dark">&nbsp;Crafting - testing! WIP</h2>
+                <h4>Metal</h4>
+                <button class="accordion" onclick="accordion('metalArmorFlap')" id="metalArmorFlapBtn">Choose Metal +</button>
+                <div id="metalArmorFlap" class="accDropdown">
+                  <div class="option" onclick="crafting('ArmorFlap', 'metal', 'Highlands Copper')">Highlands Copper</div>
+                  <div class="option" onclick="crafting('ArmorFlap', 'metal', 'Newhaven Copper')">Newhaven Copper</div>
+                  <div class="option" onclick="crafting('ArmorFlap', 'metal', 'Flatlands Tin')">Flatlands Tin</div>
+                  <div class="option" onclick="crafting('ArmorFlap', 'metal', 'Highlands Zink')">Highlands Zink</div>
                 </div>
+                <br>&nbsp;
+                <h4>Strapping</h4>
+                <button class="accordion" onclick="accordion('strappingArmorFlap')" id="strappingArmorFlapBtn">Choose Leather +</button>
+                <div id="strappingArmorFlap" class="accDropdown">
+                  <div class="option" onclick="crafting('ArmorFlap', 'strapping', 'Worn Strapping')">Worn Strapping</div>
+                  <div class="option" onclick="crafting('ArmorFlap', 'strapping', 'Coarse Lean')">Coarse Lean</div>
+                  <div class="option" onclick="crafting('ArmorFlap', 'strapping', 'Rough Light')">Rough Light</div>
+                  <div class="option" onclick="crafting('ArmorFlap', 'strapping', 'Fair Lean')">Fair Lean</div>
+                  <div class="option" onclick="crafting('ArmorFlap', 'strapping', 'Fair Dense')">Fair Dense</div>
+                </div>
+                <br>&nbsp;
+                <div id="ArmorFlapOutput"><p>Please select materials from the lists above</p></div>
+                <div class="line"></div>
+                <p><span class="cyan">Armor augment for Faulds</span></p>
               </div>
             </div>
           </div>
@@ -5506,15 +5546,15 @@
           </div>
         </div>
 
-        <div id="MetalBuckler" class="overlay"> <!-- Armorsmith -->
+        <div id="Buckler" class="overlay"> <!-- Armorsmith -->
           <a class="cancel" onclick="closeOverlay()"></a>
           <div class="popup">
             <div class="rectangle" onclick="closeOverlay()"><span class="close">&times;</span></div>
             <div class="skilltabs">
-              <input type="radio" name="MetalBucklerTabs" id="tabMetalBuckler" checked="checked">
-              <label for="tabMetalBuckler"><img src="icons/crafting/Buckler.png" alt="MetalBuckler" class="tabIcon"></label>
+              <input type="radio" name="BucklerTabs" id="tabBuckler" checked="checked">
+              <label for="tabBuckler"><img src="icons/crafting/Buckler.png" alt="Buckler" class="tabIcon"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Metal Buckler</h2>
+                <h2 class="dark">&nbsp;Buckler</h2>
                 <div class="content">
                   <h3>Materials required;</h3>
                   <div class="line"></div>
@@ -5535,13 +5575,42 @@
                     <br><small>requires imbued recipe</small></p>
                 </div>
               </div>
-              <input type="radio" name="MetalBucklerTabs" id="tabBaseMetalBuckler">
-              <label for="tabBaseMetalBuckler"><img src="icons/crafting.png" alt="Base" class="tabIcon spec"></label>
+              <input type="radio" name="BucklerTabs" id="tabBaseBuckler" onclick="loadJSON('json/Buckler.js')">
+              <label for="tabBaseBuckler"><img src="icons/crafting.png" alt="Base" class="tabIcon spec"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Crafting</h2>
-                <div class="content">
-                  <h3>Coming Soonish</h3>
+                <h2 class="dark">&nbsp;Crafting - testing! WIP</h2>
+                <h4>Body</h4>
+                <button class="accordion" onclick="accordion('bodyBuckler')" id="bodyBucklerBtn">Choose Metal +</button>
+                <div id="bodyBuckler" class="accDropdown">
+                  <div class="option" onclick="crafting('Buckler', 'body', 'Highlands Copper')">Highlands Copper</div>
+                  <div class="option" onclick="crafting('Buckler', 'body', 'Newhaven Copper')">Newhaven Copper</div>
+                  <div class="option" onclick="crafting('Buckler', 'body', 'Flatlands Tin')">Flatlands Tin</div>
+                  <div class="option" onclick="crafting('Buckler', 'body', 'Highlands Zink')">Highlands Zink</div>
                 </div>
+                <br>&nbsp;
+                <h4>Strapping</h4>
+                <button class="accordion" onclick="accordion('strappingBuckler')" id="strappingBucklerBtn">Choose Leather +</button>
+                <div id="strappingBuckler" class="accDropdown">
+                  <div class="option" onclick="crafting('Buckler', 'strapping', 'Worn Strapping')">Worn Strapping</div>
+                  <div class="option" onclick="crafting('Buckler', 'strapping', 'Coarse Lean')">Coarse Lean</div>
+                  <div class="option" onclick="crafting('Buckler', 'strapping', 'Rough Light')">Rough Light</div>
+                  <div class="option" onclick="crafting('Buckler', 'strapping', 'Fair Lean')">Fair Lean</div>
+                  <div class="option" onclick="crafting('Buckler', 'strapping', 'Fair Dense')">Fair Dense</div>
+                </div>
+                <br>&nbsp;
+                <h4>Flux</h4>
+                <button class="accordion" onclick="accordion('fluxBuckler')" id="fluxBucklerBtn">Choose Flux +</button>
+                <div id="fluxBuckler" class="accDropdown">
+                  <div class="option" onclick="crafting('Buckler', 'flux', 'None')">None</div>
+                  <div class="option" onclick="crafting('Buckler', 'flux', 'Viscous')">Viscous Ember Flux</div>
+                  <div class="option" onclick="crafting('Buckler', 'flux', 'Thick')">Thick Ember Flux</div>
+                  <div class="option" onclick="crafting('Buckler', 'flux', 'Dense')">Dense Ember Flux</div>
+                </div>
+                <br>&nbsp;
+                <div id="BucklerOutput"><p>Currently don't have crafting data for this recipe, sorry!</p></div>
+                <div class="line"></div>
+                <p><span class="cyan">Please note: better materials will give higher durability<br>
+                Durability also increases with profession level</span></p>
               </div>
             </div>
           </div>
@@ -5576,13 +5645,42 @@
                     <br><small>requires imbued recipe</small></p>
                 </div>
               </div>
-              <input type="radio" name="HeaterShieldTabs" id="tabBaseHeaterShield">
+              <input type="radio" name="HeaterShieldTabs" id="tabBaseHeaterShield" onclick="loadJSON('json/HeaterShield.js')">
               <label for="tabBaseHeaterShield"><img src="icons/crafting.png" alt="Base" class="tabIcon spec"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Crafting</h2>
-                <div class="content">
-                  <h3>Coming Soonish</h3>
+                <h2 class="dark">&nbsp;Crafting - testing! WIP</h2>
+                <h4>Body</h4>
+                <button class="accordion" onclick="accordion('bodyHeaterShield')" id="bodyHeaterShieldBtn">Choose Metal +</button>
+                <div id="bodyHeaterShield" class="accDropdown">
+                  <div class="option" onclick="crafting('HeaterShield', 'body', 'Highlands Copper')">Highlands Copper</div>
+                  <div class="option" onclick="crafting('HeaterShield', 'body', 'Newhaven Copper')">Newhaven Copper</div>
+                  <div class="option" onclick="crafting('HeaterShield', 'body', 'Flatlands Tin')">Flatlands Tin</div>
+                  <div class="option" onclick="crafting('HeaterShield', 'body', 'Highlands Zink')">Highlands Zink</div>
                 </div>
+                <br>&nbsp;
+                <h4>Strapping</h4>
+                <button class="accordion" onclick="accordion('strappingHeaterShield')" id="strappingHeaterShieldBtn">Choose Leather +</button>
+                <div id="strappingHeaterShield" class="accDropdown">
+                  <div class="option" onclick="crafting('HeaterShield', 'strapping', 'Worn Strapping')">Worn Strapping</div>
+                  <div class="option" onclick="crafting('HeaterShield', 'strapping', 'Coarse Lean')">Coarse Lean</div>
+                  <div class="option" onclick="crafting('HeaterShield', 'strapping', 'Rough Light')">Rough Light</div>
+                  <div class="option" onclick="crafting('HeaterShield', 'strapping', 'Fair Lean')">Fair Lean</div>
+                  <div class="option" onclick="crafting('HeaterShield', 'strapping', 'Fair Dense')">Fair Dense</div>
+                </div>
+                <br>&nbsp;
+                <h4>Flux</h4>
+                <button class="accordion" onclick="accordion('fluxHeaterShield')" id="fluxHeaterShieldBtn">Choose Flux +</button>
+                <div id="fluxHeaterShield" class="accDropdown">
+                  <div class="option" onclick="crafting('HeaterShield', 'flux', 'None')">None</div>
+                  <div class="option" onclick="crafting('HeaterShield', 'flux', 'Viscous')">Viscous Ember Flux</div>
+                  <div class="option" onclick="crafting('HeaterShield', 'flux', 'Thick')">Thick Ember Flux</div>
+                  <div class="option" onclick="crafting('HeaterShield', 'flux', 'Dense')">Dense Ember Flux</div>
+                </div>
+                <br>&nbsp;
+                <div id="HeaterShieldOutput"><p>Currently don't have crafting data for this recipe, sorry!</p></div>
+                <div class="line"></div>
+                <p><span class="cyan">Please note: better materials will give higher durability<br>
+                Durability also increases with profession level</span></p>
               </div>
             </div>
           </div>
@@ -5617,13 +5715,42 @@
                     <br><small>requires imbued recipe</small></p>
                 </div>
               </div>
-              <input type="radio" name="PauldronsTabs" id="tabBasePauldrons">
+              <input type="radio" name="PauldronsTabs" id="tabBasePauldrons" onclick="loadJSON('json/Pauldrons.js')">
               <label for="tabBasePauldrons"><img src="icons/crafting.png" alt="Base" class="tabIcon spec"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Crafting</h2>
-                <div class="content">
-                  <h3>Coming Soonish</h3>
+                <h2 class="dark">&nbsp;Crafting - testing! WIP</h2>
+                <h4>Metal</h4>
+                <button class="accordion" onclick="accordion('metalPauldrons')" id="metalPauldronsBtn">Choose Metal +</button>
+                <div id="metalPauldrons" class="accDropdown">
+                  <div class="option" onclick="crafting('Pauldrons', 'metal', 'Highlands Copper')">Highlands Copper</div>
+                  <div class="option" onclick="crafting('Pauldrons', 'metal', 'Newhaven Copper')">Newhaven Copper</div>
+                  <div class="option" onclick="crafting('Pauldrons', 'metal', 'Flatlands Tin')">Flatlands Tin</div>
+                  <div class="option" onclick="crafting('Pauldrons', 'metal', 'Highlands Zink')">Highlands Zink</div>
                 </div>
+                <br>&nbsp;
+                <h4>Strapping</h4>
+                <button class="accordion" onclick="accordion('strappingPauldrons')" id="strappingPauldronsBtn">Choose Leather +</button>
+                <div id="strappingPauldrons" class="accDropdown">
+                  <div class="option" onclick="crafting('Pauldrons', 'strapping', 'Worn Strapping')">Worn Strapping</div>
+                  <div class="option" onclick="crafting('Pauldrons', 'strapping', 'Coarse Lean')">Coarse Lean</div>
+                  <div class="option" onclick="crafting('Pauldrons', 'strapping', 'Rough Light')">Rough Light</div>
+                  <div class="option" onclick="crafting('Pauldrons', 'strapping', 'Fair Lean')">Fair Lean</div>
+                  <div class="option" onclick="crafting('Pauldrons', 'strapping', 'Fair Dense')">Fair Dense</div>
+                </div>
+                <br>&nbsp;
+                <h4>Flux</h4>
+                <button class="accordion" onclick="accordion('fluxPauldrons')" id="fluxPauldronsBtn">Choose Flux +</button>
+                <div id="fluxPauldrons" class="accDropdown">
+                  <div class="option" onclick="crafting('Pauldrons', 'flux', 'None')">None</div>
+                  <div class="option" onclick="crafting('Pauldrons', 'flux', 'Viscous')">Viscous Ember Flux</div>
+                  <div class="option" onclick="crafting('Pauldrons', 'flux', 'Thick')">Thick Ember Flux</div>
+                  <div class="option" onclick="crafting('Pauldrons', 'flux', 'Dense')">Dense Ember Flux</div>
+                </div>
+                <br>&nbsp;
+                <div id="PauldronsOutput"><p>Please select materials from the lists above</p></div>
+                <div class="line"></div>
+                <p><span class="cyan">Please note: better materials will give higher durability<br>
+                Durability also increases with profession level</span></p>
               </div>
             </div>
           </div>
@@ -5691,6 +5818,9 @@
                 </div>
                 <br>&nbsp;
                 <div id="CuirassOutput"><p>Please select materials from the lists above</p></div>
+                <div class="line"></div>
+                <p><span class="cyan">Please note: better materials will give higher durability<br>
+                Durability also increases with profession level</span></p>
               </div>
             </div>
           </div>
@@ -5725,13 +5855,42 @@
                     <br><small>requires imbued recipe</small></p>
                 </div>
               </div>
-              <input type="radio" name="GreavesTabs" id="tabBaseGreaves">
+              <input type="radio" name="GreavesTabs" id="tabBaseGreaves" onclick="loadJSON('json/Greaves.js')">
               <label for="tabBaseGreaves"><img src="icons/crafting.png" alt="Base" class="tabIcon spec"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Crafting</h2>
-                <div class="content">
-                  <h3>Coming Soonish</h3>
+                <h2 class="dark">&nbsp;Crafting - testing! WIP</h2>
+                <h4>Metal</h4>
+                <button class="accordion" onclick="accordion('metalGreaves')" id="metalGreavesBtn">Choose Metal +</button>
+                <div id="metalGreaves" class="accDropdown">
+                  <div class="option" onclick="crafting('Greaves', 'metal', 'Highlands Copper')">Highlands Copper</div>
+                  <div class="option" onclick="crafting('Greaves', 'metal', 'Newhaven Copper')">Newhaven Copper</div>
+                  <div class="option" onclick="crafting('Greaves', 'metal', 'Flatlands Tin')">Flatlands Tin</div>
+                  <div class="option" onclick="crafting('Greaves', 'metal', 'Highlands Zink')">Highlands Zink</div>
                 </div>
+                <br>&nbsp;
+                <h4>Strapping</h4>
+                <button class="accordion" onclick="accordion('strappingGreaves')" id="strappingGreavesBtn">Choose Leather +</button>
+                <div id="strappingGreaves" class="accDropdown">
+                  <div class="option" onclick="crafting('Greaves', 'strapping', 'Worn Strapping')">Worn Strapping</div>
+                  <div class="option" onclick="crafting('Greaves', 'strapping', 'Coarse Lean')">Coarse Lean</div>
+                  <div class="option" onclick="crafting('Greaves', 'strapping', 'Rough Light')">Rough Light</div>
+                  <div class="option" onclick="crafting('Greaves', 'strapping', 'Fair Lean')">Fair Lean</div>
+                  <div class="option" onclick="crafting('Greaves', 'strapping', 'Fair Dense')">Fair Dense</div>
+                </div>
+                <br>&nbsp;
+                <h4>Flux</h4>
+                <button class="accordion" onclick="accordion('fluxGreaves')" id="fluxGreavesBtn">Choose Flux +</button>
+                <div id="fluxGreaves" class="accDropdown">
+                  <div class="option" onclick="crafting('Greaves', 'flux', 'None')">None</div>
+                  <div class="option" onclick="crafting('Greaves', 'flux', 'Viscous')">Viscous Ember Flux</div>
+                  <div class="option" onclick="crafting('Greaves', 'flux', 'Thick')">Thick Ember Flux</div>
+                  <div class="option" onclick="crafting('Greaves', 'flux', 'Dense')">Dense Ember Flux</div>
+                </div>
+                <br>&nbsp;
+                <div id="GreavesOutput"><p>Please select materials from the lists above</p></div>
+                <div class="line"></div>
+                <p><span class="cyan">Please note: better materials will give higher durability<br>
+                Durability also increases with profession level</span></p>
               </div>
             </div>
           </div>
@@ -5766,13 +5925,42 @@
                     <br><small>requires imbued recipe</small></p>
                 </div>
               </div>
-              <input type="radio" name="VambraceTabs" id="tabBaseVambrace">
+              <input type="radio" name="VambraceTabs" id="tabBaseVambrace" onclick="loadJSON('json/Vambrace.js')">
               <label for="tabBaseVambrace"><img src="icons/crafting.png" alt="Base" class="tabIcon spec"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Crafting</h2>
-                <div class="content">
-                  <h3>Coming Soonish</h3>
+                <h2 class="dark">&nbsp;Crafting - testing! WIP</h2>
+                <h4>Metal</h4>
+                <button class="accordion" onclick="accordion('metalVambrace')" id="metalVambraceBtn">Choose Metal +</button>
+                <div id="metalVambrace" class="accDropdown">
+                  <div class="option" onclick="crafting('Vambrace', 'metal', 'Highlands Copper')">Highlands Copper</div>
+                  <div class="option" onclick="crafting('Vambrace', 'metal', 'Newhaven Copper')">Newhaven Copper</div>
+                  <div class="option" onclick="crafting('Vambrace', 'metal', 'Flatlands Tin')">Flatlands Tin</div>
+                  <div class="option" onclick="crafting('Vambrace', 'metal', 'Highlands Zink')">Highlands Zink</div>
                 </div>
+                <br>&nbsp;
+                <h4>Strapping</h4>
+                <button class="accordion" onclick="accordion('strappingVambrace')" id="strappingVambraceBtn">Choose Leather +</button>
+                <div id="strappingVambrace" class="accDropdown">
+                  <div class="option" onclick="crafting('Vambrace', 'strapping', 'Worn Strapping')">Worn Strapping</div>
+                  <div class="option" onclick="crafting('Vambrace', 'strapping', 'Coarse Lean')">Coarse Lean</div>
+                  <div class="option" onclick="crafting('Vambrace', 'strapping', 'Rough Light')">Rough Light</div>
+                  <div class="option" onclick="crafting('Vambrace', 'strapping', 'Fair Lean')">Fair Lean</div>
+                  <div class="option" onclick="crafting('Vambrace', 'strapping', 'Fair Dense')">Fair Dense</div>
+                </div>
+                <br>&nbsp;
+                <h4>Flux</h4>
+                <button class="accordion" onclick="accordion('fluxVambrace')" id="fluxVambraceBtn">Choose Flux +</button>
+                <div id="fluxVambrace" class="accDropdown">
+                  <div class="option" onclick="crafting('Vambrace', 'flux', 'None')">None</div>
+                  <div class="option" onclick="crafting('Vambrace', 'flux', 'Viscous')">Viscous Ember Flux</div>
+                  <div class="option" onclick="crafting('Vambrace', 'flux', 'Thick')">Thick Ember Flux</div>
+                  <div class="option" onclick="crafting('Vambrace', 'flux', 'Dense')">Dense Ember Flux</div>
+                </div>
+                <br>&nbsp;
+                <div id="VambraceOutput"><p>Please select materials from the lists above</p></div>
+                <div class="line"></div>
+                <p><span class="cyan">Please note: better materials will give higher durability<br>
+                Durability also increases with profession level</span></p>
               </div>
             </div>
           </div>
@@ -5807,13 +5995,42 @@
                     <br><small>requires imbued recipe</small></p>
                 </div>
               </div>
-              <input type="radio" name="FauldsTabs" id="tabBaseFaulds">
+              <input type="radio" name="FauldsTabs" id="tabBaseFaulds" onclick="loadJSON('json/Faulds.js')">
               <label for="tabBaseFaulds"><img src="icons/crafting.png" alt="Base" class="tabIcon spec"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Crafting</h2>
-                <div class="content">
-                  <h3>Coming Soonish</h3>
+                <h2 class="dark">&nbsp;Crafting - testing! WIP</h2>
+                <h4>Metal</h4>
+                <button class="accordion" onclick="accordion('metalFaulds')" id="metalFauldsBtn">Choose Metal +</button>
+                <div id="metalFaulds" class="accDropdown">
+                  <div class="option" onclick="crafting('Faulds', 'metal', 'Highlands Copper')">Highlands Copper</div>
+                  <div class="option" onclick="crafting('Faulds', 'metal', 'Newhaven Copper')">Newhaven Copper</div>
+                  <div class="option" onclick="crafting('Faulds', 'metal', 'Flatlands Tin')">Flatlands Tin</div>
+                  <div class="option" onclick="crafting('Faulds', 'metal', 'Highlands Zink')">Highlands Zink</div>
                 </div>
+                <br>&nbsp;
+                <h4>Strapping</h4>
+                <button class="accordion" onclick="accordion('strappingFaulds')" id="strappingFauldsBtn">Choose Leather +</button>
+                <div id="strappingFaulds" class="accDropdown">
+                  <div class="option" onclick="crafting('Faulds', 'strapping', 'Worn Strapping')">Worn Strapping</div>
+                  <div class="option" onclick="crafting('Faulds', 'strapping', 'Coarse Lean')">Coarse Lean</div>
+                  <div class="option" onclick="crafting('Faulds', 'strapping', 'Rough Light')">Rough Light</div>
+                  <div class="option" onclick="crafting('Faulds', 'strapping', 'Fair Lean')">Fair Lean</div>
+                  <div class="option" onclick="crafting('Faulds', 'strapping', 'Fair Dense')">Fair Dense</div>
+                </div>
+                <br>&nbsp;
+                <h4>Flux</h4>
+                <button class="accordion" onclick="accordion('fluxFaulds')" id="fluxFauldsBtn">Choose Flux +</button>
+                <div id="fluxFaulds" class="accDropdown">
+                  <div class="option" onclick="crafting('Faulds', 'flux', 'None')">None</div>
+                  <div class="option" onclick="crafting('Faulds', 'flux', 'Viscous')">Viscous Ember Flux</div>
+                  <div class="option" onclick="crafting('Faulds', 'flux', 'Thick')">Thick Ember Flux</div>
+                  <div class="option" onclick="crafting('Faulds', 'flux', 'Dense')">Dense Ember Flux</div>
+                </div>
+                <br>&nbsp;
+                <div id="FauldsOutput"><p>Please select materials from the lists above</p></div>
+                <div class="line"></div>
+                <p><span class="cyan">Please note: better materials will give higher durability<br>
+                Durability also increases with profession level</span></p>
               </div>
             </div>
           </div>
@@ -5848,13 +6065,42 @@
                     <br><small>requires imbued recipe</small></p>
                 </div>
               </div>
-              <input type="radio" name="HelmTabs" id="tabBaseHelm">
+              <input type="radio" name="HelmTabs" id="tabBaseHelm" onclick="loadJSON('json/Helm.js')">
               <label for="tabBaseHelm"><img src="icons/crafting.png" alt="Base" class="tabIcon spec"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Crafting</h2>
-                <div class="content">
-                  <h3>Coming Soonish</h3>
+                <h2 class="dark">&nbsp;Crafting - testing! WIP</h2>
+                <h4>Metal</h4>
+                <button class="accordion" onclick="accordion('metalHelm')" id="metalHelmBtn">Choose Metal +</button>
+                <div id="metalHelm" class="accDropdown">
+                  <div class="option" onclick="crafting('Helm', 'metal', 'Highlands Copper')">Highlands Copper</div>
+                  <div class="option" onclick="crafting('Helm', 'metal', 'Newhaven Copper')">Newhaven Copper</div>
+                  <div class="option" onclick="crafting('Helm', 'metal', 'Flatlands Tin')">Flatlands Tin</div>
+                  <div class="option" onclick="crafting('Helm', 'metal', 'Highlands Zink')">Highlands Zink</div>
                 </div>
+                <br>&nbsp;
+                <h4>Strapping</h4>
+                <button class="accordion" onclick="accordion('strappingHelm')" id="strappingHelmBtn">Choose Leather +</button>
+                <div id="strappingHelm" class="accDropdown">
+                  <div class="option" onclick="crafting('Helm', 'strapping', 'Worn Strapping')">Worn Strapping</div>
+                  <div class="option" onclick="crafting('Helm', 'strapping', 'Coarse Lean')">Coarse Lean</div>
+                  <div class="option" onclick="crafting('Helm', 'strapping', 'Rough Light')">Rough Light</div>
+                  <div class="option" onclick="crafting('Helm', 'strapping', 'Fair Lean')">Fair Lean</div>
+                  <div class="option" onclick="crafting('Helm', 'strapping', 'Fair Dense')">Fair Dense</div>
+                </div>
+                <br>&nbsp;
+                <h4>Flux</h4>
+                <button class="accordion" onclick="accordion('fluxHelm')" id="fluxHelmBtn">Choose Flux +</button>
+                <div id="fluxHelm" class="accDropdown">
+                  <div class="option" onclick="crafting('Helm', 'flux', 'None')">None</div>
+                  <div class="option" onclick="crafting('Helm', 'flux', 'Viscous')">Viscous Ember Flux</div>
+                  <div class="option" onclick="crafting('Helm', 'flux', 'Thick')">Thick Ember Flux</div>
+                  <div class="option" onclick="crafting('Helm', 'flux', 'Dense')">Dense Ember Flux</div>
+                </div>
+                <br>&nbsp;
+                <div id="HelmOutput"><p>Please select materials from the lists above</p></div>
+                <div class="line"></div>
+                <p><span class="cyan">Please note: better materials will give higher durability<br>
+                Durability also increases with profession level</span></p>
               </div>
             </div>
           </div>
@@ -5873,7 +6119,7 @@
                   <h3>Materials required;</h3>
                   <div class="line"></div>
                   <p><img src="icons/crafting/CopperIngot.png" class="mats floatL">
-                    <b>Metal</b> - Metal <b>x4</b>
+                    <b>Body</b> - Metal <b>x4</b>
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                     <div class="line"></div>
                   <p><img src="icons/crafting/Strapping.png" class="mats floatL">
@@ -5889,13 +6135,42 @@
                     <br><small>requires imbued recipe</small></p>
                 </div>
               </div>
-              <input type="radio" name="KiteShieldTabs" id="tabBaseKiteShield">
+              <input type="radio" name="KiteShieldTabs" id="tabBaseKiteShield" onclick="loadJSON('json/KiteShield.js')">
               <label for="tabBaseKiteShield"><img src="icons/crafting.png" alt="Base" class="tabIcon spec"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Crafting</h2>
-                <div class="content">
-                  <h3>Coming Soonish</h3>
+                <h2 class="dark">&nbsp;Crafting - testing! WIP</h2>
+                <h4>Body</h4>
+                <button class="accordion" onclick="accordion('bodyKiteShield')" id="bodyKiteShieldBtn">Choose Metal +</button>
+                <div id="bodyKiteShield" class="accDropdown">
+                  <div class="option" onclick="crafting('KiteShield', 'body', 'Highlands Copper')">Highlands Copper</div>
+                  <div class="option" onclick="crafting('KiteShield', 'body', 'Newhaven Copper')">Newhaven Copper</div>
+                  <div class="option" onclick="crafting('KiteShield', 'body', 'Flatlands Tin')">Flatlands Tin</div>
+                  <div class="option" onclick="crafting('KiteShield', 'body', 'Highlands Zink')">Highlands Zink</div>
                 </div>
+                <br>&nbsp;
+                <h4>Strapping</h4>
+                <button class="accordion" onclick="accordion('strappingKiteShield')" id="strappingKiteShieldBtn">Choose Leather +</button>
+                <div id="strappingKiteShield" class="accDropdown">
+                  <div class="option" onclick="crafting('KiteShield', 'strapping', 'Worn Strapping')">Worn Strapping</div>
+                  <div class="option" onclick="crafting('KiteShield', 'strapping', 'Coarse Lean')">Coarse Lean</div>
+                  <div class="option" onclick="crafting('KiteShield', 'strapping', 'Rough Light')">Rough Light</div>
+                  <div class="option" onclick="crafting('KiteShield', 'strapping', 'Fair Lean')">Fair Lean</div>
+                  <div class="option" onclick="crafting('KiteShield', 'strapping', 'Fair Dense')">Fair Dense</div>
+                </div>
+                <br>&nbsp;
+                <h4>Flux</h4>
+                <button class="accordion" onclick="accordion('fluxKiteShield')" id="fluxKiteShieldBtn">Choose Flux +</button>
+                <div id="fluxKiteShield" class="accDropdown">
+                  <div class="option" onclick="crafting('KiteShield', 'flux', 'None')">None</div>
+                  <div class="option" onclick="crafting('KiteShield', 'flux', 'Viscous')">Viscous Ember Flux</div>
+                  <div class="option" onclick="crafting('KiteShield', 'flux', 'Thick')">Thick Ember Flux</div>
+                  <div class="option" onclick="crafting('KiteShield', 'flux', 'Dense')">Dense Ember Flux</div>
+                </div>
+                <br>&nbsp;
+                <div id="KiteShieldOutput"><p>Currently don't have crafting data for this recipe, sorry!</p></div>
+                <div class="line"></div>
+                <p><span class="cyan">Please note: better materials will give higher durability<br>
+                Durability also increases with profession level</span></p>
               </div>
             </div>
           </div>
@@ -5922,14 +6197,32 @@
                     <br><small>Coarse / Linen / Cotton</small><br>&nbsp;</p>
                 </div>
               </div>
-              <input type="radio" name="ArmorPaddingTabs" id="tabBaseArmorPadding">
+              <input type="radio" name="ArmorPaddingTabs" id="tabBaseArmorPadding" onclick="loadJSON('json/ArmorPadding.js')">
               <label for="tabBaseArmorPadding"><img src="icons/crafting.png" alt="Base" class="tabIcon spec"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Crafting</h2>
-                <div class="content">
-                  <h3>+3 Resist: Physical Debuff</h3>
-                  <p><span class="cyan">Armor augment for the Head or Chest</span></p>
+                <h2 class="dark">&nbsp;Crafting - testing! WIP</h2>
+                <h4>Fur</h4>
+                <button class="accordion" onclick="accordion('furArmorPadding')" id="furArmorPaddingBtn">Choose Leather +</button>
+                <div id="furArmorPadding" class="accDropdown">
+                  <div class="option" onclick="crafting('ArmorPadding', 'fur', 'Coarse Lean')">Coarse Lean</div>
+                  <div class="option" onclick="crafting('ArmorPadding', 'fur', 'Rough Light')">Rough Light</div>
+                  <div class="option" onclick="crafting('ArmorPadding', 'fur', 'Fair Lean')">Fair Lean</div>
+                  <div class="option" onclick="crafting('ArmorPadding', 'fur', 'Fair Dense')">Fair Dense</div>
                 </div>
+                <br>&nbsp;
+                <h4>Thread</h4>
+                <button class="accordion" onclick="accordion('threadArmorPadding')" id="threadArmorPaddingBtn">Choose Thread +</button>
+                <div id="threadArmorPadding" class="accDropdown">
+                  <div class="option" onclick="crafting('ArmorPadding', 'thread', 'Coarse')">Coarse Thread</div>
+                  <div class="option" onclick="crafting('ArmorPadding', 'thread', 'Timberland Linen')">Timberland Linen</div>
+                  <div class="option" onclick="crafting('ArmorPadding', 'thread', 'Prairie Cotton')">Prairie Cotton</div>
+                </div>
+                <br>&nbsp;
+                <div id="ArmorPaddingOutput"><p>Please select materials from the lists above</p></div>
+                <div class="line"></div>
+                <p>Currently don't have all crafting data for this recipe, sorry!</p>
+                <div class="line"></div>
+                <p><span class="cyan">Armor augment for the Head or Chest</span></p>
               </div>
             </div>
           </div>
@@ -5956,14 +6249,31 @@
                     <br><small>Copper / Tin / Zink / Gold / Cobalt</small><br>&nbsp;</p>
                 </div>
               </div>
-              <input type="radio" name="ArmorStrapsTabs" id="tabBaseArmorStraps">
+              <input type="radio" name="ArmorStrapsTabs" id="tabBaseArmorStraps" onclick="loadJSON('json/ArmorStraps.js')">
               <label for="tabBaseArmorStraps"><img src="icons/crafting.png" alt="Base" class="tabIcon spec"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Crafting</h2>
-                <div class="content">
-                  <h3>+3 Resist: Movement Debuff</h3>
-                  <p><span class="cyan">Armor augment for Greaves</span></p>
+                <h2 class="dark">&nbsp;Crafting - testing! WIP</h2>
+                <h4>Leather</h4>
+                <button class="accordion" onclick="accordion('leatherArmorStraps')" id="leatherArmorStrapsBtn">Choose Leather +</button>
+                <div id="leatherArmorStraps" class="accDropdown">
+                  <div class="option" onclick="crafting('ArmorStraps', 'leather', 'Coarse Lean')">Coarse Lean</div>
+                  <div class="option" onclick="crafting('ArmorStraps', 'leather', 'Rough Light')">Rough Light</div>
+                  <div class="option" onclick="crafting('ArmorStraps', 'leather', 'Fair Lean')">Fair Lean</div>
+                  <div class="option" onclick="crafting('ArmorStraps', 'leather', 'Fair Dense')">Fair Dense</div>
                 </div>
+                <br>&nbsp;
+                <h4>Metal</h4>
+                <button class="accordion" onclick="accordion('metalArmorStraps')" id="metalArmorStrapsBtn">Choose Metal +</button>
+                <div id="metalArmorStraps" class="accDropdown">
+                  <div class="option" onclick="crafting('ArmorStraps', 'metal', 'Highlands Copper')">Highlands Copper</div>
+                  <div class="option" onclick="crafting('ArmorStraps', 'metal', 'Newhaven Copper')">Newhaven Copper</div>
+                  <div class="option" onclick="crafting('ArmorStraps', 'metal', 'Flatlands Tin')">Flatlands Tin</div>
+                  <div class="option" onclick="crafting('ArmorStraps', 'metal', 'Highlands Zink')">Highlands Zink</div>
+                </div>
+                <br>&nbsp;
+                <div id="ArmorStrapsOutput"><p>Please select materials from the lists above</p></div>
+                <div class="line"></div>
+                <p><span class="cyan">Armor augment for Greaves</span></p>
               </div>
             </div>
           </div>
