@@ -19,19 +19,23 @@ thing.ArmorPadding = [
     },
     {
         "fur": "Coarse Lean",
-        "thread": "Spider Silk"
+        "thread": "Spider Silk",
+        "undefined": "No Data"
     },
     {
         "fur": "Coarse Lean",
-        "thread": "Mandrake"
+        "thread": "Mandrake",
+        "undefined": "No Data"
     },
     {
         "fur": "Coarse Lean",
-        "thread": "Highlands Linen"
+        "thread": "Highlands Linen",
+        "undefined": "No Data"
     },
     {
         "fur": "Coarse Lean",
-        "thread": "Ramie"
+        "thread": "Ramie",
+        "undefined": "No Data"
     },
     {
         "fur": "Rough Light",
@@ -56,19 +60,23 @@ thing.ArmorPadding = [
     },
     {
         "fur": "Rough Light",
-        "thread": "Spider Silk"
+        "thread": "Spider Silk",
+        "undefined": "No Data"
     },
     {
         "fur": "Rough Light",
-        "thread": "Mandrake"
+        "thread": "Mandrake",
+        "undefined": "No Data"
     },
     {
         "fur": "Rough Light",
-        "thread": "Highlands Linen"
+        "thread": "Highlands Linen",
+        "undefined": "No Data"
     },
     {
         "fur": "Rough Light",
-        "thread": "Ramie"
+        "thread": "Ramie",
+        "undefined": "No Data"
     },
     {
         "fur": "Fair Lean",
@@ -90,19 +98,23 @@ thing.ArmorPadding = [
     },
     {
         "fur": "Fair Lean",
-        "thread": "Spider Silk"
+        "thread": "Spider Silk",
+        "undefined": "No Data"
     },
     {
         "fur": "Fair Lean",
-        "thread": "Mandrake"
+        "thread": "Mandrake",
+        "undefined": "No Data"
     },
     {
         "fur": "Fair Lean",
-        "thread": "Highlands Linen"
+        "thread": "Highlands Linen",
+        "undefined": "No Data"
     },
     {
         "fur": "Fair Lean",
-        "thread": "Ramie"
+        "thread": "Ramie",
+        "undefined": "No Data"
     },
     {
         "fur": "Fair Dense",
@@ -124,18 +136,22 @@ thing.ArmorPadding = [
     },
     {
         "fur": "Fair Dense",
-        "thread": "Spider Silk"
+        "thread": "Spider Silk",
+        "undefined": "No Data"
     },
     {
         "fur": "Fair Dense",
-        "thread": "Mandrake"
+        "thread": "Mandrake",
+        "undefined": "No Data"
     },
     {
         "fur": "Fair Dense",
-        "thread": "Highlands Linen"
+        "thread": "Highlands Linen",
+        "undefined": "No Data"
     },
     {
         "fur": "Fair Dense",
-        "thread": "Ramie"
+        "thread": "Ramie",
+        "undefined": "No Data"
     }
 ]
