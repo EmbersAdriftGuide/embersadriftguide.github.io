@@ -5197,7 +5197,7 @@
               <label for="tabArmorsmith"><img class="spec" src="icons/crafting/Armorsmith.png" alt="Armorsmith"></label>
               <div class="tab">
                 <p>&nbsp;</p>
-                <h1>Armorsmith<span class="midtone ea"> - <small>most crafting simulators now working!</small></span></h1>
+                <h1>Armorsmith<span class="midtone ea"> - <small>crafting simulators now working!</small></span></h1>
                 <h2 class="subHeader"><span class="midtone"><small>Suggested - <img src="icons/mountain.png" class="nudgeMore"> Prospector + <img src="icons/rabbit.png" class="nudgeMore"> Hunter</small></span></h2>
                 <div class="flexBox">
                   <div class="icon">
@@ -5534,13 +5534,54 @@
                     <br><small>requires imbued recipe, rare drop</small><br>&nbsp;</p>
                 </div>
               </div>
-              <input type="radio" name="HauberkTabs" id="tabBaseHauberk">
+              <input type="radio" name="HauberkTabs" id="tabBaseHauberk" onclick="loadJSON('json/Hauberk.js')">
               <label for="tabBaseHauberk"><img src="icons/crafting.png" alt="Base" class="tabIcon spec"></label>
               <div class="tab">
-                <h2 class="dark">&nbsp;Crafting</h2>
-                <div class="content">
-                  <h3>coming soonish</h3>
+                <h2 class="dark">&nbsp;Crafting - testing! WIP</h2>
+                <h4>Chain Mesh</h4>
+                <button class="accordion" onclick="accordion('chainMeshHauberk')" id="chainMeshHauberkBtn">Choose Metal +</button>
+                <div id="chainMeshHauberk" class="accDropdown">
+                  <div class="option" onclick="crafting('Hauberk', 'chainMesh', 'Highlands Copper')">Highlands Copper</div>
+                  <div class="option" onclick="crafting('Hauberk', 'chainMesh', 'Newhaven Copper')">Newhaven Copper</div>
+                  <div class="option" onclick="crafting('Hauberk', 'chainMesh', 'Flatlands Tin')">Flatlands Tin</div>
+                  <div class="option" onclick="crafting('Hauberk', 'chainMesh', 'Highlands Zink')">Highlands Zink</div>
                 </div>
+                <br>&nbsp;
+                <h4>Gambeson</h4>
+                <button class="accordion" onclick="accordion('gambesonHauberk')" id="gambesonHauberkBtn">Choose Cloth +</button>
+                <div id="gambesonHauberk" class="accDropdown">
+                  <div class="option" onclick="crafting('Hauberk', 'gambeson', 'Timberland Linen')">Timberland Linen</div>
+                  <div class="option" onclick="crafting('Hauberk', 'gambeson', 'Highlands Linen')">Highlands Linen</div>
+                  <div class="option" onclick="crafting('Hauberk', 'gambeson', 'Prairie Cotton')">Prairie Cotton</div>
+                  <div class="option" onclick="crafting('Hauberk', 'gambeson', 'Spider Silk')">Spider Silk</div>
+                  <div class="option" onclick="crafting('Hauberk', 'gambeson', 'Highlands Ramie')">Highlands Ramie</div>
+                </div>
+                <br>&nbsp;
+                <h4>Thread</h4>
+                <button class="accordion" onclick="accordion('threadHauberk')" id="threadHauberkBtn">Choose Thread +</button>
+                <div id="threadHauberk" class="accDropdown">
+                  <div class="option" onclick="crafting('Hauberk', 'thread', 'Coarse')">Coarse Thread</div>
+                  <div class="option" onclick="crafting('Hauberk', 'thread', 'Timberland Linen')">Timberland Linen</div>
+                  <div class="option" onclick="crafting('Hauberk', 'thread', 'Highlands Linen')">Highlands Linen</div>
+                  <div class="option" onclick="crafting('Hauberk', 'thread', 'Prairie Cotton')">Prairie Cotton</div>
+                  <div class="option" onclick="crafting('Hauberk', 'thread', 'Spider Silk')">Spider Silk</div>
+                  <div class="option" onclick="crafting('Hauberk', 'thread', 'Highlands Ramie')">Highlands Ramie</div>
+                </div>
+                <br>&nbsp;
+                <h4>Flux</h4>
+                <button class="accordion" onclick="accordion('fluxHauberk')" id="fluxHauberkBtn">Choose Flux +</button>
+                <div id="fluxHauberk" class="accDropdown">
+                  <div class="option" onclick="crafting('Hauberk', 'flux', 'Viscous')">Viscous Ember Flux</div>
+                  <div class="option" onclick="crafting('Hauberk', 'flux', 'Thick')">Thick Ember Flux</div>
+                  <div class="option" onclick="crafting('Hauberk', 'flux', 'Dense')">Dense Ember Flux</div>
+                </div>
+                <br>&nbsp;
+                <div id="HauberkOutput"><p>Please select materials from the lists above</p></div>
+                <div class="line"></div>
+                <p>Currently don't have all crafting data for this recipe, sorry!</p>
+                <div class="line"></div>
+                <p><span class="cyan">Please note: better materials will give higher durability<br>
+                Durability also increases with profession level</span></p>
               </div>
             </div>
           </div>
@@ -5607,7 +5648,9 @@
                   <div class="option" onclick="crafting('Buckler', 'flux', 'Dense')">Dense Ember Flux</div>
                 </div>
                 <br>&nbsp;
-                <div id="BucklerOutput"><p>Currently don't have crafting data for this recipe, sorry!</p></div>
+                <div id="BucklerOutput"><p>Please select materials from the lists above</p></div>
+                <div class="line"></div>
+                <p>Currently don't have all crafting data for this recipe, sorry!</p>
                 <div class="line"></div>
                 <p><span class="cyan">Please note: better materials will give higher durability<br>
                 Durability also increases with profession level</span></p>
@@ -5677,7 +5720,9 @@
                   <div class="option" onclick="crafting('HeaterShield', 'flux', 'Dense')">Dense Ember Flux</div>
                 </div>
                 <br>&nbsp;
-                <div id="HeaterShieldOutput"><p>Currently don't have crafting data for this recipe, sorry!</p></div>
+                <div id="HeaterShieldOutput"><p>Please select materials from the lists above</p></div>
+                <div class="line"></div>
+                <p>Currently don't have all crafting data for this recipe, sorry!</p>
                 <div class="line"></div>
                 <p><span class="cyan">Please note: better materials will give higher durability<br>
                 Durability also increases with profession level</span></p>
@@ -6167,7 +6212,9 @@
                   <div class="option" onclick="crafting('KiteShield', 'flux', 'Dense')">Dense Ember Flux</div>
                 </div>
                 <br>&nbsp;
-                <div id="KiteShieldOutput"><p>Currently don't have crafting data for this recipe, sorry!</p></div>
+                <div id="KiteShieldOutput"><p>Please select materials from the lists above</p></div>
+                <div class="line"></div>
+                <p>Currently don't have all crafting data for this recipe, sorry!</p>
                 <div class="line"></div>
                 <p><span class="cyan">Please note: better materials will give higher durability<br>
                 Durability also increases with profession level</span></p>
