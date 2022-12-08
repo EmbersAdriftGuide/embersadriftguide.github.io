@@ -20,7 +20,8 @@ thing.ArmorPadding = [
     {
         "fur": "Coarse Lean",
         "thread": "Spider Silk",
-        "undefined": "No Data"
+        "physicalDebuffResists": 3,
+        "levelReq": 0
     },
     {
         "fur": "Coarse Lean",
@@ -30,12 +31,14 @@ thing.ArmorPadding = [
     {
         "fur": "Coarse Lean",
         "thread": "Highlands Linen",
-        "undefined": "No Data"
+        "physicalDebuffResists": 3,
+        "levelReq": 0
     },
     {
         "fur": "Coarse Lean",
         "thread": "Ramie",
-        "undefined": "No Data"
+        "physicalDebuffResists": 3,
+        "levelReq": 0
     },
     {
         "fur": "Rough Light",
@@ -61,7 +64,9 @@ thing.ArmorPadding = [
     {
         "fur": "Rough Light",
         "thread": "Spider Silk",
-        "undefined": "No Data"
+        "stunResists": 2,
+        "dazeResists": 2,
+        "levelReq": 0
     },
     {
         "fur": "Rough Light",
@@ -71,12 +76,16 @@ thing.ArmorPadding = [
     {
         "fur": "Rough Light",
         "thread": "Highlands Linen",
-        "undefined": "No Data"
+        "stunResists": 3,
+        "dazeResists": 3,
+        "levelReq": 10
     },
     {
         "fur": "Rough Light",
         "thread": "Ramie",
-        "undefined": "No Data"
+        "stunResists": 3,
+        "dazeResists": 3,
+        "levelReq": 10
     },
     {
         "fur": "Fair Lean",
@@ -99,7 +108,8 @@ thing.ArmorPadding = [
     {
         "fur": "Fair Lean",
         "thread": "Spider Silk",
-        "undefined": "No Data"
+        "physicalDebuffResists": 3,
+        "levelReq": 0
     },
     {
         "fur": "Fair Lean",
@@ -109,12 +119,14 @@ thing.ArmorPadding = [
     {
         "fur": "Fair Lean",
         "thread": "Highlands Linen",
-        "undefined": "No Data"
+        "physicalDebuffResists": 6,
+        "levelReq": 20
     },
     {
         "fur": "Fair Lean",
         "thread": "Ramie",
-        "undefined": "No Data"
+        "physicalDebuffResists": 6,
+        "levelReq": 20
     },
     {
         "fur": "Fair Dense",
@@ -137,7 +149,8 @@ thing.ArmorPadding = [
     {
         "fur": "Fair Dense",
         "thread": "Spider Silk",
-        "undefined": "No Data"
+        "resilience": 1,
+        "levelReq": 0
     },
     {
         "fur": "Fair Dense",
@@ -147,11 +160,13 @@ thing.ArmorPadding = [
     {
         "fur": "Fair Dense",
         "thread": "Highlands Linen",
-        "undefined": "No Data"
+        "resilience": 2,
+        "levelReq": 20
     },
     {
         "fur": "Fair Dense",
         "thread": "Ramie",
-        "undefined": "No Data"
+        "resilience": 2,
+        "levelReq": 20
     }
 ]
