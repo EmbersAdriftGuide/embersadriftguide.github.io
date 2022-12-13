@@ -310,25 +310,31 @@ thing.KiteShield = [
         "body": "Flatlands Tin",
         "strapping": "Worn Strapping",
         "flux": "Viscous",
+        "block": 5,
+        "physicalDmgResists": 1,
         "durability": -0.75,
-        "levelReq": 10,
-        "undefined": "No Data"
+        "armorClass": 29,
+        "levelReq": 10
     },
     {
         "body": "Flatlands Tin",
         "strapping": "Worn Strapping",
         "flux": "Thick",
+        "block": 5,
+        "physicalDmgResists": 1,
         "durability": -0.75,
-        "levelReq": 10,
-        "undefined": "No Data"
+        "armorClass": 32,
+        "levelReq": 10
     },
     {
         "body": "Flatlands Tin",
         "strapping": "Worn Strapping",
         "flux": "Dense",
+        "block": 5,
+        "physicalDmgResists": 1,
         "durability": -0.75,
-        "levelReq": 20,
-        "undefined": "No Data"
+        "armorClass": 47,
+        "levelReq": 20
     },
     {
         "body": "Flatlands Tin",
@@ -342,22 +348,31 @@ thing.KiteShield = [
         "body": "Flatlands Tin",
         "strapping": "Coarse Lean",
         "flux": "Viscous",
-        "levelReq": 10,
-        "undefined": "No Data"
+        "block": 5,
+        "emberDmgResists": 1,
+        "physicalDmgResists": 1,
+        "armorClass": 29,
+        "levelReq": 10
     },
     {
         "body": "Flatlands Tin",
         "strapping": "Coarse Lean",
         "flux": "Thick",
-        "levelReq": 10,
-        "undefined": "No Data"
+        "block": 5,
+        "emberDmgResists": 1,
+        "physicalDmgResists": 1,
+        "armorClass": 32,
+        "levelReq": 10
     },
     {
         "body": "Flatlands Tin",
         "strapping": "Coarse Lean",
         "flux": "Dense",
-        "levelReq": 20,
-        "undefined": "No Data"
+        "block": 5,
+        "emberDmgResists": 1,
+        "physicalDmgResists": 1,
+        "armorClass": 47,
+        "levelReq": 20
     },
     {
         "body": "Flatlands Tin",
@@ -371,22 +386,31 @@ thing.KiteShield = [
         "body": "Flatlands Tin",
         "strapping": "Rough Light",
         "flux": "Viscous",
-        "levelReq": 10,
-        "undefined": "No Data"
+        "block": 5,
+        "emberDmgResists": 1,
+        "physicalDmgResists": 2,
+        "armorClass": 29,
+        "levelReq": 10
     },
     {
         "body": "Flatlands Tin",
         "strapping": "Rough Light",
         "flux": "Thick",
-        "levelReq": 10,
-        "undefined": "No Data"
+        "block": 5,
+        "emberDmgResists": 1,
+        "physicalDmgResists": 2,
+        "armorClass": 32,
+        "levelReq": 10
     },
     {
         "body": "Flatlands Tin",
         "strapping": "Rough Light",
         "flux": "Dense",
-        "levelReq": 20,
-        "undefined": "No Data"
+        "block": 5,
+        "emberDmgResists": 1,
+        "physicalDmgResists": 2,
+        "armorClass": 47,
+        "levelReq": 20
     },
     {
         "body": "Flatlands Tin",
@@ -429,22 +453,31 @@ thing.KiteShield = [
         "body": "Flatlands Tin",
         "strapping": "Fair Dense",
         "flux": "Viscous",
-        "levelReq": 20,
-        "undefined": "No Data"
+        "block": 5,
+        "emberDmgResists": 1,
+        "physicalDmgResists": 2,
+        "armorClass": 43,
+        "levelReq": 20
     },
     {
         "body": "Flatlands Tin",
         "strapping": "Fair Dense",
         "flux": "Thick",
-        "levelReq": 20,
-        "undefined": "No Data"
+        "block": 5,
+        "emberDmgResists": 1,
+        "physicalDmgResists": 2,
+        "armorClass": 46,
+        "levelReq": 20
     },
     {
         "body": "Flatlands Tin",
         "strapping": "Fair Dense",
         "flux": "Dense",
-        "levelReq": 20,
-        "undefined": "No Data"
+        "block": 5,
+        "emberDmgResists": 2,
+        "physicalDmgResists": 2,
+        "armorClass": 47,
+        "levelReq": 20
     },
     {
         "body": "Highlands Zink",
