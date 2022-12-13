@@ -71,7 +71,7 @@ function loadJSON(file) {
 
 function append(input, doc) {
   for (const [key, value] of Object.entries(input[0])) {
-    if (key.match("metal") || key.match("strapping") || key.match("flux") || key.match("body") || key.match("fur") || key.match("thread") || key.match("gambeson") || key.match("chainMesh")){}
+    if (key.match("metal") || key.match("strapping") || key.match("flux") || key.match("body") || key.match("fur") || key.match("thread") || key.match("gambeson") || key.match("chainMesh") || key.match("leather")){}
   else {
     doc.innerHTML += "<p>" + key + " :" + value + "</p>";}
    // console.log(key, value);
