@@ -30,8 +30,13 @@ function accordion(name) {
 }
 
 var recipe = {Name:"", Materials:{}}
+var currentItemName = ""
 
 function crafting(item, component, value) { 
+  if (item !== currentItemName) {
+    recipe = {Name:"", Materials:{}}
+  }
+  currentItemName = item
   recipe.Name = item
   recipe.Materials[component] = value
   var doc = document.getElementById(item + "Output")
@@ -43,7 +48,9 @@ function crafting(item, component, value) {
         doc.innerHTML = "<p>No data available, please select different materials</p>";
     } else {
         doc.innerHTML = " "
-        append(filterRecipe(thing), doc)}
+        append(filterRecipe(thing), doc)}        
+//    console.log(filterRecipe(thing))
+//    console.log(recipe)
 }
 
 function filterRecipe(item) {
@@ -65,5 +72,6 @@ function loadJSON(file) {
 function append(input, doc) {
   for (const [key, value] of Object.entries(input[0])) {
     doc.innerHTML += "<p>" + key + " :" + value + "</p>";
-    console.log(key, value);}
+   // console.log(key, value);
+  }
 }
