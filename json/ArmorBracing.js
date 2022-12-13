@@ -32,8 +32,8 @@ thing.ArmorBracing = [
     {
         "metal": "Highlands Copper",
         "strapping": "Worn Strapping",
-        "combatMov": 3,
-        "levelReq": 20
+        "combatMov": 1,
+        "levelReq": 0
     },
     {
         "metal": "Highlands Copper",
@@ -62,8 +62,8 @@ thing.ArmorBracing = [
     {
         "metal": "Flatlands Tin",
         "strapping": "Worn Strapping",
-        "chemicalDebuffResists": 2,
-        "levelReq": 10
+        "chemicalDebuffResists": 1,
+        "levelReq": 0
     },
     {
         "metal": "Flatlands Tin",
@@ -92,31 +92,31 @@ thing.ArmorBracing = [
     {
         "metal": "Highlands Zink",
         "strapping": "Worn Strapping",
-        "chemicalDebuffResists": 3,
-        "levelReq": 20
+        "mentalDebuffResists": 1,
+        "levelReq": 0
     },
     {
         "metal": "Highlands Zink",
         "strapping": "Coarse Lean",
-        "chemicalDebuffResists": 1,
+        "mentalDebuffResists": 1,
         "levelReq": 0
     },
     {
         "metal": "Highlands Zink",
         "strapping": "Rough Light",
-        "chemicalDebuffResists": 2,
+        "mentalDebuffResists": 2,
         "levelReq": 10
     },
     {
         "metal": "Highlands Zink",
         "strapping": "Fair Lean",
-        "chemicalDebuffResists": 3,
+        "mentalDebuffResists": 3,
         "levelReq": 20
     },
     {
         "metal": "Highlands Zink",
         "strapping": "Fair Dense",
-        "chemicalDebuffResists": 3,
+        "mentalDebuffResists": 3,
         "levelReq": 20
     }
 ]

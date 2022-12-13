@@ -43,9 +43,9 @@ thing.ArmorPadding = [
     {
         "fur": "Rough Light",
         "thread": "Coarse",
-        "stunResists": 3,
-        "dazeResists": 3,
-        "levelReq": 10
+        "stunResists": 2,
+        "dazeResists": 2,
+        "levelReq": 0
     },
     {
         "fur": "Rough Light",
@@ -90,8 +90,8 @@ thing.ArmorPadding = [
     {
         "fur": "Fair Lean",
         "thread": "Coarse",
-        "physicalDebuffResists": 6,
-        "levelReq": 20
+        "physicalDebuffResists": 3,
+        "levelReq": 0
     },
     {
         "fur": "Fair Lean",
@@ -131,8 +131,8 @@ thing.ArmorPadding = [
     {
         "fur": "Fair Dense",
         "thread": "Coarse",
-        "resilience": 2,
-        "levelReq": 20
+        "resilience": 1,
+        "levelReq": 0
     },
     {
         "fur": "Fair Dense",
