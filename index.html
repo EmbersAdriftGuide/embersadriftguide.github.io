@@ -8,7 +8,7 @@
     <meta id='viewport' name="viewport" content="width=device-width"/>
     <meta name="robots" content="index,follow">
     <title>Embers Adrift Guide</title>
-    <meta name="description" content="A complete guide for Embers Adrift Class Skills and Crafting">
+    <meta name="description" content="Not sure which spec to choose? Confused by skills & stats? A complete guide for Embers Adrift Specs, Skills and Crafting">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/fire.png">
   </head>
 <body>
@@ -22,7 +22,8 @@
             <div class="banner">
             <img src="icons/Banner.png" class="homePic">
             <div class="logo"><img src="icons/Embers-Adrift-Brand-White-Colour.png"></div><div class="guide">GUIDE</div></div>
-            <h4>Crafting simulation code works! Woohoo!<br>- currently looks fugly, most of armorsmith done, bear with me :)</h4><br>
+            <a onclick="checkRadio('tabGuides')"><h4 class="gradient">Not sure which spec to choose? Take a look at the new spec guides tab &nbsp;<i class="fa-solid fa-angles-right"></i></h4></a><br>
+            <p><span class="midtone">- only Jugg & Marshal done currently</span></p>
             <hr><h2>Class Roles<span class="midtone"> - Work in Progress</span></h2>
             Click on the text below for expanding spec information<hr>
               <div class="accWrapper"> <!-- Defender -->
@@ -31,15 +32,19 @@
                 <div id="accDefender" class="panel">
                   <p><a onclick="checkRadio('tabJuggernaut')"><img src="icons/class/juggernaut.png" class="spec floatL mats margin"></a>
                     <b>Juggernaut</b><small> - The Juggernaut pushes the battle forward, striking down enemies with little regard for their defenses.<br>&nbsp;<br>
-                    If you want to play a tank who can cheat KOs, shrug off stuns and damage, create havoc in battle - drawing attention to themselves from multiple enemies - and deal a good amount of their own damage to multiple enemies, then Juggernaut is for you.</small></p>
+                      Juggernauts are adept at both tanking and dps - they get an AoE threat ability to help control groups of mobs and also dps abilities that ignore armor or cause bleeding.<br>
+                      If you enjoy smashing enemies with a huge maul then this may be the class for you.</small></p>
                     <div class="line"></div>
                   <p><a onclick="checkRadio('tabKnight')"><img src="icons/class/knight.png" class="spec mats floatL margin"></a>
                     <b>Knight</b><small> - An expert in one-on-one combat, the Knight's oath to protect others makes them a powerful ally.<br>&nbsp;<br>
-                    If you're looking to be a tank fully decked out in platemail frustrating your enemies with armor and shield and little exposed to attacks then the Knight is for you. Not only will you be hard to kill, but you'll be highly specialized in drawing the attention of any monster.</small></p>
+                      Knights are focused on tanking, able to wear the heaviest armor and with several high threat single target abilities. They can also support their allies with a resistance aura.<br>
+                      If you want to tank the biggest scariest enemies with ease then the Knight may be for you.</small></p>
                     <div class="line"></div>
                   <p><a onclick="checkRadio('tabMarshal')"><img src="icons/class/marshal.png" class="spec mats floatL margin"></a>
                     <b>Marshal</b><small> - A seasoned tactician and military commander who changes the tide of battle by stopping enemies in their tracks. The Marshal sees every battle as a test of their wits.<br>&nbsp;<br>
-                    Exerting control over the battlefield and your enemies is a great way to ensure victory in every conflict. Trapping and slowing your enemies while increasing your own combat effectiveness draws the ire of your foes to such a height that they make fatal mistakes.</small></p>
+                      Marshals are all about controlling the flow of battle, they have an AoE root and a single target slow to enable re-positioning mid combat.<br>
+                      If you enjoy combining brains and brawn (or impaling enemies on a pike) this spec might suit you.
+                      </small></p>
                 </div>
               </div>
               <div class="accWrapper"> <!-- Striker -->
@@ -91,7 +96,293 @@
                 <a onclick="checkRadio('tabWoodsman')"><img class="spec" src="icons/tree.png" alt="Bushcraft"></a>
                 <p class="iTxt"><b>Bushcraft</b></p></div>
                 <div class="blank"><a><img src="icons/blank.png"></a></div>
-            <h4 class="midtone">report mistakes to tallbird#9579 on discord<br>&nbsp;</h4>
+            <h4 class="pale">report mistakes to tallbird#9579 on discord<br>&nbsp;</h4>
+            <p class="pale"><small>Official website for Embers Adrift - <a href="https://www.embersadrift.com/" target="_blank">https://www.embersadrift.com/</a>
+              <br>this is a fan made website and has no affiliation with Stormhaven Studios or Embers Adrift</small></p>
+          </div>
+        </div>
+
+        <input type="radio" name="tabs" id="tabGuides">
+        <label for="tabGuides"><img src="icons/book.png" alt="Guides"></label>
+        <div class="main">
+          <div class="middle"><h1>Spec Guides<span class="midtone ea"> - Playstyle, Skills & Gear</span></h1></div>
+          <div class="flexBox">
+            <div class="icon">
+              <a onclick="openOverlay('juggGuide')"><img src="icons/guides/juggGuide.jpg"  alt="Juggernaut"></a>
+              <p class="grey">&nbsp;</p><img src="icons/shield.png" class="role1"><img src="icons/damage.png" class='role2'>
+              <p class="iTxt"><b>Juggernaut<br><span class="midtone">DPS Tank</span></b></p>
+            </div>
+            <div class="icon">
+              <a onclick="openOverlay('knightGuide')"><img src="icons/guides/knightGuide.jpg"  alt="Knight"></a>
+              <p class="grey">&nbsp;</p><img src="icons/shield.png" class="role1"><img src="icons/aura.png" class='role2'>
+              <p class="iTxt"><b>Knight<br><span class="midtone">Coming<br>Soon</span></b></p>
+                <!--<span class="midtone">Classic Tank</span></b></p>-->
+            </div>
+            <div class="icon">
+              <a onclick="openOverlay('marshalGuide')"><img src="icons/guides/marshalGuide.jpg"  alt="Marshal"></a>
+              <p class="grey">&nbsp;</p><img src="icons/shield.png" class="role1"><img src="icons/cc.png" class='role2'>
+              <p class="iTxt"><b>Marshal<br><span class="midtone">Control Tank</span></b></p>
+            </div>
+          </div>
+          <div class="flexBox">
+            <div class="icon">
+              <a onclick="openOverlay('zerkerGuide')"><img src="icons/guides/zerkerGuide.webp"  alt="Berserker"></a>
+              <p class="grey">&nbsp;</p><img src="icons/damage.png" class="role1"><img src="icons/shield.png" class='role2'>
+              <p class="iTxt"><b>Berserker<br><span class="midtone">Coming<br>Soon</span></b></p>
+                <!--<span class="midtone">Frenzied<br>Attacks</span></b></p>-->
+            </div>
+            <div class="icon">
+              <a onclick="openOverlay('brigGuide')"><img src="icons/guides/brigGuide.jpg"  alt="Brigand"></a>
+              <p class="grey">&nbsp;</p><img src="icons/damage.png" class="role1"><img src="icons/cc.png" class='role2'>
+              <p class="iTxt"><b>Brigand<br><span class="midtone">Coming<br>Soon</span></b></p>
+                <!--<span class="midtone">Prepare<br>to Die</span></b></p>-->
+            </div>
+            <div class="icon">
+              <a onclick="openOverlay('wardenGuide')"><img src="icons/guides/wardenGuide.jpg"  alt="Warden"></a>
+              <p class="grey">&nbsp;</p><img src="icons/damage.png" class="role1"><img src="icons/aura.png" class='role2'>
+              <p class="iTxt"><b>Warden<br><span class="midtone">Coming<br>Soon</span></b></p>
+                <!--<span class="midtone">Damage<br>Over Time</span></b></p>-->
+            </div>
+          </div>
+          <div class="flexBox">
+            <div class="icon">
+              <a onclick="openOverlay('duelistGuide')"><img src="icons/guides/duelistGuide.jpg"  alt="Duelist"></a>
+              <p class="grey">&nbsp;</p><img src="icons/heal.png" class="role1"><img src="icons/damage.png" class='role2'>
+              <p class="iTxt"><b>Duelist<br><span class="midtone">Coming<br>Soon</span></b></p>
+                <!--<span class="midtone">DPS Healer</span></b></p>-->
+            </div>
+            <div class="icon">
+              <a onclick="openOverlay('sentinelGuide')"><img src="icons/guides/sentinelGuide.jpg"  alt="Sentinel"></a>
+              <p class="grey">&nbsp;</p><img src="icons/heal.png" class="role1"><img src="icons/shield.png" class='role2'>
+              <p class="iTxt"><b>Sentinel<br><span class="midtone">Coming<br>Soon</span></b></p>
+                <!--<span class="midtone">Durable<br>Healer</span></b></p>-->
+            </div>
+            <div class="icon">
+              <a onclick="openOverlay('warlordGuide')"><img src="icons/guides/warlordGuide.png"  alt="Warlord"></a>
+              <p class="grey">&nbsp;</p><img src="icons/heal.png" class="role1"><img src="icons/aura.png" class='role2'>
+              <p class="iTxt"><b>Warlord<br><span class="midtone">Coming<br>Soon</span></b></p>
+                <!--<span class="midtone">Battle<br>Chanter</span></b></p>-->
+            </div>
+          </div>
+        </div>
+
+        <div id="juggGuide" class="overlay"> <!-- Guides -->
+          <a class="cancel" onclick="closeOverlay()"></a>
+          <div class="popup">
+            <div class="rectangle" onclick="closeOverlay()"><span class="close">&times;</span></div>
+            <div class="skilltabs">
+              <input type="radio" name="juggGuideTabs" id="tabjuggGuide" checked="checked">
+              <label for="tabjuggGuide"><img src="icons/guides/juggGuide.jpg" alt="juggGuide" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Juggernaut<span class="name midtone"> - Defender</span></h2>
+                <div class="content">
+                  <h4>Spec Overview</h4>
+                  <p><br>&nbsp;The juggernaut pushes the battle forward, striking down enemies with little regard for their defenses.<br>
+                    Juggernauts are adept at both tanking and dps - they get an AoE threat ability to help control groups of mobs and also dps abilities that ignore armor or cause bleeding.<br>
+                    If you enjoy smashing enemies with a huge maul then this may be the class for you.</p>
+                  <div class="line"></div>
+                  <p><span class="cyan">Push the battle forward</p>
+                </div>
+              </div>
+              <input type="radio" name="juggGuideTabs" id="tabjuggGuideSkillsTank">
+              <label for="tabjuggGuideSkillsTank"><img src="icons/book.png" alt="juggGuideSkills" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Tanking Skills</h2>
+                <div class="content">
+                  <p><img src="icons/skills/Provoke.png" class="mats floatL">
+                    <b>Provoke</b> - requires lvl <b>2</b>
+                    <br><small>This is one of your core threat abilities, it has a short range. Use it as the mob is running towards you and then on cooldown to maintain aggro. 
+                      Will not break crowd control.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/ThreateningStrike.png" class="mats floatL">
+                    <b>Threatening Strike</b> - requires lvl <b>1</b>
+                    <br><small>This is your second core threat ability, which is melee range only. Use on cooldown to maintain aggro. 
+                      If you have a good weapon and are similar level to your dps you can normally maintain aggro just using provoke and threatening strike on cooldown.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Roar.png" class="mats floatL">
+                    <b>Roar</b> - requires lvl <b>8</b>
+                    <br><small>This is an 360° AoE threat ability with a decent range. Use this when tanking multiple mobs, or to pick up extra adds without needing to turn and target them.
+                      This ability will not break crowd control like stuns (it will break lull), so its very good in combination with a brigands AoE CC to maintain aggro. 
+                      This will drain your stamina fast! consider dropping provoke when AoE tanking.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Resistant.png" class="mats floatL">
+                    <b>Resistant</b> - requires lvl <b>4</b>
+                    <br><small>This defensive cooldown reduces your physical damage taken for a short time. Pop this whenever you are fighting harder mobs or AoE tanking to help mitigate some damage.</span></small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/NoTimeToDie.png" class="mats floatL"><img src="icons/skills/Unstoppable.png" class="mats floatL">
+                    <b>Utility</b><small> - These defensive cooldowns are situationally useful. No Time to Die will prevent your next death. Unstoppable can be helpful against mobs that stun eg. in dryfoot basilisk ember veins.</span></small></p>
+                </div>
+              </div>
+              <input type="radio" name="juggGuideTabs" id="tabjuggGuideSkillsDPS">
+              <label for="tabjuggGuideSkillsDPS"><img src="icons/book.png" alt="juggGuideSkills" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;DPS Skills</h2>
+                <div class="content">
+                  <p><img src="icons/skills/Perforate.png" class="mats floatL">
+                    <b>Perforate</b> - requires lvl <b>22</b>
+                    <br><small>You don't get this skill until fairly late, but once you do this should be the first ability in your rotation, try and maintain the bleed.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Breach.png" class="mats floatL">
+                    <b>Breach</b> - requires lvl <b>6</b>
+                    <br><small>This is your core dps ability and you unlock it immediately at lvl 6. It ignores armor for some really beefy damage. (I like to shout BONK! over voice comms when it crits).<br>Use on cooldown. Especially good against high armor enemies.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/CollateralDamage.png" class="mats floatL">
+                    <b>Collateral Damage</b> - requires lvl <b>14</b>
+                    <br><small>This is your first AoE ability that hits 2 enemies, but I also recommend using it in your normal DPS rotation as well, we don't get too many DPS abilities. It is conal with a fair range so be careful not to break any CC when you use it.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/ThreateningStrike.png" class="mats floatL">
+                    <b>Threatening Strike</b> - requires lvl <b>1</b>
+                    <br><small>This ability does good damage but also has a hefty threat multiplier, so be cautious when using this that you don't pull aggro. Use it when your other DPS abilities are on cooldown. If you are having trouble with generating too much aggro in harder content consider dropping this for strike instead, you will do less damage but the tank won't hate you!</small></p>
+                </div>
+              </div>
+              <input type="radio" name="juggGuideTabs" id="tabjuggGuideGear">
+              <label for="tabjuggGuideGear"><img src="icons/guides/juggGuide.jpg" alt="juggGuideGear" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Gear & Professions</span></h2>
+                <div class="content">
+                  <p><img src="icons/crafting/Mace.png" class="mats floatL">
+                    <b>Weapons</b><small> 
+                      - For tanking you either want a 1H & Shield (best versus harder mobs or if your gear isn't amazing) or a Maul.<br>
+                      - 1H maces are generally the best for threat, however swords get extra +Hit positional bonus which can be good versus harder mobs.<br>
+                      - 2H Maul - best for threat and also for DPS.<br>
+                      - Polearm - not as useful on a Juggernaut due to not benefitting from flanking.<br>
+                      - Shields - if you are lacking armor heater shields are best, if you are at AC soft cap then you could consider a buckler for extra parry. Kite shields are in-between the two.<br></small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/crafting/Cuirass.png" class="mats floatL">
+                    <b>Tanking</b><small> - You want to prioritise hitting the AC soft cap of 50% absorb (check your combat log to see how much damage you absorb from each hit). After that you can look at stacking block / avoid / parry (1 stat = 1% chance to mitigate all damage, not everything can be dodged / blocked / parried though).<br>
+                      - Physical Damage Resist is also a very important stat to stack, this is a flat % damage mitigated and the majority of mobs do physical damage, so get as much of this as you can.<br>
+                      - Riposte adds a chance to do damage when you parry, you will probably have lowish parry so this isn't worth chasing.<br>
+                      - Flanking is a good threat stat that will increase the positional stats on your weapon whether you are using a 1h or a Maul. Crafted rings are a good source of this on tanks. Beware of wearing too much chitin armor as this tends to have negative flanking. Don't sacrifice AC for flanking when tanking unless you are fighting easy mobs.<br>
+                      - Hit & 1H/2H damage are also useful to have for threat and tend to come on crafted rings.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Perforate.png" class="mats floatL">
+                    <b>DPS</b><small> - Flanking is a good damage stat that will increase the positional stats on your weapon, mostly found on mid-weight (leather) armor and crafted rings.<br>
+                      - Penetration is also a solid damage stat to stack.<br>
+                      - 2H damage is a % increase to your overall damage done.<br>
+                      - Hit is not quite as good as the other stats, better against harder mobs which are more difficult to hit.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/crafting/SpiderSilk.png" class="mats floatL">
+                    <b>Other Stats</b><small> - Stamina Regen is super useful for both tanking and dps - more stamina = more threat output / more damage, especially shines in longer fights in dungeons or when AoE tanking (roar is quite stamina intensive). Stamina can regen in combat (at a lower rate).<br>
+                      Health Regen is good for soloing as it means less downtime, somewhat useful in group play as you won't have to rely on your healer topping you up between fights. Afaik HP doesn't regen whilst in combat.</small></p>
+                      <div class="line"></div>
+                  <p><img src="icons/crafting/KingsPotion.png" class="mats floatL">
+                    <b>Professions</b><small> - Armorsmith can craft high AC armor, and also some shields with physical damage resist.<br>
+                    - Outfitter can craft helm / shirt / pants / boots with either physical damage resists or parry / avoid stats. It can also craft dps gear with flanking.<br>
+                    - Tinker can make some nice jewellery with various stats.<br>
+                    - Provisioner can make potions - HP and Kings pots, also hp and stam regen food / drink.<br>
+                    If you want to be more self-sufficient, it's recommended to pick up the core gathering skills first BEFORE picking your production skill 3rd at tradeskill lv 12.</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="marshalGuide" class="overlay"> <!-- Guides -->
+          <a class="cancel" onclick="closeOverlay()"></a>
+          <div class="popup">
+            <div class="rectangle" onclick="closeOverlay()"><span class="close">&times;</span></div>
+            <div class="skilltabs">
+              <input type="radio" name="marshalGuideTabs" id="tabmarshalGuide" checked="checked">
+              <label for="tabmarshalGuide"><img src="icons/guides/marshalGuide.jpg" alt="marshalGuide" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Marshal<span class="name midtone"> - Defender</span></h2>
+                <div class="content">
+                  <p>A seasoned tactician and military commander who changes the tide of battle by stopping enemies in their tracks. The Marshal sees every battle as a test of their wits.<br>&nbsp;<br>
+                    Marshals are all about controlling the flow of battle, they have an AoE root and a single target slow to enable re-positioning mid combat.<br>
+                    If you enjoy combining brains and brawn (or impaling enemies on a pike) this spec might suit you.</p>
+                  <div class="line"></div>
+                  <p><span class="cyan">This guide is based on Asfastasican's guide to playing marshals which you can find on the official forums <a href="https://forums.embersadrift.com/index.php?threads/basic-guide-on-playing-marshals-1-22-updated-11-10-22.3437/" target="_blank">HERE</a></p>
+                </div>
+              </div>
+              <input type="radio" name="marshalGuideTabs" id="tabmarshalGuideSkillsTank">
+              <label for="tabmarshalGuideSkillsTank"><img src="icons/book.png" alt="marshalGuideSkills" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Tanking Skills</h2>
+                <div class="content">
+                  <p><img src="icons/skills/Provoke.png" class="mats floatL"><img src="icons/skills/ThreateningStrike.png" class="mats floatL"><img src="icons/skills/Sweep.png" class="mats floatL">
+                    <b>Threat rotation</b><small> - The three skills you will need to use very often or on cooldown to hold aggro in groups are Provoke, Threatening Strike and Sweep (yes even on single targets.)
+                      <b><span class="red">They are the TTT (triple threat trinity.)</span></b>
+                      <br>You should try to always start with Provoke at range then follow up with the other two. But for the sake of conserving stamina, you should stick to these 3 and only these three as the skills you want to use on cooldown.<br>
+                      If you push things further and use additional skills, you will drain your stamina past a comfortable threshold. I prefer to start a fight by Provoking then smacking it with a Sweep, because it hits hard and has the longer cooldown to get it to refresh faster.<br>
+                      Its worth mentioning that you should always apply provoke on a CC'ed target while its incapacitated (provoke doesn't break CC). If you don't, changes are the mob that was CC'ed will run straight at the teammate that casted it on them the moment it breaks. Poor Brigands.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Resistant.png" class="mats floatL">
+                    <b>Resistant</b> - requires lvl <b>4</b>
+                    <br><small>Your first defensive cooldown. What makes this skill viable is its lower stamina cost later on. Try to weave this while you are tanking in a group when you know you'll be taking decent damage for the next 20 seconds or so to help your healer. 
+                      Definitely worth using if there's 2 or more mobs hitting on you and threat is established.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Dodge.png" class="mats floatL">
+                    <b>Parry</b> - requires lvl <b>18</b>
+                    <br><small>This skill is another good defensive cooldown. Parry makes Polearms more effective for tanking and solo'ing, because it allows you to riposte after a successful parry more often. I now always prefer using this skill over Resistant if I'm using a polearm and only want 1 defensive cooldown.</small></p>
+                </div>
+              </div>
+              <input type="radio" name="marshalGuideTabs" id="tabmarshalGuideSkillsUtility">
+              <label for="tabmarshalGuideSkillsUtility"><img src="icons/book.png" alt="marshalGuideSkills" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Utility Skills</h2>
+                <div class="content">
+                  <p><img src="icons/skills/Halt.png" class="mats floatL">
+                    <b>Halt</b> - requires lvl <b>6</b>
+                    <br><small>Probably your class defining skill. Just like in other mmo's, damage will break its effect. 
+                      - In groups, i recommended you Sweep first before rooting, as long as you or your group can handle a couple of hits while you cast both skills. The extra threat helps keeping them focused on you.<br>                     
+                      - This skill generates threat pretty well on its own and can be used as a pseudo-aoe taunt. You can still apply provoke on a target afterwards to increase threat on it without breaking your root.<br>             
+                      - Want to handle one mob at a time in any situation with multiple mobs? Just root and step aside. You can then focus on the kill target.<br>              
+                      - While main tanking or off tanking, you can aoe root a pack of incoming adds to help the healer out. Marshals can main tank, but the ability to root makes you a better off tank, considering you can root and kite mobs away or just root and buy everyone time.<br>                 
+                      - Need to gather materials in the open with a mob attacking you? Just root, collect the materials and keep going.<br>
+                      - You rarely need to use Tar, but using Tar does help in a number of ways. If you toggle it on, your roots will do additional damage. The damage is small BUT it helps generate threat on all of those mobs. Also, it increases duration, meaning you should consider toggling it on in urgent group situations. 
+                      Using Tar also helps a lot when dealing with diminishing returns. Root tends to be more lenient with diminishing returns, but longer roots means less DR overall.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Pressure.png" class="mats floatL">
+                    <b>Pressure</b> - requires lvl <b>8</b>
+                    <br><small>A fun skill to use, but overrated. It's great in solo play and a fine defensive-oriented attack, but it's main issue is its high stamina cost. This skill is meant to shine in group situations as a tool for something even off tank Marshall can contribute. 
+                      You only get 1 stack of pressure and it is consumed when an enemy attacks. It's high stamina cost is a major reason why it's not a part of the core tank rotation.</small></p>
+                      <div class="line"></div>
+                  <p><img src="icons/skills/Persuit.png" class="mats floatL">
+                    <b>Pursuit</b> - requires lvl <b>10</b>
+                    <br><small>A versatile skill with many subtle uses, all of which I'll list here:<br>
+                      - In a pragmatic sense, this skill CAN be used to generate threat. If a mob is still at range after you use Provoke, use this. You can also weave it in between other skills if you have stamina to burn.<br> 
+                      - You can use this to escape fights you can't win, because it slows down the mob AND speeds you up as well. Makes it very easy to disengage and pick your fights.<br>                    
+                      - You can use this to kite mobs and save teammates that are running. Feel free to tell them in chat that you snared the mob to let them know.<br>                 
+                      - You can actually use this to min/max and speed up travel time a little bit by using it on mobs you pass by.</small></p>
+                      <div class="line"></div>
+                  <p><img src="icons/skills/QuickStrike.png" class="mats floatL">
+                    <b>Quick Strike</b> - requires lvl <b>22</b>
+                    <br><small>It starts at a high 13% stamina cost, but it's a fun skill that hits hard. It's a must have when off tanking since it doesn't generate bonus threat and is decent when used along with pressure. The extra damage modifier is good and advantage means it has a better chance of being a heavy or critical. </small></p>
+                </div>
+              </div>
+              <input type="radio" name="marshalGuideTabs" id="tabmarshalGuideGear">
+              <label for="tabmarshalGuideGear"><img src="icons/guides/marshalGuide.jpg" alt="marshalGuideGear" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Gear & Professions</span></h2>
+                <div class="content">
+                  <p><img src="icons/crafting/Armorsmith.png" class="mats floatL">
+                    <b>Armor</b><small> - Generally speaking AC is king. You want to reach the AC soft cap of 50% absorb (check your combat log to see how much damage you absorb from each hit).
+                    Block is good, and parry gets better late game as well, riposte will come if you use a polearm, but shouldn't be thought about much.
+                    Physical damage resist is also very good and should be ranked higher than the other resists, with stun and daze also good agaist specific mobs.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/crafting/Mace.png" class="mats floatL">
+                    <b>Weapons</b><small> 
+                    - Mace and Shield - The overall best all-purpose weapon choice for Marshals. Can be used to tank, grind and even solo granted your weapon is solid. Swords can be used as well to increase your Hit rating against higher level mobs.<br>                  
+                    - 2 Handed Mauls - Best for DPS'ing in a group. Some also prefer using this to Polearms, but it still only shines in group play where you can actually back attack.<br>
+                    - Polearms - The best for solo'ing. Parrying means less downtime and riposte also provides more possible dmg while taking hits. The only downside is that flanking gear has zero effect on your Polearm usage.<br></small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/AdvantageStrike.png" class="mats floatL">
+                    <b>Other Stats</b><small> 
+                    - Penetration is very useful on weapons and maces in general. Its worth mentioning that penetration does not directly increase your threat, but it does improve your damage.<br>
+                    - Hit is a good stat, but it remains to be seen if its the best stat while leveling. Hit does boost your threat, but moreso on mobs that are higher level then you.<br>
+                    - Flanking will buff your weapon modifiers, such as penetration, helping your threat generation. NEVER sacrifice AC for more flanking when deciding on what to equip.<br>
+                    - Stamina regen is crucial to every class in the game, but it helps tanks the most. More stamina obviously means you have more energy to spare and allows you to use more skills more often. More skills means more damage and more threat. More threat means DPS and strikers can push themselves further.<br>
+                    - Getting as much health regen on the side is great for tanks and any class too. Less downtime. But keep in mind certain types of health regen do not work in combat.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/crafting/KingsPotion.png" class="mats floatL">
+                    <b>Professions</b><small> - Armorsmith can craft high AC armor, and also some shields with physical damage resist.<br>
+                    - Outfitter can craft helm / shirt / pants / boots with either physical damage resists or parry / avoid stats.<br>
+                    - Tinker can make some nice jewellery with various stats.<br>
+                    - Provisioner can make potions - HP and Kings pots, also hp and stam regen food / drink.<br>
+                    If you want to be more self-sufficient, it's recommended to pick up the core gathering skills first BEFORE picking your production skill 3rd at tradeskill lv 12.</small></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -101,22 +392,22 @@
           <div class="middle"><a onclick="openOverlay('DefInfo')"><img class="class" src="icons/class/defender.png"></a><h1>Defender<span class="midtone ea"> - Skilled Warriors</span></h1></div>
           <div class="flexBox">
             <div class="icon">
-              <a onclick="openOverlay('ThreateningStrike')"><img src="icons/skills/ThreateningStrike.png"  alt="Threatening Strike"></a>
+              <a onclick="openOverlay('ThreateningStrike')"><img src="icons/skills/ThreateningStrike.png"  alt="Threatening Strike" class="skill"></a>
               <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/damage.png" class='role2'>
               <p class="iTxt"><b>Threatening<br>Strike</b></p>
             </div>
             <div class="icon">
-              <a onclick="openOverlay('StrikeDef')"><img src="icons/skills/Strike.png"  alt="Strike"></a>
+              <a onclick="openOverlay('StrikeDef')"><img src="icons/skills/Strike.png"  alt="Strike" class="skill"></a>
               <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/damage.png" class='role2'>
               <p class="iTxt"><b>Strike</b></p>
             </div>
             <div class="icon">
-              <a onclick="openOverlay('Provoke')"><img src="icons/skills/Provoke.png"  alt="Provoke" id="ProvokeButton"></a>
+              <a onclick="openOverlay('Provoke')"><img src="icons/skills/Provoke.png"  alt="Provoke" class="skill"></a>
               <p class="grey">&nbsp;</p><img src="icons/2.png" class="role1"><img src="icons/debuff.png" class='role2'>
               <p class="iTxt"><b>Provoke</b></p>
             </div>
             <div class="icon">
-              <a onclick="openOverlay('Resistant')"><img src="icons/skills/Resistant.png"  alt="Resistant" id="ResistantButton"></a>
+              <a onclick="openOverlay('Resistant')"><img src="icons/skills/Resistant.png"  alt="Resistant" class="skill"></a>
               <p class="grey">&nbsp;</p><img src="icons/4.png" class="role1"><img src="icons/buff.png" class='role2'>
               <p class="iTxt"><b>Resistant</b></p>
             </div>
@@ -129,42 +420,42 @@
                 <h1>Juggernaut<span class="midtone ea"> - <small>Push the Battle Forward</small></span></h1>
                 <div class="flexBox">
                   <div class="icon">
-                    <a onclick="openOverlay('Breach')"><img src="icons/skills/Breach.png"  alt="Breach"></a>
+                    <a onclick="openOverlay('Breach')"><img src="icons/skills/Breach.png"  alt="Breach" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/damage.png" class='role2'>
                     <p class="iTxt"><b>Breach</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Roar')"><img src="icons/skills/Roar.png"  alt="Roar"></a>
+                    <a onclick="openOverlay('Roar')"><img src="icons/skills/Roar.png"  alt="Roar" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/8.png" class="role1"><img src="icons/debuff.png" class='role2'>
                     <p class="iTxt"><b>Roar</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('NoTimeToDie')"><img src="icons/skills/NoTimeToDie.png"  alt="NoTimeToDie"></a>
+                    <a onclick="openOverlay('NoTimeToDie')"><img src="icons/skills/NoTimeToDie.png"  alt="NoTimeToDie" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/10.png" class="role1"><img src="icons/buff.png" class='role2'>
                     <p class="iTxt"><b>No Time<br>To Die</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('CollateralDamage')"><img src="icons/skills/CollateralDamage.png"  alt="CollateralDamage"></a>
+                    <a onclick="openOverlay('CollateralDamage')"><img src="icons/skills/CollateralDamage.png"  alt="CollateralDamage" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/14.png" class="role1"><img src="icons/damage.png" class='role2'>
                     <p class="iTxt"><b>Collateral<br>Damage</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Unstoppable')"><img src="icons/skills/Unstoppable.png"  alt="Unstoppable"></a>
+                    <a onclick="openOverlay('Unstoppable')"><img src="icons/skills/Unstoppable.png"  alt="Unstoppable" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/18.png" class="role1"><img src="icons/buff.png" class='role2'>
                     <p class="iTxt"><b>Unstoppable</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Perforate')"><img src="icons/skills/Perforate.png"  alt="Perforate"></a>
+                    <a onclick="openOverlay('Perforate')"><img src="icons/skills/Perforate.png"  alt="Perforate" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/22.png" class="role1"><img src="icons/damage.png" class='role2'>
                     <p class="iTxt"><b>Perforate</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Brace')"><img src="icons/skills/Brace.png"  alt="Brace"></a>
+                    <a onclick="openOverlay('Brace')"><img src="icons/skills/Brace.png"  alt="Brace" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/26.png" class="role1"><img src="icons/buff.png" class='role2'>
                     <p class="iTxt"><b>Brace</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Rip')"><img src="icons/skills/Rip.png"  alt="Rip"></a>
+                    <a onclick="openOverlay('Rip')"><img src="icons/skills/Rip.png"  alt="Rip" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/30.png" class="role1"><img src="icons/damage.png" class='role2'>
                     <p class="iTxt"><b>Rip</b></p>
                   </div>
@@ -177,42 +468,42 @@
                 <h1>Knight<span class="midtone ea"> - <small>An Oath to Protect Others</small></span></h1>
                 <div class="flexBox">
                   <div class="icon">
-                    <a onclick="openOverlay('EnragingStrike')"><img src="icons/skills/EnragingStrike.png"  alt="EnragingStrike"></a>
+                    <a onclick="openOverlay('EnragingStrike')"><img src="icons/skills/EnragingStrike.png"  alt="EnragingStrike" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/debuff.png" class='role2'>
                     <p class="iTxt"><b>Enraging Strike</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Protect')"><img src="icons/skills/Protect.png"  alt="Protect"></a>
+                    <a onclick="openOverlay('Protect')"><img src="icons/skills/Protect.png"  alt="Protect" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/8.png" class="role1"><img src="icons/buff.png" class='role2'>
                     <p class="iTxt"><b>Protect</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Counter')"><img src="icons/skills/Counter.png"  alt="Counter"></a>
+                    <a onclick="openOverlay('Counter')"><img src="icons/skills/Counter.png"  alt="Counter" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/10.png" class="role1"><img src="icons/buff.png" class='role2'>
                     <p class="iTxt"><b>Counter</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Bash')"><img src="icons/skills/Bash.png"  alt="Bash"></a>
+                    <a onclick="openOverlay('Bash')"><img src="icons/skills/Bash.png"  alt="Bash" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/14.png" class="role1"><img src="icons/damage.png" class='role2'>
                     <p class="iTxt"><b>Bash</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Inspire')"><img src="icons/skills/Inspire.png"  alt="Inspire"></a>
+                    <a onclick="openOverlay('Inspire')"><img src="icons/skills/Inspire.png"  alt="Inspire" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/18.png" class="role1"><img src="icons/aura.png" class='role2'>
                     <p class="iTxt"><b>Inspire</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('CrushingBlow')"><img src="icons/skills/CrushingBlow.png"></a>
+                    <a onclick="openOverlay('CrushingBlow')"><img src="icons/skills/CrushingBlow.png" alt="CrushingBlow" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/22.png" class="role1"><img src="icons/damage.png" class='role2'>
                     <p class="iTxt"><b>Crushing Blow</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Bulwark')"><img src="icons/skills/Bulwark.png"  alt="Bulwark"></a>
+                    <a onclick="openOverlay('Bulwark')"><img src="icons/skills/Bulwark.png"  alt="Bulwark" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/26.png" class="role1"><img src="icons/buff.png" class='role2'>
                     <p class="iTxt"><b>Bulwark</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('InnerFire')"><img src="icons/skills/InnerFire.png"  alt="InnerFire"></a>
+                    <a onclick="openOverlay('InnerFire')"><img src="icons/skills/InnerFire.png"  alt="InnerFire" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/30.png" class="role1"><img src="icons/heal.png" class='role2'>
                     <p class="iTxt"><b>Inner Fire</b></p>
                   </div>
@@ -225,50 +516,50 @@
                 <h1>Marshal<span class="midtone ea"> - <small>A Seasoned Tactician</small></span></h1>
                 <div class="flexBox">
                   <div class="icon">
-                    <a onclick="openOverlay('Halt')"><img src="icons/skills/Halt.png"  alt="Halt"></a>
+                    <a onclick="openOverlay('Halt')"><img src="icons/skills/Halt.png"  alt="Halt" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/cc.png" class='role2'>
                     <p class="iTxt"><b>Halt</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Pressure')"><img src="icons/skills/Pressure.png"  alt="Pressure"></a>
+                    <a onclick="openOverlay('Pressure')"><img src="icons/skills/Pressure.png"  alt="Pressure" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/8.png" class="role1"><img src="icons/debuff.png" class='role2'>
                     <p class="iTxt"><b>Pressure</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Pursuit')"><img src="icons/skills/Pursuit.png"  alt="Pursuit"></a>
+                    <a onclick="openOverlay('Pursuit')"><img src="icons/skills/Pursuit.png"  alt="Pursuit" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/10.png" class="role1"><img src="icons/buff.png" class='role2'>
                     <p class="iTxt"><b>Pursuit</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Sweep')"><img src="icons/skills/Sweep.png"  alt="Sweep"></a>
+                    <a onclick="openOverlay('Sweep')"><img src="icons/skills/Sweep.png"  alt="Sweep" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/14.png" class="role1"><img src="icons/debuff.png" class='role2'>
                     <p class="iTxt"><b>Sweep</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Parry')"><img src="icons/skills/Dodge.png"  alt="Dodge"></a>
+                    <a onclick="openOverlay('Parry')"><img src="icons/skills/Dodge.png"  alt="Dodge" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/18.png" class="role1"><img src="icons/buff.png" class='role2'>
                     <p class="iTxt"><b>Parry</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('QuickStrike')"><img src="icons/skills/QuickStrike.png"  alt="QuickStrike"></a>
+                    <a onclick="openOverlay('QuickStrike')"><img src="icons/skills/QuickStrike.png"  alt="QuickStrike" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/22.png" class="role1"><img src="icons/damage.png" class='role2'>
                     <p class="iTxt"><b>Quick Strike</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Ready')"><img src="icons/skills/Ready.png"  alt="Ready" id="ReadyButton"></a>
+                    <a onclick="openOverlay('Ready')"><img src="icons/skills/Ready.png"  alt="Ready" id="ReadyButton" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/26.png" class="role1"><img src="icons/buff.png" class='role2'>
                     <p class="iTxt"><b>Ready</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('DrawFire')"><img src="icons/skills/DrawFire.png"  alt="DrawFire"></a>
+                    <a onclick="openOverlay('DrawFire')"><img src="icons/skills/DrawFire.png"  alt="DrawFire" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/30.png" class="role1"><img src="icons/debuff.png" class='role2'>
                     <p class="iTxt"><b>Draw Fire</b></p>
                   </div>
-                  <div class="icon">
+                  <!--<div class="icon">
                     <a onclick="openOverlay('CenterSelf')"><img src="icons/skills/CenterSelf.png"  alt="CenterSelf"></a>
                     <p class="grey">&nbsp;</p><img src="icons/40.png" class="role1"><img src="icons/buff.png" class='role2'>
                     <p class="iTxt"><b>Center Self</b></p>
-                  </div>
+                  </div>-->
                 </div>
               </div>
             </div>
@@ -622,7 +913,7 @@
                   <p>Target: <span class="red">Offensive</span>, PBAoE, <b>6</b> targets</p>
                   <p>Damage: <b>1d4 +10</b>, <b>x2.5</b> (250%) to <span class="orange">Threat</span></p>
                   <p>Mods: <span class="yellow">Ignore Active Defense</span> (block, avoid, parry)</p>
-                  <p>Radius: <b>6m</b></p>
+                  <p>Radius: <b>12m</b></p>
                   <div class="line"></div>
                   <p><span class="cyan">Loud roar that goads your enemies to attack you</p>
                 </div>
@@ -642,7 +933,7 @@
                   <p>Target: <span class="red">Offensive</span>, PBAoE, <b>6</b> targets</p>
                   <p>Damage: <b>1d4 +18</b>, <b>x2.7</b> (270%) to <span class="orange">Threat</span></p>
                   <p>Mods: <span class="yellow">Ignore Active Defense</span> (block, avoid, parry)</p>
-                  <p>Radius: <b>6m</b></p>
+                  <p>Radius: <b>12m</b></p>
                   <div class="line"></div>
                   <p><span class="cyan">Loud roar that goads your enemies to attack you</p>
                 </div>
@@ -1606,22 +1897,22 @@
           <div class="middle"><a onclick="openOverlay('StrInfo')"><img class="class" src="icons/class/Duelist.png"></a><h1>Striker<span class="midtone ea"> - Deadly Fighters</span></h1></div>
           <div class="flexBox">
             <div class="icon">
-              <a onclick="openOverlay('AdvantageStrike')"><img src="icons/skills/AdvantageStrike.png"  alt="Advantage Strike"></a>
+              <a onclick="openOverlay('AdvantageStrike')"><img src="icons/skills/AdvantageStrike.png"  alt="Advantage Strike" class="skill"></a>
               <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/damage.png" class='role2'>
               <p class="iTxt"><b>Advantage<br>Strike</b></p>
             </div>
             <div class="icon">
-              <a onclick="openOverlay('StrikeStr')"><img src="icons/skills/Strike.png"  alt="Strike"></a>
+              <a onclick="openOverlay('StrikeStr')"><img src="icons/skills/Strike.png"  alt="Strike" class="skill"></a>
               <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/damage.png" class='role2'>
               <p class="iTxt"><b>Strike</b></p>
             </div>
             <div class="icon">
-              <a onclick="openOverlay('FadingStrike')"><img src="icons/skills/Disengage.png"  alt="FadingStrike"></a>
+              <a onclick="openOverlay('FadingStrike')"><img src="icons/skills/Disengage.png"  alt="FadingStrike" class="skill"></a>
               <p class="grey">&nbsp;</p><img src="icons/2.png" class="role1"><img src="icons/debuff.png" class='role2'>
               <p class="iTxt"><b>Fading<br>Strike</b></p>
             </div>
             <div class="icon">
-              <a onclick="openOverlay('BleedingStrike')"><img src="icons/skills/BleedingStrike.png"  alt="BleedingStrike"></a>
+              <a onclick="openOverlay('BleedingStrike')"><img src="icons/skills/BleedingStrike.png"  alt="BleedingStrike" class="skill"></a>
               <p class="grey">&nbsp;</p><img src="icons/4.png" class="role1"><img src="icons/damage.png" class='role2'>
               <p class="iTxt"><b>Bleeding<br>Strike</b></p>
             </div>
@@ -1634,47 +1925,47 @@
                 <h1>Berserker<span class="midtone ea"> - <small>An All Out Offensive</small></span></h1>
                 <div class="flexBox">
                 <div class="icon">
-                  <a onclick="openOverlay('Assault')"><img src="icons/skills/Assault.png"  alt="Assault"></a>
+                  <a onclick="openOverlay('Assault')"><img src="icons/skills/Assault.png"  alt="Assault" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Assault</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Arc')"><img src="icons/skills/Arc.png"  alt="Arc"></a>
+                  <a onclick="openOverlay('Arc')"><img src="icons/skills/Arc.png"  alt="Arc" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/8.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Arc</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Fury')"><img src="icons/skills/Fury.png"  alt="Fury"></a>
+                  <a onclick="openOverlay('Fury')"><img src="icons/skills/Fury.png"  alt="Fury" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/10.png" class="role1"><img src="icons/buff.png" class='role2'>
                   <p class="iTxt"><b>Fury</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Intimidate')"><img src="icons/skills/Intimidate.png"  alt="Intimidate"></a>
+                  <a onclick="openOverlay('Intimidate')"><img src="icons/skills/Intimidate.png"  alt="Intimidate" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/12.png" class="role1"><img src="icons/debuff.png" class='role2'>
                   <p class="iTxt"><b>Intimidate</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('FollowThrough')"><img src="icons/skills/FollowThrough.png"  alt="FollowThrough"></a>
+                  <a onclick="openOverlay('FollowThrough')"><img src="icons/skills/FollowThrough.png"  alt="FollowThrough" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/14.png" class="role1"><img src="icons/buff.png" class='role2'>
                   <p class="iTxt"><b>Follow<br>Through</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Pummel')"><img src="icons/skills/Pummel.png"  alt="Pummel"></a>
+                  <a onclick="openOverlay('Pummel')"><img src="icons/skills/Pummel.png"  alt="Pummel" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/18.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Pummel</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Guts')"><img src="icons/skills/Guts.png"  alt="Guts"></a>
+                  <a onclick="openOverlay('Guts')"><img src="icons/skills/Guts.png"  alt="Guts" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/22.png" class="role1"><img src="icons/buff.png" class='role2'>
                   <p class="iTxt"><b>Guts</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Windup')"><img src="icons/skills/Windup.png"  alt="Windup"></a>
+                  <a onclick="openOverlay('Windup')"><img src="icons/skills/Windup.png"  alt="Windup" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/26.png" class="role1"><img src="icons/buff.png" class='role2'>
                   <p class="iTxt"><b>Windup</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('WildStrikes')"><img src="icons/skills/WildStrikes.png"  alt="WildStrikes"></a>
+                  <a onclick="openOverlay('WildStrikes')"><img src="icons/skills/WildStrikes.png"  alt="WildStrikes" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/30.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Wild Strike</b></p>
                 </div>
@@ -1687,42 +1978,42 @@
                 <h1>Brigand<span class="midtone ea"> - <small>Underhanded Fighting</small></span></h1>
                 <div class="flexBox">
                 <div class="icon">
-                  <a onclick="openOverlay('Stun')"><img src="icons/skills/Stun.png"  alt="Stun"></a>
+                  <a onclick="openOverlay('Stun')"><img src="icons/skills/Stun.png"  alt="Stun" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/cc.png" class='role2'>
                   <p class="iTxt"><b>Stun</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('HiddenStrike')"><img src="icons/skills/HiddenStrike.png"  alt="HiddenStrike"></a>
+                  <a onclick="openOverlay('HiddenStrike')"><img src="icons/skills/HiddenStrike.png"  alt="HiddenStrike" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/8.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Hidden<br>Strike</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Overpower')"><img src="icons/skills/Overpower.png"  alt="Overpower"></a>
+                  <a onclick="openOverlay('Overpower')"><img src="icons/skills/Overpower.png"  alt="Overpower" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/10.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Overpower</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('SharpenEdge')"><img src="icons/skills/SharpenEdge.png"  alt="SharpenEdge"></a>
+                  <a onclick="openOverlay('SharpenEdge')"><img src="icons/skills/SharpenEdge.png"  alt="SharpenEdge" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/14.png" class="role1"><img src="icons/buff.png" class='role2'>
                   <p class="iTxt"><b>Sharpen<br>Edge</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Daze')"><img src="icons/skills/Daze.png"  alt="Daze"></a>
+                  <a onclick="openOverlay('Daze')"><img src="icons/skills/Daze.png"  alt="Daze" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/18.png" class="role1"><img src="icons/cc.png" class='role2'>
                   <p class="iTxt"><b>Daze</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('FlashPowder')"><img src="icons/skills/FlashPowder.png"  alt="FlashPowder"></a>
+                  <a onclick="openOverlay('FlashPowder')"><img src="icons/skills/FlashPowder.png"  alt="FlashPowder" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/22.png" class="role1"><img src="icons/cc.png" class='role2'>
                   <p class="iTxt"><b>Flash<br>Powder</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Execute')"><img src="icons/skills/Execute.png"  alt="Execute"></a>
+                  <a onclick="openOverlay('Execute')"><img src="icons/skills/Execute.png"  alt="Execute" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/26.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Execute</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('FromTheShadows')"><img src="icons/skills/FromTheShadows.png"  alt="FromTheShadows"></a>
+                  <a onclick="openOverlay('FromTheShadows')"><img src="icons/skills/FromTheShadows.png"  alt="FromTheShadows" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/30.png" class="role1"><img src="icons/buff.png" class='role2'>
                   <p class="iTxt"><b>From the<br>Shadows</b></p>
                 </div>
@@ -1735,47 +2026,47 @@
                 <h1>Warden<span class="midtone ea"> - <small>Attuned to the World</small></span></h1>
                 <div class="flexBox">
                 <div class="icon">
-                  <a onclick="openOverlay('VenomStrike')"><img src="icons/skills/VenomStrike.png"  alt="VenomStrike"></a>
+                  <a onclick="openOverlay('VenomStrike')"><img src="icons/skills/VenomStrike.png"  alt="VenomStrike" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Venom<br>Strike</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Assist')"><img src="icons/skills/Assist.png"  alt="Assist"></a>
+                  <a onclick="openOverlay('Assist')"><img src="icons/skills/Assist.png"  alt="Assist" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/8.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Assist</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Aid')"><img src="icons/skills/Aid.png"  alt="Aid"></a>
+                  <a onclick="openOverlay('Aid')"><img src="icons/skills/Aid.png"  alt="Aid" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/10.png" class="role1"><img src="icons/heal.png" class='role2'>
                   <p class="iTxt"><b>Aid</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('SedationDart')"><img src="icons/skills/SedationDart.png"  alt="SedationDart"></a>
+                  <a onclick="openOverlay('SedationDart')"><img src="icons/skills/SedationDart.png"  alt="SedationDart" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/12.png" class="role1"><img src="icons/cc.png" class='role2'>
                   <p class="iTxt"><b>Sedation Dart</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('LayOfTheLand')"><img src="icons/skills/LayOfTheLand.png"  alt="LayOfTheLand"></a>
+                  <a onclick="openOverlay('LayOfTheLand')"><img src="icons/skills/LayOfTheLand.png"  alt="LayOfTheLand" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/14.png" class="role1"><img src="icons/aura.png" class='role2'>
                   <p class="iTxt"><b>Lay of<br>the Land</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('AcidStrike')"><img src="icons/skills/AcidStrike.png"  alt="AcidStrike"></a>
+                  <a onclick="openOverlay('AcidStrike')"><img src="icons/skills/AcidStrike.png"  alt="AcidStrike" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/18.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Acid Strike</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('EagleEye')"><img src="icons/skills/EagleEye.png"  alt="EagleEye"></a>
+                  <a onclick="openOverlay('EagleEye')"><img src="icons/skills/EagleEye.png"  alt="EagleEye" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/22.png" class="role1"><img src="icons/buff.png" class='role2'>
                   <p class="iTxt"><b>Eagle Eye</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('ViperidToxins')"><img src="icons/skills/ViperidToxins.png"  alt="ViperidToxins"></a>
+                  <a onclick="openOverlay('ViperidToxins')"><img src="icons/skills/ViperidToxins.png"  alt="ViperidToxins" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/26.png" class="role1"><img src="icons/debuff.png" class='role2'>
                   <p class="iTxt"><b>Viperid<br>Toxins</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('QuillbackSpines')"><img src="icons/skills/QuillbackSpines.png"  alt="QuillbackSpines"></a>
+                  <a onclick="openOverlay('QuillbackSpines')"><img src="icons/skills/QuillbackSpines.png"  alt="QuillbackSpines" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/30.png" class="role1"><img src="icons/buff.png" class='role2'>
                   <p class="iTxt"><b>Quillback<br>Spines</b></p>
                 </div>
@@ -3109,22 +3400,22 @@
           <div class="middle"><a onclick="openOverlay('SupInfo')"><img class="class" src="icons/class/Supporter.png"></a><h1>Supporter<span class="midtone ea"> - Combat Medics</span></h1></div>
           <div class="flexBox">
             <div class="icon">
-              <a onclick="openOverlay('AssailingStrike')"><img src="icons/skills/AssailingStrike.png"  alt="Assailing Strike"></a>
+              <a onclick="openOverlay('AssailingStrike')"><img src="icons/skills/AssailingStrike.png"  alt="Assailing Strike" class="skill"></a>
               <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/damage.png" class='role2'>
               <p class="iTxt"><b>Assailing<br>Strike</b></p>
             </div>
             <div class="icon">
-              <a onclick="openOverlay('StrikeSup')"><img src="icons/skills/Strike.png"  alt="Strike"></a>
+              <a onclick="openOverlay('StrikeSup')"><img src="icons/skills/Strike.png"  alt="Strike" class="skill"></a>
               <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/damage.png" class='role2'>
               <p class="iTxt"><b>Strike</b></p>
             </div>
             <div class="icon">
-              <a onclick="openOverlay('FirstAid')"><img src="icons/skills/FirstAid.png"  alt="FirstAid"></a>
+              <a onclick="openOverlay('FirstAid')"><img src="icons/skills/FirstAid.png"  alt="FirstAid" class="skill"></a>
               <p class="grey">&nbsp;</p><img src="icons/2.png" class="role1"><img src="icons/heal.png" class='role2'>
               <p class="iTxt"><b>First Aid</b></p>
             </div>
             <div class="icon">
-              <a onclick="openOverlay('Screen')"><img src="icons/skills/Screen.png"  alt="Screen"></a>
+              <a onclick="openOverlay('Screen')"><img src="icons/skills/Screen.png"  alt="Screen" class="skill"></a>
               <p class="grey">&nbsp;</p><img src="icons/4.png" class="role1"><img src="icons/buff.png" class='role2'>
               <p class="iTxt"><b>Screen</b></p>
             </div>
@@ -3137,42 +3428,42 @@
                 <h1>Duelist<span class="midtone ea"> - <small>Balanced Offense and Defense</small></span></h1>
                 <div class="flexBox">
                 <div class="icon">
-                  <a onclick="openOverlay('Patch')"><img src="icons/skills/Patch.png"  alt="Patch"></a>
+                  <a onclick="openOverlay('Patch')"><img src="icons/skills/Patch.png"  alt="Patch" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/heal.png" class='role2'>
                   <p class="iTxt"><b>Patch</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('CombinedStrike')"><img src="icons/skills/CombinedStrike.png"  alt="CombinedStrike"></a>
+                  <a onclick="openOverlay('CombinedStrike')"><img src="icons/skills/CombinedStrike.png"  alt="CombinedStrike" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/8.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Combined<br>Strike</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Disengage')"><img src="icons/skills/Disengage.png"  alt="Disengage"></a>
+                  <a onclick="openOverlay('Disengage')"><img src="icons/skills/Disengage.png"  alt="Disengage" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/10.png" class="role1"><img src="icons/debuff.png" class='role2'>
                   <p class="iTxt"><b>Disengage</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('WeakPoint')"><img src="icons/skills/WeakPoint.png"  alt="WeakPoint"></a>
+                  <a onclick="openOverlay('WeakPoint')"><img src="icons/skills/WeakPoint.png"  alt="WeakPoint" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/14.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Weak Point</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Serration')"><img src="icons/skills/Serration.png"  alt="Serration"></a>
+                  <a onclick="openOverlay('Serration')"><img src="icons/skills/Serration.png"  alt="Serration" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/18.png" class="role1"><img src="icons/buff.png" class='role2'>
                   <p class="iTxt"><b>Serration</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Triage')"><img src="icons/skills/Triage.png"  alt="Triage"></a>
+                  <a onclick="openOverlay('Triage')"><img src="icons/skills/Triage.png"  alt="Triage" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/22.png" class="role1"><img src="icons/heal.png" class='role2'>
                   <p class="iTxt"><b>Triage</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('HemorrhagingStrike')"><img src="icons/skills/HemorrhagingStrike.png"  alt="HemorrhagingStrike"></a>
+                  <a onclick="openOverlay('HemorrhagingStrike')"><img src="icons/skills/HemorrhagingStrike.png"  alt="HemorrhagingStrike" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/26.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Hemorrhaging<br>Strike</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Stim')"><img src="icons/skills/Stim.png"  alt="Stim"></a>
+                  <a onclick="openOverlay('Stim')"><img src="icons/skills/Stim.png"  alt="Stim" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/30.png" class="role1"><img src="icons/buff.png" class='role2'>
                   <p class="iTxt"><b>Stim</b></p>
                 </div>
@@ -3185,42 +3476,42 @@
                 <h1>Sentinel<span class="midtone ea"> - <small>A Guardian of the People</small></span></h1>
                 <div class="flexBox">
                 <div class="icon">
-                  <a onclick="openOverlay('Replenish')"><img src="icons/skills/Replenish.png"  alt="Replenish"></a>
+                  <a onclick="openOverlay('Replenish')"><img src="icons/skills/Replenish.png"  alt="Replenish" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/heal.png" class='role2'>
                   <p class="iTxt"><b>Replenish</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('DistractingStrike')"><img src="icons/skills/Distract.png"  alt="Distract"></a>
+                  <a onclick="openOverlay('DistractingStrike')"><img src="icons/skills/Distract.png"  alt="Distract" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/8.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Distracting<br>Strike</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('BolsterArmor')"><img src="icons/skills/BolsterArmor.png"  alt="BolsterArmor"></a>
+                  <a onclick="openOverlay('BolsterArmor')"><img src="icons/skills/BolsterArmor.png"  alt="BolsterArmor" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/10.png" class="role1"><img src="icons/buff.png" class='role2'>
                   <p class="iTxt"><b>Bolster<br>Armor</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Weaken')"><img src="icons/skills/Weaken.png"  alt="Weaken"></a>
+                  <a onclick="openOverlay('Weaken')"><img src="icons/skills/Weaken.png"  alt="Weaken" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/14.png" class="role1"><img src="icons/debuff.png" class='role2'>
                   <p class="iTxt"><b>Weaken</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('FortifyingAura')"><img src="icons/skills/FortifyingAura.png"  alt="FortifyingAura"></a>
+                  <a onclick="openOverlay('FortifyingAura')"><img src="icons/skills/FortifyingAura.png"  alt="FortifyingAura" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/18.png" class="role1"><img src="icons/aura.png" class='role2'>
                   <p class="iTxt"><b>Fortifying<br>Aura</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Salvo')"><img src="icons/skills/Salvo.png"  alt="Salvo"></a>
+                  <a onclick="openOverlay('Salvo')"><img src="icons/skills/Salvo.png"  alt="Salvo" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/22.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Salvo</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Diversion')"><img src="icons/skills/Diversion.png"  alt="Diversion"></a>
+                  <a onclick="openOverlay('Diversion')"><img src="icons/skills/Diversion.png"  alt="Diversion" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/26.png" class="role1"><img src="icons/debuff.png" class='role2'>
                   <p class="iTxt"><b>Diversion</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Treatment')"><img src="icons/skills/Treatment.png"  alt="Treatment"></a>
+                  <a onclick="openOverlay('Treatment')"><img src="icons/skills/Treatment.png"  alt="Treatment" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/30.png" class="role1"><img src="icons/heal.png" class='role2'>
                   <p class="iTxt"><b>Treatment</b></p>
                 </div>
@@ -3233,52 +3524,52 @@
                 <h1>Warlord<span class="midtone ea"> - <small>Inspiring Battle Songs</small></span></h1>
                 <div class="flexBox">
                 <div class="icon">
-                  <a onclick="openOverlay('RejuvenatingHymn')"><img src="icons/skills/RejuvenatingHymn.png"  alt="RejuvenatingHymn"></a>
+                  <a onclick="openOverlay('RejuvenatingHymn')"><img src="icons/skills/RejuvenatingHymn.png"  alt="RejuvenatingHymn" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/heal.png" class='role2'>
                   <p class="iTxt"><b>Rejuvenating<br>Hymn</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('OpenWound')"><img src="icons/skills/OpenWound.png"  alt="OpenWound"></a>
+                  <a onclick="openOverlay('OpenWound')"><img src="icons/skills/OpenWound.png"  alt="OpenWound" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/6.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Open Wound</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('EnergizingBattleChant')"><img src="icons/skills/EnergisingBattleChant.png"  alt="FocusingBattleChant"></a>
+                  <a onclick="openOverlay('EnergizingBattleChant')"><img src="icons/skills/EnergisingBattleChant.png"  alt="FocusingBattleChant" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/8.png" class="role1"><img src="icons/aura.png" class='role2'>
                   <p class="iTxt"><b>Energizing <br>Battle Chant</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('TerrorsOfWar')"><img src="icons/skills/TerrorsOfWar.png"  alt="TerrorsOfWar"></a>
+                  <a onclick="openOverlay('TerrorsOfWar')"><img src="icons/skills/TerrorsOfWar.png"  alt="TerrorsOfWar" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/10.png" class="role1"><img src="icons/cc.png" class='role2'>
                   <p class="iTxt"><b>Terrors<br>of War</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Stifle')"><img src="icons/skills/Stifle.png"  alt="Stifle"></a>
+                  <a onclick="openOverlay('Stifle')"><img src="icons/skills/Stifle.png"  alt="Stifle" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/14.png" class="role1"><img src="icons/damage.png" class='role2'>
                   <p class="iTxt"><b>Stifle</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('DreadBellow')"><img src="icons/skills/DreadBellow.png"  alt="DreadBellow"></a>
+                  <a onclick="openOverlay('DreadBellow')"><img src="icons/skills/DreadBellow.png"  alt="DreadBellow" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/16.png" class="role1"><img src="icons/debuff.png" class='role2'>
                   <p class="iTxt"><b>Dread<br>Bellow</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('FocusingBattleChant')"><img src="icons/skills/FocusingBattleChant.png"  alt="FocusingBattleChant"></a>
+                  <a onclick="openOverlay('FocusingBattleChant')"><img src="icons/skills/FocusingBattleChant.png"  alt="FocusingBattleChant" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/18.png" class="role1"><img src="icons/aura.png" class='role2'>
                   <p class="iTxt"><b>Focusing<br>Battle Chant</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('FlinchingStrike')"><img src="icons/skills/FlinchingStrike.png"  alt="FlinchingStrike"></a>
+                  <a onclick="openOverlay('FlinchingStrike')"><img src="icons/skills/FlinchingStrike.png"  alt="FlinchingStrike" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/22.png" class="role1"><img src="icons/debuff.png" class='role2'>
                   <p class="iTxt"><b>Flinching<br>Strike</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('RallyingCall')"><img src="icons/skills/RallyingCall.png"  alt="RallyingCall"></a>
+                  <a onclick="openOverlay('RallyingCall')"><img src="icons/skills/RallyingCall.png"  alt="RallyingCall" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/26.png" class="role1"><img src="icons/buff.png" class='role2'>
                   <p class="iTxt"><b>Rallying Call</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('FrightfulVisage')"><img src="icons/skills/FrightfulVisage.png"  alt="FrightfulVisage"></a>
+                  <a onclick="openOverlay('FrightfulVisage')"><img src="icons/skills/FrightfulVisage.png"  alt="FrightfulVisage" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/30.png" class="role1"><img src="icons/cc.png" class='role2'>
                   <p class="iTxt"><b>Frightful<br>Visage</b></p>
                 </div>
@@ -4679,37 +4970,37 @@
                 <h1><img src="icons/tree2.png" class="nudge"> Forester<span class="midtone ea"> - <small>Refine Wood and Plants</small></span></h1>
                 <div class="flexBox">
                 <div class="icon">
-                  <a onclick="openOverlay('BowString')"><img src="icons/crafting/LinenBowString.png"  alt="BowString"></a>
+                  <a onclick="openOverlay('BowString')"><img src="icons/crafting/LinenBowString.png"  alt="BowString" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
                   <p class="iTxt"><b>Bow String</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Cloth')"><img src="icons/crafting/LinenCloth.png"  alt="Cloth"></a>
+                  <a onclick="openOverlay('Cloth')"><img src="icons/crafting/LinenCloth.png"  alt="Cloth" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
                   <p class="iTxt"><b>Cloth</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Thread')"><img src="icons/crafting/CoarseThread.png"  alt="Thread"></a>
+                  <a onclick="openOverlay('Thread')"><img src="icons/crafting/CoarseThread.png"  alt="Thread" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
                   <p class="iTxt"><b>Thread</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('PlantOil')"><img src="icons/crafting/LinseedOil.png"  alt="PlantOil"></a>
+                  <a onclick="openOverlay('PlantOil')"><img src="icons/crafting/LinseedOil.png"  alt="PlantOil" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
                   <p class="iTxt"><b>Plant Oil</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('MushroomOil')"><img src="icons/crafting/PennyBunMushroomOil.png"  alt="MushroomOil"></a>
+                  <a onclick="openOverlay('MushroomOil')"><img src="icons/crafting/PennyBunMushroomOil.png"  alt="MushroomOil" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
                   <p class="iTxt"><b>Mushroom Oil</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Sap')"><img src="icons/crafting/PineSap.png"  alt="Sap"></a>
+                  <a onclick="openOverlay('Sap')"><img src="icons/crafting/PineSap.png"  alt="Sap" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
                   <p class="iTxt"><b>Sap</b></p>
                 </div>
                 <div class="icon">
-                  <a onclick="openOverlay('Wood')"><img src="icons/crafting/PineWood.png"  alt="Wood"></a>
+                  <a onclick="openOverlay('Wood')"><img src="icons/crafting/PineWood.png"  alt="Wood" class="skill"></a>
                   <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
                   <p class="iTxt"><b>Wood</b></p>
                 </div>
@@ -4725,22 +5016,22 @@
                 <h1><img src="icons/rabbit.png" class="nudge"> Hunter<span class="midtone ea"> - <small>Refine Animals</small></span></h1>
                 <div class="flexBox">
                   <div class="icon">
-                    <a onclick="openOverlay('TeaLeaves')"><img src="icons/crafting/DeerTeaLeaves.png"  alt="TeaLeaves"></a>
+                    <a onclick="openOverlay('TeaLeaves')"><img src="icons/crafting/DeerTeaLeaves.png"  alt="TeaLeaves" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
                     <p class="iTxt"><b>Tea Leaves</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Bones')"><img src="icons/crafting/LeanBone.png"  alt="Bones"></a>
+                    <a onclick="openOverlay('Bones')"><img src="icons/crafting/LeanBone.png"  alt="Bones" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
                     <p class="iTxt"><b>Bones</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Leather')"><img src="icons/crafting/CoarseLeanLeather.png"  alt="Leather"></a>
+                    <a onclick="openOverlay('Leather')"><img src="icons/crafting/CoarseLeanLeather.png"  alt="Leather" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
                     <p class="iTxt"><b>Leather</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Meat')"><img src="icons/crafting/LeanMeat.png"  alt="Meat"></a>
+                    <a onclick="openOverlay('Meat')"><img src="icons/crafting/LeanMeat.png"  alt="Meat" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
                     <p class="iTxt"><b>Meat</b></p>
                   </div>
@@ -4753,12 +5044,12 @@
                 <h1><img src="icons/mountain.png" class="nudge"> Prospector<span class="midtone ea"> - <small>Refine Minerals</small></span></h1>
                 <div class="flexBox">
                   <div class="icon">
-                    <a onclick="openOverlay('MetalIngot')"><img src="icons/crafting/CopperIngot.png"  alt="MetalIngot"></a>
+                    <a onclick="openOverlay('MetalIngot')"><img src="icons/crafting/CopperIngot.png"  alt="MetalIngot" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
                     <p class="iTxt"><b>Metal Ingot</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('CutGem')"><img src="icons/crafting/Malachite.png"  alt="CutGem"></a>
+                    <a onclick="openOverlay('CutGem')"><img src="icons/crafting/Malachite.png"  alt="CutGem" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/1.png" class="role1"><img src="icons/diamond.png" class='role2'>
                     <p class="iTxt"><b>Cut Gem</b></p>
                   </div>
@@ -5201,72 +5492,72 @@
                 <h2 class="subHeader"><span class="midtone"><small>Suggested - <img src="icons/mountain.png" class="nudgeMore"> Prospector + <img src="icons/rabbit.png" class="nudgeMore"> Hunter</small></span></h2>
                 <div class="flexBox">
                   <div class="icon">
-                    <a onclick="openOverlay('ArmorBracing')"><img src="icons/crafting/ArmorBracing.png"  alt="ArmorBracing"></a>
+                    <a onclick="openOverlay('ArmorBracing')"><img src="icons/crafting/ArmorBracing.png"  alt="ArmorBracing" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Armor<br>Bracing</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('ArmorFlap')"><img src="icons/crafting/ArmorFlap.png"  alt="ArmorFlap"></a>
+                    <a onclick="openOverlay('ArmorFlap')"><img src="icons/crafting/ArmorFlap.png"  alt="ArmorFlap" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Armor Flap</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Hauberk')"><img src="icons/crafting/Hauberk.png"  alt="Hauberk"></a>
+                    <a onclick="openOverlay('Hauberk')"><img src="icons/crafting/Hauberk.png"  alt="Hauberk" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Hauberk</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Buckler')"><img src="icons/crafting/Buckler.png"  alt="Buckler"></a>
+                    <a onclick="openOverlay('Buckler')"><img src="icons/crafting/Buckler.png"  alt="Buckler" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Buckler</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('HeaterShield')"><img src="icons/crafting/HeaterShield.png"  alt="HeaterShield"></a>
+                    <a onclick="openOverlay('HeaterShield')"><img src="icons/crafting/HeaterShield.png"  alt="HeaterShield" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Heater<br>Shield</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Pauldrons')"><img src="icons/crafting/Pauldron.png"  alt="Pauldrons"></a>
+                    <a onclick="openOverlay('Pauldrons')"><img src="icons/crafting/Pauldron.png"  alt="Pauldrons" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Pauldrons</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Cuirass')"><img src="icons/crafting/Cuirass.png"  alt="Cuirass"></a>
+                    <a onclick="openOverlay('Cuirass')"><img src="icons/crafting/Cuirass.png"  alt="Cuirass" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Cuirass</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Greaves')"><img src="icons/crafting/Greaves.png"  alt="Greaves"></a>
+                    <a onclick="openOverlay('Greaves')"><img src="icons/crafting/Greaves.png"  alt="Greaves" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Greaves</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Vambrace')"><img src="icons/crafting/Vambrace.png"  alt="Vambrace"></a>
+                    <a onclick="openOverlay('Vambrace')"><img src="icons/crafting/Vambrace.png"  alt="Vambrace" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Vambrace</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Faulds')"><img src="icons/crafting/Faulds.png"  alt="Faulds"></a>
+                    <a onclick="openOverlay('Faulds')"><img src="icons/crafting/Faulds.png"  alt="Faulds" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Faulds</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Helm')"><img src="icons/crafting/Helm.png"  alt="Helm"></a>
+                    <a onclick="openOverlay('Helm')"><img src="icons/crafting/Helm.png"  alt="Helm" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Helm</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('KiteShield')"><img src="icons/crafting/KiteShield.png"  alt="KiteShield"></a>
+                    <a onclick="openOverlay('KiteShield')"><img src="icons/crafting/KiteShield.png"  alt="KiteShield" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>KiteShield</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('ArmorPadding')"><img src="icons/crafting/ArmorPadding.png"  alt="ArmorPadding"></a>
+                    <a onclick="openOverlay('ArmorPadding')"><img src="icons/crafting/ArmorPadding.png"  alt="ArmorPadding" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Armor<br>Padding</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('ArmorStraps')"><img src="icons/crafting/ArmorStraps.png"  alt="ArmorStraps"></a>
+                    <a onclick="openOverlay('ArmorStraps')"><img src="icons/crafting/ArmorStraps.png"  alt="ArmorStraps" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Armor Straps</b></p>
                   </div>
@@ -5286,52 +5577,52 @@
                 <h2 class="subHeader"><span class="midtone"><small>Suggested - <img src="icons/mountain.png" class="nudgeMore"> Prospector + <img src="icons/tree2.png" class="nudgeMore"> Forester / <img src="icons/rabbit.png" class="nudgeMore"> Hunter</small></span></h2>
                 <div class="flexBox">
                   <div class="icon">
-                    <a onclick="openOverlay('GreatAxe')"><img src="icons/crafting/GreatAxe.png"  alt="GreatAxe"></a>
+                    <a onclick="openOverlay('GreatAxe')"><img src="icons/crafting/GreatAxe.png"  alt="GreatAxe" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Great Axe</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('GreatSword')"><img src="icons/crafting/GreatSword.png"  alt="GreatSword"></a>
+                    <a onclick="openOverlay('GreatSword')"><img src="icons/crafting/GreatSword.png"  alt="GreatSword" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role3"><img src="icons/tree2.png" class='role4'><img src="icons/rabbit.png" class='role5'>
                     <p class="iTxt"><b>Great Sword</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Hatchet')"><img src="icons/crafting/Hatchet.png"  alt="Hatchet"></a>
+                    <a onclick="openOverlay('Hatchet')"><img src="icons/crafting/Hatchet.png"  alt="Hatchet" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Hatchet</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('LongSword')"><img src="icons/crafting/LongSword.png"  alt="LongSword"></a>
+                    <a onclick="openOverlay('LongSword')"><img src="icons/crafting/LongSword.png"  alt="LongSword" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role3"><img src="icons/tree2.png" class='role4'><img src="icons/rabbit.png" class='role5'>
                     <p class="iTxt"><b>Long Sword</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Mace')"><img src="icons/crafting/Mace.png"  alt="Mace"></a>
+                    <a onclick="openOverlay('Mace')"><img src="icons/crafting/Mace.png"  alt="Mace" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Mace</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Maul')"><img src="icons/crafting/2HMaul.png"  alt="Maul"></a>
+                    <a onclick="openOverlay('Maul')"><img src="icons/crafting/2HMaul.png"  alt="Maul" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Maul</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Polearm')"><img src="icons/crafting/Polearm.png"  alt="Polearm"></a>
+                    <a onclick="openOverlay('Polearm')"><img src="icons/crafting/Polearm.png"  alt="Polearm" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Polearm</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('ShortSword')"><img src="icons/crafting/ShortSword.png"  alt="ShortSword"></a>
+                    <a onclick="openOverlay('ShortSword')"><img src="icons/crafting/ShortSword.png"  alt="ShortSword" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role3"><img src="icons/tree2.png" class='role4'><img src="icons/rabbit.png" class='role5'>
                     <p class="iTxt"><b>Short Sword</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('LeatherGripWraps')"><img src="icons/crafting/LeatherGripWraps.png"  alt="LeatherGripWraps"></a>
+                    <a onclick="openOverlay('LeatherGripWraps')"><img src="icons/crafting/LeatherGripWraps.png"  alt="LeatherGripWraps" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role1"><img src="icons/diamond.png" class='role2'>
                     <p class="iTxt"><b>Leather<br>Grip Wraps</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('LeatherGrips')"><img src="icons/crafting/LeatherGrips.png"  alt="LeatherGrips"></a>
+                    <a onclick="openOverlay('LeatherGrips')"><img src="icons/crafting/LeatherGrips.png"  alt="LeatherGrips" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role1"><img src="icons/diamond.png" class='role2'>
                     <p class="iTxt"><b>Leather Grips</b></p>
                   </div>
@@ -5351,42 +5642,42 @@
                 <h2 class="subHeader"><span class="midtone"><small>Suggested - <img src="icons/mountain.png" class="nudgeMore"> Prospector</small></span></h2>
                 <div class="flexBox">
                   <div class="icon">
-                    <a onclick="openOverlay('Dagger')"><img src="icons/crafting/Dagger.png"  alt="Dagger"></a>
+                    <a onclick="openOverlay('Dagger')"><img src="icons/crafting/Dagger.png"  alt="Dagger" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role3"><img src="icons/tree2.png" class='role4'><img src="icons/rabbit.png" class='role5'>
                     <p class="iTxt"><b>Dagger</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('SightPin')"><img src="icons/crafting/SightPin.png"  alt="SightPin"></a>
+                    <a onclick="openOverlay('SightPin')"><img src="icons/crafting/SightPin.png"  alt="SightPin" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role4">
                     <p class="iTxt"><b>SightPin</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('ThrowingKnife')"><img src="icons/crafting/ThrowingKnife.png"  alt="ThrowingKnife"></a>
+                    <a onclick="openOverlay('ThrowingKnife')"><img src="icons/crafting/ThrowingKnife.png"  alt="ThrowingKnife" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Throwing<br>Knife</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('LeatherBelt')"><img src="icons/crafting/LeatherBelt.png"  alt="LeatherBelt"></a>
+                    <a onclick="openOverlay('LeatherBelt')"><img src="icons/crafting/LeatherBelt.png"  alt="LeatherBelt" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Leather Belt</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('BeltBuckle')"><img src="icons/crafting/BeltBuckle.png"  alt="BeltBuckle"></a>
+                    <a onclick="openOverlay('BeltBuckle')"><img src="icons/crafting/BeltBuckle.png"  alt="BeltBuckle" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role4">
                     <p class="iTxt"><b>Belt Buckle</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Earring')"><img src="icons/crafting/MalachiteEarring.png"  alt="Earring"></a>
+                    <a onclick="openOverlay('Earring')"><img src="icons/crafting/MalachiteEarring.png"  alt="Earring" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role4">
                     <p class="iTxt"><b>Earring</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Necklace')"><img src="icons/crafting/MalachiteNecklace.png"  alt="Necklace"></a>
+                    <a onclick="openOverlay('Necklace')"><img src="icons/crafting/MalachiteNecklace.png"  alt="Necklace" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role4">
                     <p class="iTxt"><b>Necklace</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Ring')"><img src="icons/crafting/MalachiteRing.png"  alt="Ring"></a>
+                    <a onclick="openOverlay('Ring')"><img src="icons/crafting/MalachiteRing.png"  alt="Ring" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role4">
                     <p class="iTxt"><b>Ring</b></p>
                   </div>
@@ -7089,52 +7380,52 @@
                 <h2 class="subHeader"><span class="midtone"><small>Suggested - <img src="icons/tree2.png" class="nudgeMore"> Forester + <img src="icons/rabbit.png" class="nudgeMore"> Hunter</small></span></h2>
                 <div class="flexBox">
                   <div class="icon">
-                    <a onclick="openOverlay('Arrows')"><img src="icons/crafting/Arrow.png"  alt="Arrows"></a>
+                    <a onclick="openOverlay('Arrows')"><img src="icons/crafting/Arrow.png"  alt="Arrows" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role3"><img src="icons/tree2.png" class='role4'><img src="icons/rabbit.png" class='role5'>
                     <p class="iTxt"><b>Arrows</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Bolts')"><img src="icons/crafting/Bolt.png"  alt="Bolts"></a>
+                    <a onclick="openOverlay('Bolts')"><img src="icons/crafting/Bolt.png"  alt="Bolts" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role3"><img src="icons/tree2.png" class='role4'><img src="icons/rabbit.png" class='role5'>
                     <p class="iTxt"><b>Bolts</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Banner')"><img src="icons/crafting/Banner.png"  alt="Banner"></a>
+                    <a onclick="openOverlay('Banner')"><img src="icons/crafting/Banner.png"  alt="Banner" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role4">
                     <p class="iTxt"><b>Banner</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('WoodenBuckler')"><img src="icons/crafting/Buckler.png"  alt="WoodenBuckler"></a>
+                    <a onclick="openOverlay('WoodenBuckler')"><img src="icons/crafting/Buckler.png"  alt="WoodenBuckler" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Wooden<br>Buckler</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Counterweight')"><img src="icons/crafting/Counterweight.png"  alt="Counterweight"></a>
+                    <a onclick="openOverlay('Counterweight')"><img src="icons/crafting/Counterweight.png"  alt="Counterweight" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Counter<br>Weight</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Crossbow')"><img src="icons/crafting/Crossbow.png"  alt="Crossbow"></a>
+                    <a onclick="openOverlay('Crossbow')"><img src="icons/crafting/Crossbow.png"  alt="Crossbow" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role4">
                     <p class="iTxt"><b>Crossbow</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('HeavyCrossbow')"><img src="icons/crafting/Crossbow.png"  alt="HeavyCrossbow"></a>
+                    <a onclick="openOverlay('HeavyCrossbow')"><img src="icons/crafting/Crossbow.png"  alt="HeavyCrossbow" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role4">
                     <p class="iTxt"><b>Heavy<br>Crossbow</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('LongBow')"><img src="icons/crafting/LongBow.png"  alt="LongBow"></a>
+                    <a onclick="openOverlay('LongBow')"><img src="icons/crafting/LongBow.png"  alt="LongBow" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>LongBow</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('ShortBow')"><img src="icons/crafting/ShortBow.png"  alt="ShortBow"></a>
+                    <a onclick="openOverlay('ShortBow')"><img src="icons/crafting/ShortBow.png"  alt="ShortBow" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>ShortBow</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Quarterstaff')"><img src="icons/crafting/Quarterstaff.png"  alt="Quarterstaff"></a>
+                    <a onclick="openOverlay('Quarterstaff')"><img src="icons/crafting/Quarterstaff.png"  alt="Quarterstaff" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role1"><img src="icons/rabbit.png" class='role2'>
                     <p class="iTxt"><b>Quarterstaff</b></p>
                   </div>
@@ -7154,67 +7445,67 @@
                 <h2 class="subHeader"><span class="midtone"><small>Suggested - <img src="icons/rabbit.png" class="nudgeMore"> Hunter + <img src="icons/tree2.png" class="nudgeMore"> Forester</small></span></h2>
                 <div class="flexBox">
                   <div class="icon">
-                    <a onclick="openOverlay('Bootstraps')"><img src="icons/crafting/Bootstraps.png"  alt="Bootstraps"></a>
+                    <a onclick="openOverlay('Bootstraps')"><img src="icons/crafting/Bootstraps.png"  alt="Bootstraps" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role1"><img src="icons/mountain.png" class='role2'>
                     <p class="iTxt"><b>Bootstraps</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('LeatherBoots')"><img src="icons/crafting/LeatherBoots.png"  alt="LeatherBoots"></a>
+                    <a onclick="openOverlay('LeatherBoots')"><img src="icons/crafting/LeatherBoots.png"  alt="LeatherBoots" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Leather<br>Boots</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('LeatherGloves')"><img src="icons/crafting/LeatherGloves.png"  alt="LeatherGloves"></a>
+                    <a onclick="openOverlay('LeatherGloves')"><img src="icons/crafting/LeatherGloves.png"  alt="LeatherGloves" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Leather<br>Gloves</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('LeatherHelm')"><img src="icons/crafting/LeatherHelm.png"  alt="LeatherHelm"></a>
+                    <a onclick="openOverlay('LeatherHelm')"><img src="icons/crafting/LeatherHelm.png"  alt="LeatherHelm" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Leather Helm</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('LeatherCuirass')"><img src="icons/crafting/LeatherCuirass.png"  alt="LeatherCuirass"></a>
+                    <a onclick="openOverlay('LeatherCuirass')"><img src="icons/crafting/LeatherCuirass.png"  alt="LeatherCuirass" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Leather<br>Cuirass</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('LeatherFaulds')"><img src="icons/crafting/LeatherFaulds.png"  alt="LeatherFaulds"></a>
+                    <a onclick="openOverlay('LeatherFaulds')"><img src="icons/crafting/LeatherFaulds.png"  alt="LeatherFaulds" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Leather<br>Faulds</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('LeatherGreaves')"><img src="icons/crafting/LeatherGreaves.png"  alt="LeatherGreaves"></a>
+                    <a onclick="openOverlay('LeatherGreaves')"><img src="icons/crafting/LeatherGreaves.png"  alt="LeatherGreaves" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Leather<br>Greaves</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('LeatherSpaulder')"><img src="icons/crafting/LeatherSpaulder.png"  alt="LeatherSpaulder"></a>
+                    <a onclick="openOverlay('LeatherSpaulder')"><img src="icons/crafting/LeatherSpaulder.png"  alt="LeatherSpaulder" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Leather<br>Spaulder</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('LeatherVambrace')"><img src="icons/crafting/LeatherVambrace.png"  alt="LeatherVambrace"></a>
+                    <a onclick="openOverlay('LeatherVambrace')"><img src="icons/crafting/LeatherVambrace.png"  alt="LeatherVambrace" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Leather<br>Vambrace</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('ClothGloves')"><img src="icons/crafting/ClothGloves.png"  alt="ClothGloves"></a>
+                    <a onclick="openOverlay('ClothGloves')"><img src="icons/crafting/ClothGloves.png"  alt="ClothGloves" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role4">
                     <p class="iTxt"><b>Cloth Gloves</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('ClothTrousers')"><img src="icons/crafting/ClothTrousers.png"  alt="ClothTrousers"></a>
+                    <a onclick="openOverlay('ClothTrousers')"><img src="icons/crafting/ClothTrousers.png"  alt="ClothTrousers" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role4">
                     <p class="iTxt"><b>Cloth<br>Trousers</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('ClothShirt')"><img src="icons/crafting/ClothShirt.png"  alt="ClothShirt"></a>
+                    <a onclick="openOverlay('ClothShirt')"><img src="icons/crafting/ClothShirt.png"  alt="ClothShirt" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role4">
                     <p class="iTxt"><b>Cloth Shirt</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('LinenPatch')"><img src="icons/crafting/LinenPatch.png"  alt="LinenPatch"></a>
+                    <a onclick="openOverlay('LinenPatch')"><img src="icons/crafting/LinenPatch.png"  alt="LinenPatch" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role4">
                     <p class="iTxt"><b>Linen Patch</b></p>
                   </div>
@@ -7228,72 +7519,72 @@
                 <h2 class="subHeader"><span class="midtone"><small>Suggested - <img src="icons/tree2.png" class="nudgeMore"> Forester + <img src="icons/rabbit.png" class="nudgeMore"> Hunter / <img src="icons/mountain.png" class="nudgeMore"> Prospector</small></span></h2>
                 <div class="flexBox">
                   <div class="icon">
-                    <a onclick="openOverlay('BrewedDeerLeafTea')"><img src="icons/crafting/Tea.png"  alt="BrewedDeerLeafTea"></a>
+                    <a onclick="openOverlay('BrewedDeerLeafTea')"><img src="icons/crafting/Tea.png"  alt="BrewedDeerLeafTea" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role4">
                     <p class="iTxt"><b>Brewed<br>Deer Leaf<br>Tea</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Axe')"><img src="icons/crafting/Axe.png"  alt="Axe"></a>
+                    <a onclick="openOverlay('Axe')"><img src="icons/crafting/Axe.png"  alt="Axe" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Axe</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('PickAxe')"><img src="icons/crafting/Pickaxe.png"  alt="PickAxe"></a>
+                    <a onclick="openOverlay('PickAxe')"><img src="icons/crafting/Pickaxe.png"  alt="PickAxe" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>PickAxe</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('Sickle')"><img src="icons/crafting/Sickle.png"  alt="Sickle"></a>
+                    <a onclick="openOverlay('Sickle')"><img src="icons/crafting/Sickle.png"  alt="Sickle" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Sickle</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('SkinningKnife')"><img src="icons/crafting/SkinningKnife.png"  alt="SkinningKnife"></a>
+                    <a onclick="openOverlay('SkinningKnife')"><img src="icons/crafting/SkinningKnife.png"  alt="SkinningKnife" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Skinning<br>Knife</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('HealingPotion')"><img src="icons/crafting/HealingPotion.png"  alt="HealingPotion"></a>
+                    <a onclick="openOverlay('HealingPotion')"><img src="icons/crafting/HealingPotion.png"  alt="HealingPotion" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role4">
                     <p class="iTxt"><b>Healing<br>Potion</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('PhysicalResistPotion')"><img src="icons/crafting/PhysicalResistPotion.png"  alt="PhysicalResistPotion"></a>
+                    <a onclick="openOverlay('PhysicalResistPotion')"><img src="icons/crafting/PhysicalResistPotion.png"  alt="PhysicalResistPotion" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role4">
                     <p class="iTxt"><b>Physical<br>Resistance<br>Potion</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('FocusPotion')"><img src="icons/crafting/FocusPotion.png"  alt="FocusPotion"></a>
+                    <a onclick="openOverlay('FocusPotion')"><img src="icons/crafting/FocusPotion.png"  alt="FocusPotion" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role4">
                     <p class="iTxt"><b>Focus<br>Potion</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('RegenPotion')"><img src="icons/crafting/HealingPotion.png"  alt="RegenPotion"></a>
+                    <a onclick="openOverlay('RegenPotion')"><img src="icons/crafting/HealingPotion.png"  alt="RegenPotion" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role4">
                     <p class="iTxt"><b>Regeneration<br>Potion</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('KingsPotion')"><img src="icons/crafting/KingsPotion.png"  alt="KingsPotion"></a>
+                    <a onclick="openOverlay('KingsPotion')"><img src="icons/crafting/KingsPotion.png"  alt="KingsPotion" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role4">
                     <p class="iTxt"><b>King's<br>Potion</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('CookedMeat')"><img src="icons/crafting/CookedMeat.png"  alt="CookedMeat"></a>
+                    <a onclick="openOverlay('CookedMeat')"><img src="icons/crafting/CookedMeat.png"  alt="CookedMeat" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role4">
                     <p class="iTxt"><b>Cooked Meat</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('SmokedMeat')"><img src="icons/crafting/CookedMeat.png"  alt="SmokedMeat"></a>
+                    <a onclick="openOverlay('SmokedMeat')"><img src="icons/crafting/CookedMeat.png"  alt="SmokedMeat" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/rabbit.png" class="role1"><img src="icons/tree2.png" class='role2'>
                     <p class="iTxt"><b>Smoked Meat</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('GroundTorch')"><img src="icons/crafting/GroundTorch.png"  alt="GroundTorch"></a>
+                    <a onclick="openOverlay('GroundTorch')"><img src="icons/crafting/GroundTorch.png"  alt="GroundTorch" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/tree2.png" class="role1"><img src="icons/mountain.png" class='role2'>
                     <p class="iTxt"><b>Ground Torch</b></p>
                   </div>
                   <div class="icon">
-                    <a onclick="openOverlay('RepairKit')"><img src="icons/crafting/RepairKit.png"  alt="RepairKit"></a>
+                    <a onclick="openOverlay('RepairKit')"><img src="icons/crafting/RepairKit.png"  alt="RepairKit" class="skill"></a>
                     <p class="grey">&nbsp;</p><img src="icons/mountain.png" class="role3"><img src="icons/tree2.png" class='role4'><img src="icons/rabbit.png" class='role5'>
                     <p class="iTxt"><b>Repair Kit</b></p>
                   </div>
@@ -8779,10 +9070,6 @@
           </div>
         </div>
       </div>
-      <div class="footer">
-          <p><small>Official website for Embers Adrift - <a href="https://www.embersadrift.com/" target="_blank">https://www.embersadrift.com/</a>
-          <br>this is a fan made website and has no affiliation with Stormhaven Studios or Embers Adrift</p>
-        </div>
     </div>
 </body>
 </html>

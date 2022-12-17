@@ -179,6 +179,7 @@ label{
   margin: 2%;
   margin-left: 1rem;
   margin-right: 1rem;
+  width: auto;
 }
 
 .icon .dTxt {
@@ -192,6 +193,13 @@ label{
   outline-style: solid;
   outline-width: 0.2rem;
   outline-color: #4a557c;
+}
+
+.skill {
+  outline-style: solid;
+  outline-width: 0.2rem;
+  outline-color:rgba(87, 85, 85, 0.425);
+  outline-offset: -0.3rem;
 }
 
 .class {
@@ -213,8 +221,17 @@ label{
   width:3.5rem;
 }
 
+.line, .gradient {
+  background-image:linear-gradient(to right, rgba(114, 114, 138, 0.425), rgba(0,0,0,0));
+}
+
+.gradient {
+  padding: 0.7rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
 .line {
-  background-image:linear-gradient(to right, rgba(128, 128, 128, 0.425), rgba(0,0,0,0));
   height: 3px;
 }
 
@@ -285,7 +302,7 @@ hr {
 }
 
 a:link, a:visited {
-  color: white;
+  color:white;
 }
 
 .iTxt {
