@@ -23,7 +23,7 @@
             <img src="icons/Banner.png" class="homePic">
             <div class="logo"><img src="icons/Embers-Adrift-Brand-White-Colour.png"></div><div class="guide">GUIDE</div></div>
             <a onclick="checkRadio('tabGuides')"><h4 class="gradient">Not sure which spec to choose? Take a look at the new spec guides tab &nbsp;<i class="fa-solid fa-angles-right"></i></h4></a><br>
-            <p><span class="midtone">- only Jugg & Marshal done currently</span></p>
+            <p><span class="midtone">- only Defenders done currently</span></p>
             <hr><h2>Class Roles<span class="midtone"> - Work in Progress</span></h2>
             Click on the text below for expanding spec information<hr>
               <div class="accWrapper"> <!-- Defender -->
@@ -115,8 +115,7 @@
             <div class="icon">
               <a onclick="openOverlay('knightGuide')"><img src="icons/guides/knightGuide.jpg"  alt="Knight"></a>
               <p class="grey">&nbsp;</p><img src="icons/shield.png" class="role1"><img src="icons/aura.png" class='role2'>
-              <p class="iTxt"><b>Knight<br><span class="midtone">Coming<br>Soon</span></b></p>
-                <!--<span class="midtone">Classic Tank</span></b></p>-->
+              <p class="iTxt"><b>Knight<br><span class="midtone">Classic Tank</span></b>
             </div>
             <div class="icon">
               <a onclick="openOverlay('marshalGuide')"><img src="icons/guides/marshalGuide.jpg"  alt="Marshal"></a>
@@ -248,7 +247,7 @@
                       - Polearm - not as useful on a Juggernaut due to not benefitting from flanking.<br>
                       - Shields - if you are lacking armor heater shields are best, if you are at AC soft cap then you could consider a buckler for extra parry. Kite shields are in-between the two.<br></small></p>
                     <div class="line"></div>
-                  <p><img src="icons/crafting/Cuirass.png" class="mats floatL">
+                  <p><img src="icons/crafting/Armorsmith.png" class="mats floatL">
                     <b>Tanking</b><small> - You want to prioritise hitting the AC soft cap of 50% absorb (check your combat log to see how much damage you absorb from each hit). After that you can look at stacking block / avoid / parry (1 stat = 1% chance to mitigate all damage, not everything can be dodged / blocked / parried though).<br>
                       - Physical Damage Resist is also a very important stat to stack, this is a flat % damage mitigated and the majority of mobs do physical damage, so get as much of this as you can.<br>
                       - Riposte adds a chance to do damage when you parry, you will probably have lowish parry so this isn't worth chasing.<br>
@@ -263,11 +262,121 @@
                     <div class="line"></div>
                   <p><img src="icons/crafting/SpiderSilk.png" class="mats floatL">
                     <b>Other Stats</b><small> - Stamina Regen is super useful for both tanking and dps - more stamina = more threat output / more damage, especially shines in longer fights in dungeons or when AoE tanking (roar is quite stamina intensive). Stamina can regen in combat (at a lower rate).<br>
-                      Health Regen is good for soloing as it means less downtime, somewhat useful in group play as you won't have to rely on your healer topping you up between fights. Afaik HP doesn't regen whilst in combat.</small></p>
+                      - Health Regen is good for soloing as it means less downtime, somewhat useful in group play as you won't have to rely on your healer topping you up between fights. Afaik HP doesn't regen whilst in combat.</small></p>
                       <div class="line"></div>
                   <p><img src="icons/crafting/KingsPotion.png" class="mats floatL">
                     <b>Professions</b><small> - Armorsmith can craft high AC armor, and also some shields with physical damage resist.<br>
                     - Outfitter can craft helm / shirt / pants / boots with either physical damage resists or parry / avoid stats. It can also craft dps gear with flanking.<br>
+                    - Tinker can make some nice jewellery with various stats.<br>
+                    - Provisioner can make potions - HP and Kings pots, also hp and stam regen food / drink.<br>
+                    If you want to be more self-sufficient, it's recommended to pick up the core gathering skills first BEFORE picking your production skill 3rd at tradeskill lv 12.</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="knightGuide" class="overlay"> <!-- Guides -->
+          <a class="cancel" onclick="closeOverlay()"></a>
+          <div class="popup">
+            <div class="rectangle" onclick="closeOverlay()"><span class="close">&times;</span></div>
+            <div class="skilltabs">
+              <input type="radio" name="knightGuideTabs" id="tabknightGuide" checked="checked">
+              <label for="tabknightGuide"><img src="icons/guides/knightGuide.jpg" alt="knightGuide" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Knight<span class="name midtone"> - Defender</span></h2>
+                <div class="content">
+                  <h4>Spec Overview</h4>
+                  <p><br>&nbsp;An expert in one-on-one combat, the Knight's oath to protect others makes them a powerful ally.<br>&nbsp;<br>
+                    Knights are focused on tanking, able to wear the heaviest armor and with several high threat single target abilities. They can also support their allies with a resistance aura.<br>
+                    If you want to tank the biggest scariest enemies with ease then the Knight may be for you.</p>
+                  <div class="line"></div>
+                  <p><span class="cyan">An oath to protect others</p>
+                </div>
+              </div>
+              <input type="radio" name="knightGuideTabs" id="tabknightGuideSkillsTank">
+              <label for="tabknightGuideSkillsTank"><img src="icons/book.png" alt="knightGuideSkills" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Threat Skills</h2>
+                <div class="content">
+                  <p><img src="icons/skills/Provoke.png" class="mats floatL">
+                    <b>Provoke</b> - requires lvl <b>2</b>
+                    <br><small>This is one of your core threat abilities, it has a short range. Use it as the mob is running towards you and then on cooldown to maintain aggro. 
+                      Will not break crowd control.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/ThreateningStrike.png" class="mats floatL">
+                    <b>Threatening Strike</b> - requires lvl <b>1</b>
+                    <br><small>This is your second core threat ability, which is melee range only. Use on cooldown to maintain aggro. 
+                      If you have a good weapon and are similar level to your dps you can normally maintain aggro just using provoke and threatening strike on cooldown. However the knight has a couple more threat moves they can use.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Bash.png" class="mats floatL">
+                    <b>Bash</b> - requires lvl <b>14</b>
+                    <br><small>This ability has a chunky threat modifier on it of 250%, much larger than threatening strike. As soon as you unlock this ability you want to prioritise its use over threatening strike. 
+                      You may be able to save provoke for picking up extra adds at range now instead of using it in your core threat rotation.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/CrushingBlow.png" class="mats floatL">
+                    <b>Crushing Blow</b> - requires lvl <b>22</b>
+                    <br><small>You don't unlock this until later on, but once you do you will want to prioritise it over everything else. It has a massive 500% threat modifier, no other ability comes close to how much threat this can produce. 
+                      Your preferred opener on mobs becomes provoke at range, and then crushing blow once they get to melee. This will create a large threat lead that will be hard for dps / heals to overcome.</span></small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Counter.png" class="mats floatL">
+                    <b>Counter</b>- requires lvl <b>10</b>
+                    <br><small> - This ability is both a defensive cooldown and a small amount of extra threat rolled into one. It guarantees you will parry the next attack, taking no damage, plus you will riposte for extra damage (and therefor threat).</span></small></p>
+                </div>
+              </div>
+              <input type="radio" name="knightGuideTabs" id="tabknightGuideSkillsDPS">
+              <label for="tabknightGuideSkillsDPS"><img src="icons/book.png" alt="knightGuideSkills" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Utility Skills</h2>
+                <div class="content">
+                  <p><img src="icons/skills/EnragingStrike.png" class="mats floatL">
+                    <b>Enraging Strike</b> - requires lvl <b>6</b>
+                    <br><small>This skill forces the mob to attack you for 8 seconds, extremely useful if someone in your group has pulled aggro or if extra mobs join the fight and are heading for your healer..<br>
+                    However this ability has no threat modifier at all, so it will only do a small amount of actual threat, and shouldn't be in your main threat rotation. If you haven't lost threat you probably don't need to use it!</small></p>
+                    <div class="line"></div>
+                    <p><img src="icons/skills/Resistant.png" class="mats floatL">
+                      <b>Resistant</b> - requires lvl <b>4</b>
+                      <br><small>This defensive cooldown reduces your physical damage taken for a short time. Pop this whenever you are fighting harder mobs or AoE tanking to help mitigate some damage.</span></small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Protect.png" class="mats floatL">
+                    <b>Protect</b> - requires lvl <b>8</b>
+                    <br><small>This ability is similar to resistant, but can only be used on an ally (your defensive target). If you are in a party with another tank you could use it on them to mitigate damage, if a healer or dps has aggro and you have no threat abilities off cooldown you could use this to help them survive a hit.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Inspire.png" class="mats floatL">
+                    <b>Inspire</b> - requires lvl <b>18</b>
+                    <br><small>This is probably your class defining ability, a 20% resistance aura for all the debuffs in the game (I think). Against certain annoying mob types eg. bears that keep dazing or basilisks that keep stunning this can make the run so much smoother and easier. Many mobs do AoE CC abilities that interupt the healer and the dps. Everyone will be grateful for this aura.</small></p>
+                </div>
+              </div>
+              <input type="radio" name="knightGuideTabs" id="tabknightGuideGear">
+              <label for="tabknightGuideGear"><img src="icons/guides/knightGuide.jpg" alt="knightGuideGear" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Gear & Professions</span></h2>
+                <div class="content">
+                  <p><img src="icons/crafting/Mace.png" class="mats floatL">
+                    <b>Weapons</b><small> 
+                      - For tanking you either want a 1H & Shield (best versus harder mobs or if your gear isn't amazing) or a 2H if you have hit the AC soft cap and want more threat.<br>
+                      - 1H Sword - As knights rely on actually hitting mobs for most of their threat the +Hit positional bonus is more attractive to knights. 1H maces are also a good option if you aren't having hit problems.<br>
+                      - 2H Maul - best for threat if you have good armor, and also for DPS / Soloing.<br>
+                      - Polearm - good threat + some survivability. Some tanks swear by polearms for both group and solo play. (Note that flanking stat has no effect on polearms)<br>
+                      - Shields - if you are lacking armor heater shields are best, if you are at AC soft cap then you could consider a buckler for extra parry. Kite shields are in-between the two.<br></small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/crafting/Armorsmith.png" class="mats floatL">
+                    <b>Tanking</b><small> - You want to prioritise hitting the AC soft cap of 50% absorb (check your combat log to see how much damage you absorb from each hit). After that you can look at stacking block / avoid / parry (1 stat = 1% chance to mitigate all damage, not everything can be dodged / blocked / parried though).<br>
+                      - Physical Damage Resist is also a very important stat to stack, this is a flat % damage mitigated and the majority of mobs do physical damage, so get as much of this as you can.<br>
+                      - Riposte adds a chance to do damage when you parry, if you enjoy using a polearm you might want to get some of this on your gear.<br>
+                      - Flanking is a good threat stat that will increase the positional stats on your weapon if you are using a 1H or a Maul. Crafted rings are a good source of this on tanks. Beware of wearing too much chitin armor as this tends to have negative flanking (which could impact your chance to hit with a sword). Don't sacrifice AC for flanking when tanking unless you are fighting easy mobs.<br>
+                      - Hit is good against higher level mobs which are more difficult to hit and also just generally to ensure your threat abilities hit harder. Tends to come on crafted rings.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/AdvantageStrike.png" class="mats floatL">
+                    <b>Other stats</b><small><br>
+                      - Penetration is a solid threat stat to stack, especially good against high armor enemies.<br>
+                      - 1H / 2H damage is a % increase to your overall damage done.<br>
+                      - Stamina Regen is super useful for both tanking and dps - more stamina = more threat output, especially shines in longer fights in dungeons or when tanking multiple mobs. Stamina can regen in combat (at a lower rate).<br>
+                      - Health Regen is good for soloing as it means less downtime, somewhat useful in group play as you won't have to rely on your healer topping you up between fights. Afaik HP doesn't regen whilst in combat.</small></p>
+                      <div class="line"></div>
+                  <p><img src="icons/crafting/KingsPotion.png" class="mats floatL">
+                    <b>Professions</b><small> - Armorsmith can craft high AC armor, and also some shields with physical damage resist.<br>
+                    - Outfitter can craft helm / shirt / pants / boots with either physical damage resists or parry / avoid stats.<br>
                     - Tinker can make some nice jewellery with various stats.<br>
                     - Provisioner can make potions - HP and Kings pots, also hp and stam regen food / drink.<br>
                     If you want to be more self-sufficient, it's recommended to pick up the core gathering skills first BEFORE picking your production skill 3rd at tradeskill lv 12.</small></p>
@@ -363,7 +472,7 @@
                   <p><img src="icons/crafting/Mace.png" class="mats floatL">
                     <b>Weapons</b><small> 
                     - Mace and Shield - The overall best all-purpose weapon choice for Marshals. Can be used to tank, grind and even solo granted your weapon is solid. Swords can be used as well to increase your Hit rating against higher level mobs.<br>                  
-                    - 2 Handed Mauls - Best for DPS'ing in a group. Some also prefer using this to Polearms, but it still only shines in group play where you can actually back attack.<br>
+                    - 2 Handed Mauls - Best for DPS'ing in a group. Some also prefer using this to Polearms.<br>
                     - Polearms - The best for solo'ing. Parrying means less downtime and riposte also provides more possible dmg while taking hits. The only downside is that flanking gear has zero effect on your Polearm usage.<br></small></p>
                     <div class="line"></div>
                   <p><img src="icons/skills/AdvantageStrike.png" class="mats floatL">
