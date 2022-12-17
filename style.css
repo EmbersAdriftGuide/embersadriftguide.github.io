@@ -248,7 +248,7 @@ label{
 }
 
 .logo img {
-  width: 60%;
+  width: 80%;
   -webkit-filter: drop-shadow(-2px 2px 3px #222);
   filter: drop-shadow(-2px 2px 3px #222);
 }
@@ -487,6 +487,10 @@ padding: 9px 18px;
   .icon p {
     font-size: 1rem;
     font-weight: unset;
+  }
+  .logo {
+    max-width: 70%;
+    left: 1rem;
   }
 
   .title{
