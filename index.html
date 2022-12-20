@@ -23,7 +23,6 @@
             <img src="icons/Banner.png" class="homePic">
             <div class="logo"><img src="icons/Embers-Adrift-Brand-White-Colour.png"></div><div class="guide">GUIDE</div></div>
             <a onclick="checkRadio('tabGuides')"><h4 class="gradient">Not sure which spec to choose? Take a look at the new spec guides tab &nbsp;<i class="fa-solid fa-angles-right"></i></h4></a><br>
-            <p><span class="midtone">- only Defenders & Berzerker done currently</span></p>
             <hr><h2>Class Roles<span class="midtone"> - Work in Progress</span></h2>
             Click on the text below for expanding spec information<hr>
               <div class="accWrapper"> <!-- Defender -->
@@ -140,8 +139,7 @@
             <div class="icon">
               <a onclick="openOverlay('wardenGuide')"><img src="icons/guides/wardenGuide.jpg"  alt="Warden"></a>
               <p class="grey">&nbsp;</p><img src="icons/damage.png" class="role1"><img src="icons/aura.png" class='role2'>
-              <p class="iTxt"><b>Warden<br><span class="midtone">Coming<br>Soon</span></b></p>
-                <!--<span class="midtone">Damage<br>Over Time</span></b></p>-->
+              <p class="iTxt"><b>Warden<br><span class="midtone">Damage<br>Over Time</span></b></p>
             </div>
           </div>
           <div class="flexBox">
@@ -294,7 +292,7 @@
                     Knights are focused on tanking, able to wear the heaviest armor and with several high threat single target abilities. They can also support their allies with a resistance aura.<br>
                     If you want to tank the biggest scariest enemies with ease then the Knight may be for you.<br></small></p>
                   <div class="line"></div>
-                  <p><b>Playstyle</b><small> - Knights are designed around group play and really shine when main tanking the big bad boss. However your ability to AoE tank is limited, so this spec pairs well with CC specs like the brigand, or alternatively with an offtank.<br>
+                  <p><b>Playstyle</b><small> - Knights are designed around group play and really shine when main tanking the big bad boss. However your ability to AoE tank is limited, so this spec pairs well with CC specs like the brigand, or alternatively with an offtank. You can also often bypass this problem by pairing with a Warden for more controlled pulls.<br>
                   Solo play is pretty slow compared to other classes.</small></p>
                   <div class="line"></div>
                   <p><span class="cyan">An oath to protect others</p>
@@ -587,7 +585,7 @@
                     <b>Professions</b><small> - Outfitter can craft dps gear with flanking, and also cloth inner armor with various other dps stats.<br>
                     - Tinker can make daggers, which are normally better than the drops and quest rewards, and also some nice jewellery with various dps stats.<br>
                     - Provisioner can make potions - HP and Kings pots, also hp and stam regen food / drink.<br>
-                    - Woodworker can make arrows and bows which I recommend if you want to play ranged.<br>
+                    - Woodworker can make arrows and bows which I recommend if you want to play ranged (you will go through a lot of arrows!).<br>
                     If you want to be more self-sufficient, it's recommended to pick up the core gathering skills first BEFORE picking your production skill 3rd at tradeskill lv 12.</small></p>
                 </div>
               </div>
@@ -669,7 +667,7 @@
               <div class="tab">
                 <h2 class="dark">&nbsp;Gear & Professions</span></h2>
                 <div class="content">
-                  <p><img src="icons/crafting/Mace.png" class="mats floatL">
+                  <p><img src="icons/crafting/GreatAxe.png" class="mats floatL">
                     <b>Weapons</b><small> 
                       - The majority of Brigands use a 2H weapon in their main weapon slot, and a bow in their second slot.<br>
                       - For the 2H weapon go with the highest damage dice. Also pay attention to the positional stats - most weapons have bonuses when attacking from the side or the rear making them suited to group play, some have frontal bonuses making them better for solo play.<br>
@@ -691,7 +689,7 @@
                     <b>Professions</b><small> - Outfitter can craft dps gear with flanking, and also cloth inner armor with various other dps stats.<br>
                     - Tinker can make daggers, which are normally better than the drops and quest rewards, and also some nice jewellery with various dps stats.<br>
                     - Provisioner can make potions - HP and Kings pots, also hp and stam regen food / drink.<br>
-                    - Woodworker can make arrows and bows which I recommend if you want to play ranged.<br>
+                    - Woodworker can make arrows and bows which I recommend if you want to play ranged (you will go through a lot of arrows!).<br>
                     If you want to be more self-sufficient, it's recommended to pick up the core gathering skills first BEFORE picking your production skill 3rd at tradeskill lv 12.</small></p>
                 </div>
               </div>
@@ -699,8 +697,103 @@
           </div>
         </div>
 
-        
-
+        <div id="wardenGuide" class="overlay"> <!-- Guides -->
+          <a class="cancel" onclick="closeOverlay()"></a>
+          <div class="popup">
+            <div class="rectangle" onclick="closeOverlay()"><span class="close">&times;</span></div>
+            <div class="skilltabs">
+              <input type="radio" name="wardenGuideTabs" id="tabwardenGuide" checked="checked">
+              <label for="tabwardenGuide"><img src="icons/guides/wardenGuide.jpg" alt="wardenGuide" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Warden<span class="name midtone"> - Striker</span></h2>
+                <div class="content">
+                  <p><b>Spec Overview</b><small> - Attuned to the world around them the resourceful Warden uses nature to attack enemies and aid their allies.<br>
+                    If you enjoy poisoning your enemies then wardens get several damage over time abilities for you to use.<br>
+                    Wardens are often the designated puller for the group thanks to the combination of a longbow and their sedation dart.<br></small></p>
+                    <div class="line"></div>
+                  <p><b>Playstyle</b><small> - Wardens often attract players who prefer ranged classes, but can also be played melee if you prefer.<br>
+                    Wardens are valued in groups for their superior pulling ability and party speed boost. Grab yourself a long bow and you will be indispensable.<br>
+                    Solo play can be very good, Wardens are better at ranged kiting higher level mobs than most classes, with both DoTs and a Heal over time that works well if mobs can't get into range to hit you. They can also sneak through dangerous areas with good use of lull.</small></p>
+                    <div class="line"></div>
+                  <p><span class="cyan">For more in-depth theorycrafting on DPS specs visit the thread on the official forums <a href="https://forums.embersadrift.com/index.php?threads/dpsn-advice.2709/" target="_blank">HERE</a></p>
+                </div>
+              </div>
+              <input type="radio" name="wardenGuideTabs" id="tabwardenGuideSkillsDPS">
+              <label for="tabwardenGuideSkillsDPS"><img src="icons/book.png" alt="wardenGuideSkills" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;DPS Skills</h2>
+                <div class="content">
+                  <p><img src="icons/skills/BleedingStrike.png" class="mats floatL"><img src="icons/skills/VenomStrike.png" class="mats floatL">
+                    <b>Bleeding Strike & Venom Strike</b><small> - These are your core damage over time abilities. Use these at the start of the fight and then on cooldown to maintain the bleed & poison dots.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Assist.png" class="mats floatL">
+                    <b>Assist</b> - requires lvl <b>12</b>
+                      <br><small> - This skill has two components, firstly it does some damage to an enemy, but it also buffs an ally (your defensive target) with advantage for their next 3 hits, which means the damage dice get rolled twice and keeps the highest result.<br>
+                      This can be useful to use on the main tank at the start of the fight to ensure they get a solid threat lead, or on a fellow dps for more damage.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/AcidStrike.png" class="mats floatL">
+                    <b>Acid Strike</b> - requires lvl <b>18</b>
+                    <br><small> - This skill does damage to both the enemy's health and armor - reduced armor means more damage on subsequent hits for the whole group. If you or your group has high values of penetration then this aspect becomes less valuble.</span></small></p>
+                </div>
+              </div>
+              <input type="radio" name="wardenGuideTabs" id="tabwardenGuideSkillsUtility">
+              <label for="tabwardenGuideSkillsUtility"><img src="icons/book.png" alt="wardenGuideSkills" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Utility Skills</h2>
+                <div class="content">
+                  <p><img src="icons/skills/FadingStrike.png" class="mats floatL">
+                    <b>Fading Strike</b> - requires lvl <b>2</b>
+                    <br><small>This is one of your core skills, it not only reduces your threat on the mob but also does very good damage per stamina. This should normally be part of your dps rotation.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/SedationDart.png" class="mats floatL">
+                    <b>Sedation Dart</b> - requires lvl <b>12</b>
+                    <br><small>This ability is a lull - which means that the range at which the mobs aggro you is reduced. Combine this with a longbow for precise pulling at long range - lull the first enemy and then hit a second nearby enemy, if done right only the second enemy will aggro.<br>
+                      This ability can let you sneak around in more dangerous areas without attracting attention. Also very useful if you are a gatherer to harvest nodes without being attacked.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Aid.png" class="mats floatL">
+                    <b>Aid</b> - requires lvl <b>10</b>
+                    <br><small>This is a heal over time, but it stops working if you get hit. You could use this on party members who have taken damage but aren't currently tanking enemies, or to heal up after combat.<br>
+                      If you get good at kiting mobs with a bow you can also use this while soloing tougher enemies.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/LayOfTheLand.png" class="mats floatL">
+                    <b>Lay Of The Land</b> - requires lvl <b>14</b>
+                    <br><small>This is a party wide buff that gives a movement speed boost for a while. Whether you need a quick getaway or just to speed up a long journey across the zone groups will love you for this.</small></p>
+                </div>
+              </div>
+              <input type="radio" name="wardenGuideTabs" id="tabwardenGuideGear">
+              <label for="tabwardenGuideGear"><img src="icons/guides/wardenGuide.jpg" alt="wardenGuideGear" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Gear & Professions</span></h2>
+                <div class="content">
+                  <p><img src="icons/crafting/LongBow.png" class="mats floatL">
+                    <b>Weapons</b><small> 
+                      - A lot of Wardens use a long bow in their main weapon slot for both pulling and dps. Your second weapon slot could be melee if you prefer that playstyle or a shortbow for mobs that make it into melee range of you.<br>
+                      - There are two different types of bows, shortbows have a shorter range but can still dps in melee, whereas long bows have a much longer range, better for pulling mobs, but also a minimum range so can't dps in melee and are unsuitable for solo play unless you are adept at kiting.<br>
+                      - If you prefer a 2H weapon go with the highest damage dice. Also pay attention to the positional stats - most weapons have bonuses when attacking from the side or the rear making them suited to group play, some have frontal bonuses making them better for solo play.<br>
+                      - You could also go duel wield if you have better 1H weapons. I would recommend both a slow main-hand and off-hand for maximum skill damage.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/AdvantageStrike.png" class="mats floatL">
+                    <b>DPS Stats</b><small> - Flanking is one of your main damage stats that will directly increase the positional stats on your weapon, mostly found on mid-weight (leather) armor and crafted rings.<br>
+                      - Penetration is also a solid damage stat to stack, especially good against heavily armoured enemies.<br>
+                      - 1H / 2H damage is a % increase to your overall damage done and worth looking out for on gear.<br>
+                      - Hit is not quite as good as the other stats, better against harder mobs which are more difficult to hit.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/crafting/SpiderSilk.png" class="mats floatL">
+                    <b>Other Stats</b><small> - Stamina Regen is super useful for all specs - more stamina = more damage, especially shines in longer fights in dungeons. Stamina can regen in combat (at a lower rate).<br>
+                      - Health Regen is good for soloing as it means less downtime, somewhat useful in group play as you won't have to rely on your healer topping you up between fights. Afaik HP doesn't regen whilst in combat.<br>
+                      - Armor Class is helpful if you like to solo a lot or tend to pull aggro. Most high armor pieces are also very heavy and have no dps stats though.</small></p>
+                      <div class="line"></div>
+                  <p><img src="icons/crafting/KingsPotion.png" class="mats floatL">
+                    <b>Professions</b><small> - Woodworker can make arrows and bows which I recommend if you want to play ranged (you will go through a lot of arrows!).<br>
+                    - Outfitter can craft dps gear with flanking, and also cloth inner armor with various other dps stats.<br>
+                    - Tinker can make daggers, which are normally better than the drops and quest rewards, and also some nice jewellery with various dps stats.<br>
+                    - Provisioner can make potions - HP and Kings pots, also hp and stam regen food / drink.<br>
+                    If you want to be more self-sufficient, it's recommended to pick up the core gathering skills first BEFORE picking your production skill 3rd at tradeskill lv 12.</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <input type="radio" name="tabs" id="tabDefender">
         <label for="tabDefender"><img src="icons/defender.png" alt="Defender"></label>
