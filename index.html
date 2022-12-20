@@ -135,8 +135,7 @@
             <div class="icon">
               <a onclick="openOverlay('brigGuide')"><img src="icons/guides/brigGuide.jpg"  alt="Brigand"></a>
               <p class="grey">&nbsp;</p><img src="icons/damage.png" class="role1"><img src="icons/cc.png" class='role2'>
-              <p class="iTxt"><b>Brigand<br><span class="midtone">Coming<br>Soon</span></b></p>
-                <!--<span class="midtone">Prepare<br>to Die</span></b></p>-->
+              <p class="iTxt"><b>Brigand<br><span class="midtone">Prepare<br>to Die</span></b></p>
             </div>
             <div class="icon">
               <a onclick="openOverlay('wardenGuide')"><img src="icons/guides/wardenGuide.jpg"  alt="Warden"></a>
@@ -331,8 +330,8 @@
                     <br><small> - This ability is both a defensive cooldown and a small amount of extra threat rolled into one. It guarantees you will parry the next attack, taking no damage, plus you will riposte for extra damage (and therefor threat).</span></small></p>
                 </div>
               </div>
-              <input type="radio" name="knightGuideTabs" id="tabknightGuideSkillsDPS">
-              <label for="tabknightGuideSkillsDPS"><img src="icons/book.png" alt="knightGuideSkills" class="tabIcon"></label>
+              <input type="radio" name="knightGuideTabs" id="tabknightGuideSkillsUtility">
+              <label for="tabknightGuideSkillsUtility"><img src="icons/book.png" alt="knightGuideSkills" class="tabIcon"></label>
               <div class="tab">
                 <h2 class="dark">&nbsp;Utility Skills</h2>
                 <div class="content">
@@ -525,8 +524,8 @@
                   <div class="line"></div>
                   <p><span class="cyan">For more in-depth theorycrafting on Berzerkers and DPS in general visit the thread on the official forums <a href="https://forums.embersadrift.com/index.php?threads/dpsn-advice.2709/" target="_blank">HERE</a></p>                </div>
               </div>
-              <input type="radio" name="zerkerGuideTabs" id="tabzerkerGuideSkillsTank">
-              <label for="tabzerkerGuideSkillsTank"><img src="icons/book.png" alt="zerkerGuideSkills" class="tabIcon"></label>
+              <input type="radio" name="zerkerGuideTabs" id="tabzerkerGuideSkillsDPS">
+              <label for="tabzerkerGuideSkillsDPS"><img src="icons/book.png" alt="zerkerGuideSkills" class="tabIcon"></label>
               <div class="tab">
                 <h2 class="dark">&nbsp;DPS Skills</h2>
                 <div class="content">
@@ -542,8 +541,8 @@
                     <b>Arc & Pummel</b><small> - You have the best AoE dps in the game with these 2 abilities. Recommended to switch to your 2H weapon for the extra range and slightly beefier damage</span></small></p>
                 </div>
               </div>
-              <input type="radio" name="zerkerGuideTabs" id="tabzerkerGuideSkillsDPS">
-              <label for="tabzerkerGuideSkillsDPS"><img src="icons/book.png" alt="zerkerGuideSkills" class="tabIcon"></label>
+              <input type="radio" name="zerkerGuideTabs" id="tabzerkerGuideSkillsUtility">
+              <label for="tabzerkerGuideSkillsUtility"><img src="icons/book.png" alt="zerkerGuideSkills" class="tabIcon"></label>
               <div class="tab">
                 <h2 class="dark">&nbsp;Utility Skills</h2>
                 <div class="content">
@@ -595,6 +594,113 @@
             </div>
           </div>
         </div>
+
+        <div id="brigGuide" class="overlay"> <!-- Guides -->
+          <a class="cancel" onclick="closeOverlay()"></a>
+          <div class="popup">
+            <div class="rectangle" onclick="closeOverlay()"><span class="close">&times;</span></div>
+            <div class="skilltabs">
+              <input type="radio" name="brigGuideTabs" id="tabbrigGuide" checked="checked">
+              <label for="tabbrigGuide"><img src="icons/guides/brigGuide.jpg" alt="brigGuide" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Brigand<span class="name midtone"> - Striker</span></h2>
+                <div class="content">
+                  <p><b>Spec Overview</b><small> - Underhanded fighting and quick strikes, the Brigand can knock out foes as well as it can dispatch them.<br>
+                    If you like playing a rogue archetype this might be the spec for you.<br>
+                    You get access to both a single target and an AoE stun, as well as a deadly finishing move.<br></small></p>
+                    <div class="line"></div>
+                  <p><b>Playstyle</b><small> - Brigand is often played as melee with a 2H weapon for maximum damage on your execute. Second weapon slot is normally a bow for pulling. It is perfectly possible to play this spec as full ranged, but you will still need to dart into melee range to stun mobs.<br>
+                    Brigands are in demand for groups wanting their crowd control skills, their AoE stun will help with bad pulls or patrols and allow groups to overcome tricky dungeons with ease.<br>
+                    Their dps is also very good and correct timing of execute means low health mobs suddenly evaporate, whilst they generate low threat thanks to Hidden Strike and Fading Strike.<br>
+                    Solo play ability is very good.</small></p>
+                  <div class="line"></div>
+                  <p><span class="cyan">For more in-depth theorycrafting on DPS specs visit the thread on the official forums <a href="https://forums.embersadrift.com/index.php?threads/dpsn-advice.2709/" target="_blank">HERE</a></p>                </div>
+              </div>
+              <input type="radio" name="brigGuideTabs" id="tabbrigGuideSkillsDPS">
+              <label for="tabbrigGuideSkillsDPS"><img src="icons/book.png" alt="brigGuideSkills" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;DPS Skills</h2>
+                <div class="content">
+                  <p><img src="icons/skills/Overpower.png" class="mats floatL">
+                    <b>Overpower</b> - requires lvl <b>10</b>
+                    <br><small>This is a strong damage skill that completely ignores enemy defences, a core part of your dps rotation.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/BleedingStrike.png" class="mats floatL">
+                    <b>Bleeding Strike</b> - requires lvl <b>4</b>
+                    <br><small> - This is a core striker skill that is still worth using in your dps rotation, generally use this at the beginning of the fight and then maintain the bleed.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Execute.png" class="mats floatL">
+                    <b>Execute</b> - requires lvl <b>26</b>
+                    <br><small> - This is your specs signature damage move. You don't unlock it for quite a while, but once you do Brigands really start to shine. This skill does more damage the less health the target has, so use it when the mobs health goes under 30% or even 20% for stupid high damage numbers.<br>
+                    A slow high damage weapon is best for maximising the crazy damage on this skill.</span></small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/SharpenEdge.png" class="mats floatL">
+                    <b>Sharpen Edge</b> - requires lvl <b>14</b>
+                    <br><small> - This is a buff that increases your penetration stat for a while, best used versus highly armoured enemies.</span></small></p>
+                </div>
+              </div>
+              <input type="radio" name="brigGuideTabs" id="tabbrigGuideSkillsUtility">
+              <label for="tabbrigGuideSkillsUtility"><img src="icons/book.png" alt="brigGuideSkills" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Utility Skills</h2>
+                <div class="content">
+                  <p><img src="icons/skills/FadingStrike.png" class="mats floatL">
+                    <b>Fading Strike</b> - requires lvl <b>2</b>
+                    <br><small>This is one of your core skills, it not only reduces your threat on the mob but also does good damage per stamina. In conjunction with Hidden Strike this should mean you stay low on the threat table.<br>
+                    It's worth noting that both Stun and Flash Powder generate threat, and often when the CC wears off the mobs will be heading straight to you. Hopefully your tank will have some threat on them, but you may want to save Fading Strike for helping de-aggro mobs.<br>
+                    If you are pulling mobs then you should also use this as soon as the tank grabs the enemy as the puller generates additional threat.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/HiddenStrike.png" class="mats floatL">
+                    <b>Hidden Strike</b> - requires lvl <b>8</b>
+                    <br><small>This ability generates no threat which is very useful, especially as an opener when the tank may not have much threat on the mob, and also after pulling mobs. If you use it on cooldown then you shouldn't have any threat problems.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Stun.png" class="mats floatL"><img src="icons/skills/FlashPowder.png" class="mats floatL">
+                    <b>Stun & Flash Powder</b><small> - These are your crowd control abilities, Stun you get straight away at level 6 and is single target. Flash Powder you unlock later at 22 and is an AoE.<br>
+                    Note that both of these abilities generate threat, so the mobs may be heading for you as soon as the CC wears off.<br>
+                    Most mobs can only be CC'd 3 times in a row and then they become resistant, higher level mobs (red) and bosses are also generally highly resistant to CC.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/Daze.png" class="mats floatL">
+                    <b>Daze</b> - requires lvl <b>18</b>
+                    <br><small>This ability makes the enemy unable to use their skills for a while. Against some enemies that do AoE damage or stuns this can be very useful to use.</small></p>
+                </div>
+              </div>
+              <input type="radio" name="brigGuideTabs" id="tabbrigGuideGear">
+              <label for="tabbrigGuideGear"><img src="icons/guides/brigGuide.jpg" alt="brigGuideGear" class="tabIcon"></label>
+              <div class="tab">
+                <h2 class="dark">&nbsp;Gear & Professions</span></h2>
+                <div class="content">
+                  <p><img src="icons/crafting/Mace.png" class="mats floatL">
+                    <b>Weapons</b><small> 
+                      - The majority of Brigands use a 2H weapon in their main weapon slot, and a bow in their second slot.<br>
+                      - For the 2H weapon go with the highest damage dice. Also pay attention to the positional stats - most weapons have bonuses when attacking from the side or the rear making them suited to group play, some have frontal bonuses making them better for solo play.<br>
+                      - You could also go duel wield if you have better 1H weapons. I would recommend both a slow main-hand and off-hand for maximum skill damage.<br>
+                      - There are two different types of bows, shortbows have a shorter range but can still dps in melee, whereas long bows have a much longer range, better for pulling mobs, but also a minimum range so can't dps in melee and are unsuitable for solo play unless you are adept at kiting.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/skills/AdvantageStrike.png" class="mats floatL">
+                    <b>DPS Stats</b><small> - Flanking is one of your main damage stats that will directly increase the positional stats on your weapon, mostly found on mid-weight (leather) armor and crafted rings.<br>
+                      - Penetration is also a solid damage stat to stack, especially good against heavily armoured enemies.<br>
+                      - 1H / 2H damage is a % increase to your overall damage done and worth looking out for on gear.<br>
+                      - Hit is not quite as good as the other stats, better against harder mobs which are more difficult to hit.</small></p>
+                    <div class="line"></div>
+                  <p><img src="icons/crafting/SpiderSilk.png" class="mats floatL">
+                    <b>Other Stats</b><small> - Stamina Regen is super useful for all specs - more stamina = more damage, especially shines in longer fights in dungeons. Stamina can regen in combat (at a lower rate).<br>
+                      - Health Regen is good for soloing as it means less downtime, somewhat useful in group play as you won't have to rely on your healer topping you up between fights. Afaik HP doesn't regen whilst in combat.<br>
+                      - Armor Class is helpful if you like to solo a lot or tend to pull aggro. Most high armor pieces are also very heavy and have no dps stats though.</small></p>
+                      <div class="line"></div>
+                  <p><img src="icons/crafting/KingsPotion.png" class="mats floatL">
+                    <b>Professions</b><small> - Outfitter can craft dps gear with flanking, and also cloth inner armor with various other dps stats.<br>
+                    - Tinker can make daggers, which are normally better than the drops and quest rewards, and also some nice jewellery with various dps stats.<br>
+                    - Provisioner can make potions - HP and Kings pots, also hp and stam regen food / drink.<br>
+                    - Woodworker can make arrows and bows which I recommend if you want to play ranged.<br>
+                    If you want to be more self-sufficient, it's recommended to pick up the core gathering skills first BEFORE picking your production skill 3rd at tradeskill lv 12.</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
 
         <input type="radio" name="tabs" id="tabDefender">
         <label for="tabDefender"><img src="icons/defender.png" alt="Defender"></label>
