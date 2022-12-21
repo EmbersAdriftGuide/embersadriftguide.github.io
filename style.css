@@ -112,7 +112,7 @@ label{
 .overlay {
   position: fixed;
   top: 0;
-  bottom: 5rem;
+  bottom: 0;
   left: 0;
   right: 0;
   transition: opacity 5ms;
@@ -150,7 +150,7 @@ label{
 }
 
 .popup .tab{
-  max-height: 65vh;
+  max-height: 60vh;
   overflow-y: scroll;
 }
 
@@ -511,7 +511,7 @@ padding: 9px 18px;
     margin: auto;
   }
   .popup .tab{
-    max-height: 80vh;
+    max-height: 75vh;
     overflow-y: scroll;
   }
 
